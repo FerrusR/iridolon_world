@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Meta/Архитектурные_приоритеты.md",
+                "file": "01_World/Боги/Удача (бог).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Архитектурные_приоритеты"
+              "title": "Удача (бог)"
             }
           }
         ]
@@ -185,41 +185,41 @@
   },
   "active": "8aea433748d3b98c",
   "lastOpenFiles": [
-    "00_Meta/Архитектурные_приоритеты.md.tmp.901783.bff9dc8efd0f",
-    "00_Meta/Архитектурные_приоритеты.md.tmp.901783.6f090541550e",
-    "00_Meta/Архитектурные_приоритеты.md.tmp.901783.a023ab3cfbe2",
-    "00_Meta/Архитектурные_приоритеты.md.tmp.901783.e0fb978be60d",
-    "00_Meta/Open_Questions.md.tmp.901783.02027deb90c9",
-    "00_Meta/Open_Questions.md.tmp.901783.7adf970d83dd",
-    "00_Meta/Open_Questions.md.tmp.901783.b6225c87fff1",
-    "00_Meta/Open_Questions.md.tmp.901783.cbc68f4b5d2d",
-    "00_Meta/Open_Questions.md.tmp.901783.d5d3fc72859f",
-    "00_Meta/Open_Questions.md.tmp.901783.8241295f8e90",
-    "00_Meta/Open_Questions.md.tmp.901783.a68d3ab31d27",
+    "00_Meta/Архитектурные_приоритеты.md.tmp.17449.82e4329215e8",
+    "00_Meta/Архитектурные_приоритеты.md.tmp.17449.b05b00cf457d",
+    "00_Meta/Open_Questions.md.tmp.17449.aa6984a98681",
+    "01_World/Боги/Смерть (бог).md",
+    "00_Meta/Open_Questions.md.tmp.17449.dede3d267abb",
+    "01_World/Пантеон.md.tmp.17449.cc338988d6ce",
+    "01_World/Пантеон.md.tmp.17449.c083c7f47e04",
+    "01_World/Пантеон.md.tmp.17449.b3bbf61bad6a",
+    "01_World/Пантеон.md.tmp.17449.976db7a1db2c",
+    "01_World/Пантеон.md.tmp.17449.ce753c655ad0",
+    "01_World/Эпоха богов.md.tmp.17449.c56b6f187351",
+    "01_World/Эпоха богов.md.tmp.17449.87a7c3bb3aa6",
+    "01_World/Боги/Справедливость (бог).md",
+    "01_World/Эпоха богов.md",
+    "00_Meta/Templates/God.md",
+    "01_World/Боги/Удача (бог).md",
+    "00_Meta/Архитектурные_приоритеты.md",
+    "04_NPCs/Кадреш.md",
+    "02_Regions/Тюрьма в долине.md",
+    "04_NPCs/Отступник.md",
+    "00_Meta/Open_Questions.md",
     "03_Factions/Культ Пепельной Матери.md",
     "01_World/Опустошитель.md",
     "01_World/Проводник.md",
     "00_Meta/Референсы.md",
     "01_World/Артефакт вознесения.md",
-    "00_Meta/Архитектурные_приоритеты.md",
-    "01_World/Боги/Удача (бог).md",
-    "00_Meta/Open_Questions.md",
     "Таймлайн мира.md",
     "00_Meta/CLAUDE_instructions.md",
     "00_Meta/ComfyUI_Checkpoint_Guide.md",
     "00_Meta/README.md",
     "00_Meta/ComfyUI Checkpoint Guide.md",
-    "01_World/Боги/Справедливость (бог).md",
     "CLAUDE.md",
     "01_World/Метафизика магии.md",
     "01_World/Пантеон.md",
     "01_World/Сердце.md",
-    "01_World/Боги и силы.md",
-    "01_World/_Index.md",
-    "Метафизика магии.md",
-    "01_World/Боги/Жизнь (бог).md",
-    "01_World/Боги/Время (бог).md",
-    "01_World/Боги/Смерть (бог).md",
-    "00_Meta/Templates/Session.md"
+    "01_World/Боги и силы.md"
   ]
 }
