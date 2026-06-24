@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_World/Боги/Удача (бог).md",
+                "file": "01_World/Пантеон.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Удача (бог)"
+              "title": "Пантеон"
+            }
+          },
+          {
+            "id": "cba125bc48b65dc3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01_World/История/Эпоха богов.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Эпоха богов"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,46 +195,50 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8aea433748d3b98c",
+  "active": "cba125bc48b65dc3",
   "lastOpenFiles": [
-    "00_Meta/Архитектурные_приоритеты.md.tmp.17449.82e4329215e8",
-    "00_Meta/Архитектурные_приоритеты.md.tmp.17449.b05b00cf457d",
-    "00_Meta/Open_Questions.md.tmp.17449.aa6984a98681",
-    "01_World/Боги/Смерть (бог).md",
-    "00_Meta/Open_Questions.md.tmp.17449.dede3d267abb",
-    "01_World/Пантеон.md.tmp.17449.cc338988d6ce",
-    "01_World/Пантеон.md.tmp.17449.c083c7f47e04",
-    "01_World/Пантеон.md.tmp.17449.b3bbf61bad6a",
-    "01_World/Пантеон.md.tmp.17449.976db7a1db2c",
-    "01_World/Пантеон.md.tmp.17449.ce753c655ad0",
-    "01_World/Эпоха богов.md.tmp.17449.c56b6f187351",
-    "01_World/Эпоха богов.md.tmp.17449.87a7c3bb3aa6",
-    "01_World/Боги/Справедливость (бог).md",
-    "01_World/Эпоха богов.md",
-    "00_Meta/Templates/God.md",
-    "01_World/Боги/Удача (бог).md",
-    "00_Meta/Архитектурные_приоритеты.md",
-    "04_NPCs/Кадреш.md",
-    "02_Regions/Тюрьма в долине.md",
-    "04_NPCs/Отступник.md",
-    "00_Meta/Open_Questions.md",
-    "03_Factions/Культ Пепельной Матери.md",
-    "01_World/Опустошитель.md",
-    "01_World/Проводник.md",
-    "00_Meta/Референсы.md",
-    "01_World/Артефакт вознесения.md",
-    "Таймлайн мира.md",
-    "00_Meta/CLAUDE_instructions.md",
-    "00_Meta/ComfyUI_Checkpoint_Guide.md",
-    "00_Meta/README.md",
-    "00_Meta/ComfyUI Checkpoint Guide.md",
-    "CLAUDE.md",
-    "01_World/Метафизика магии.md",
+    "01_World/Боги/Справедливость (бог).md.tmp.51626.14a8b8dbac4b",
+    "01_World/Боги/Справедливость (бог).md.tmp.49913.fe1aff28ab53",
+    "01_World/Боги/Справедливость (бог).md.tmp.49913.9cbfd8ec2217",
+    "01_World/Боги/Справедливость (бог).md.tmp.49913.708b1da87332",
+    "01_World/Боги/Справедливость (бог).md.tmp.49913.ac14abd7e2ad",
+    "00_Meta/Архитектурные_приоритеты.md.tmp.47610.288de422b2fc",
+    "01_World/_Index.md.tmp.47610.136183ab2685",
+    "00_Meta/Open_Questions.md.tmp.47610.d24ab50c4092",
+    "00_Meta/Open_Questions.md.tmp.47610.5a23850fd9a8",
+    "01_World/Пантеон.md.tmp.47610.efeb37c4e4be",
+    "01_World/История/Катастрофа.md.tmp.47610.5d6b6a70a158",
+    "01_World/Религия сегодня.md",
     "01_World/Пантеон.md",
-    "01_World/Сердце.md",
+    "00_Meta/Архитектурные_приоритеты.md",
+    "05_Campaign/_Index.md",
+    "05_Campaign/Доска кампании.canvas",
+    "05_Campaign/Арка 1.canvas",
+    "02_Regions/Летний Сад.md",
+    "04_NPCs/Сервитор Жизни.md",
+    "05_Campaign/Арка 1.md",
+    "06_Mechanics/PF2e_Mythic_Rules_Issues_and_Fixes.md",
+    "05_Campaign/Пререквизиты финала — чеклист.md",
+    "05_Campaign/Пререквизиты финала.canvas",
+    "05_Campaign/Принципы подачи.md",
+    "03_Factions/Культ Шепчущего.md",
+    "00_Meta/CLAUDE_instructions.md",
+    "01_World/Подземье.md",
+    "Untitled.md",
+    "CLAUDE.md",
+    "01_World/_Index.md",
+    "01_World/Дрейф реальности.md",
+    "01_World/Опустошитель.md",
+    "04_NPCs/Кадреш.md",
+    "01_World/Форма мира.md",
+    "01_World/История/Катастрофа.md",
+    "01_World/История/Демоническая война.md",
+    "01_World/Эпоха богов.md",
+    "01_World/История/Эпоха богов.md",
     "01_World/Боги и силы.md"
   ]
 }
