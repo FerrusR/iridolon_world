@@ -26,7 +26,7 @@
 		{"id":"n-kadresh","type":"file","file":"04_NPCs/Кадреш.md","x":-40,"y":200,"width":280,"height":150,"color":"5"},
 		{"id":"n-forma","type":"file","file":"01_World/Форма мира.md","x":-800,"y":500,"width":280,"height":140},
 		{"id":"n-voina","type":"file","file":"01_World/История/Демоническая война.md","x":-420,"y":500,"width":280,"height":140},
-		{"id":"n-tyurma","type":"file","file":"02_Regions/Тюрьма в долине.md","x":340,"y":200,"width":280,"height":150,"color":"5"},
+		{"id":"n-tyurma","type":"file","file":"02_Regions/Тюрьма-остров.md","x":340,"y":200,"width":280,"height":150,"color":"5"},
 		{"id":"n-epoha","type":"file","file":"01_World/История/Эпоха богов.md","x":-40,"y":500,"width":280,"height":140},
 		{"id":"n-zagrobie","type":"file","file":"01_World/Загробие.md","x":340,"y":500,"width":280,"height":140},
 		{"id":"n-magia","type":"file","file":"01_World/Метафизика магии.md","x":720,"y":500,"width":280,"height":140},
