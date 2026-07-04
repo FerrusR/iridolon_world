@@ -97,9 +97,15 @@
   <circle cx="1312" cy="858" r="5" fill="#6f8f63"/>
   <text x="1345" y="812" font-size="12" fill="#8a6f42" font-style="italic">оазисы + маяки Гильдии</text>
 
-  <!-- эльфийские леса -->
+  <!-- эльфийские леса — королевство Эландрия -->
   <path d="M1140,930 C1250,900 1420,895 1600,912 L1600,1000 L1150,1000 C1135,975 1132,950 1140,930 Z" fill="#6f8f63" opacity="0.85"/>
-  <text x="1370" y="955" font-size="15" fill="#f2efe2" text-anchor="middle">эльфийские леса · королевство (имя — лист)</text>
+  <text x="1455" y="940" font-size="20" letter-spacing="3" fill="#f2efe2" text-anchor="middle">ЭЛАНДРИЯ</text>
+  <text x="1455" y="958" font-size="12" fill="#eef3ea" text-anchor="middle" font-style="italic">королевство эльфов · прародина</text>
+  <!-- столица -->
+  <circle cx="1300" cy="978" r="10" fill="none" stroke="#2b2925" stroke-width="1.2"/>
+  <circle cx="1300" cy="978" r="6" fill="#2b2925"/>
+  <text x="1315" y="975" font-size="15" fill="#f2efe2">Аннувэль</text>
+  <text x="1315" y="991" font-size="11" fill="#eef3ea" font-style="italic">столица</text>
 
   <!-- ============ МОРЕ ============ -->
   <circle cx="1345" cy="568" r="6" fill="#4a403b"/>

@@ -11,14 +11,12 @@
             "id": "8aea433748d3b98c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "02_Regions/Королевство Магнуса.md",
-                "mode": "source",
-                "source": false
+                "file": "99_Sketches/Схема ближнего мира.svg"
               },
-              "icon": "lucide-file",
-              "title": "Королевство Магнуса"
+              "icon": "lucide-image",
+              "title": "Схема ближнего мира"
             }
           }
         ]
@@ -184,24 +182,63 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8aea433748d3b98c",
+  "floating": {
+    "id": "5dff9ae7170bea9b",
+    "type": "floating",
+    "children": [
+      {
+        "id": "58671a73360b1432",
+        "type": "window",
+        "children": [
+          {
+            "id": "97da1ba16ab8f2d6",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "3b444f9d5a502b39",
+                "type": "leaf",
+                "state": {
+                  "type": "image",
+                  "state": {
+                    "file": "99_Sketches/Схема ближнего мира.svg"
+                  },
+                  "icon": "lucide-image",
+                  "title": "Схема ближнего мира"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 800,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "3b444f9d5a502b39",
   "lastOpenFiles": [
-    "Карта мира.md.tmp.275197.5ab4c332c111",
-    "99_Sketches/_Index.md.tmp.275197.c08008d45897",
-    "99_Sketches/Схема ближнего мира.svg.tmp.275197.2f1f467920a1",
-    "99_Sketches/Схема ближнего мира.svg",
-    "99_Sketches/Схема ближнего мира.svg.tmp.275197.f7292579371e",
-    "99_Sketches/Карта — бриф для Inkarnate.md",
-    "99_Sketches/Карта — бриф для Inkarnate.md.tmp.275197.f11d4706c157",
-    "01_World/История/_Index.md.tmp.269576.e2637b6b6abf",
-    "00_Meta/Open_Questions.md.tmp.269576.2bbe0bf5e995",
-    "00_Meta/Open_Questions.md.tmp.269576.cf401e223c09",
-    "04_NPCs/Главный маршал.md.tmp.269576.ae1f19df2cf1",
-    "03_Factions/Гильдия Навигаторов.md.tmp.269576.cc7ca489fc24",
-    "01_World/История/Таймлайн мира.md",
-    "01_World/История/Таймлайн мира.md.tmp.269576.bea5c3673f7f",
-    "02_Regions/Мирсаль.md",
+    "01_World/_Index.md.tmp.280818.ee0f99c710ad",
+    "00_Meta/Open_Questions.md.tmp.280818.5922e54534e9",
+    "00_Meta/Open_Questions.md.tmp.280818.871ca08f79b2",
+    "02_Regions/Эландрия.md.tmp.280818.7fb427311a68",
+    "01_World/Религия сегодня.md.tmp.280818.ff73ddcccd79",
+    "01_World/Боги/Жизнь (бог).md.tmp.280818.27e872d24946",
+    "01_World/Боги/Время (бог).md.tmp.280818.4e9de7381b2b",
+    "01_World/Народы.md.tmp.280818.684b725b4f0b",
+    "01_World/Народы.md.tmp.280818.fcf2f228432b",
+    "01_World/История/Демоническая война.md.tmp.280818.d6dff8a590b1",
+    "01_World/Форма мира.md.tmp.280818.0bfcb05f5fb6",
+    "01_World/Аэльтимор.md",
     "02_Regions/Королевство Магнуса.md",
+    "02_Regions/Эландрия.md",
+    "99_Sketches/Схема ближнего мира.svg",
+    "99_Sketches/Карта — бриф для Inkarnate.md",
+    "01_World/История/Таймлайн мира.md",
+    "02_Regions/Мирсаль.md",
     "04_NPCs/Главный маршал.md",
     "04_NPCs/Кустос.md",
     "01_World/Форма мира.md",
@@ -221,8 +258,6 @@
     "04_NPCs/Кадреш.md",
     "04_NPCs/Каргул Ненасытный.md",
     "04_NPCs/Наккрит.md",
-    "04_NPCs/Орландо Балестра.md",
-    "04_NPCs/Тот-Кто-Внял.md",
     "05_Campaign/Доска кампании.canvas",
     "05_Campaign/Пререквизиты финала.canvas",
     "05_Campaign/Арка 1.canvas"
