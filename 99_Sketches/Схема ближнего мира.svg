@@ -14,6 +14,10 @@
   <text x="150" y="180" font-size="34" letter-spacing="6" fill="#6d6350">ВАЛАНТИЯ</text>
   <text x="150" y="208" font-size="15" fill="#8a7f66" font-style="italic">материк продолжается на запад…</text>
 
+  <!-- степное кольцо (одичавшая пашня) -->
+  <ellipse cx="225" cy="480" rx="240" ry="215" fill="#d8d3a3" opacity="0.55"/>
+  <text x="225" y="292" font-size="12" fill="#8a8352" font-style="italic" text-anchor="middle">степное кольцо — одичавшая пашня</text>
+
   <!-- мёртвые земли + Аструм -->
   <ellipse cx="225" cy="480" rx="155" ry="140" fill="#b5aaa2" stroke="#7c716b" stroke-width="1.5" stroke-dasharray="7 5" opacity="0.85"/>
   <text x="225" y="415" font-size="15" fill="#5d534e" text-anchor="middle" font-style="italic">мёртвые земли · кольцо руин-пригородов</text>
@@ -21,12 +25,17 @@
   <text x="225" y="510" font-size="14" text-anchor="middle" fill="#5d534e">павший город · над Сердцем</text>
   <circle cx="330" cy="562" r="13" fill="#7a4a32"/><text x="330" y="567" font-size="13" fill="#fff" text-anchor="middle">А6</text>
 
+  <!-- река-артерия и возвышенности -->
+  <path d="M318,368 l13,-24 13,24 z M350,352 l13,-24 13,24 z" fill="#7d6f57"/>
+  <path d="M348,372 C398,400 436,416 466,424 C498,433 512,456 521,477" fill="none" stroke="#7fa3b5" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="400" y="393" font-size="11" fill="#5f7b8a" font-style="italic">река-артерия (б/и)</text>
+
   <!-- Солариум -->
   <text x="465" y="385" font-size="20" letter-spacing="2" fill="#6d6350" text-anchor="middle">СОЛАРИУМ</text>
   <circle cx="470" cy="425" r="7" fill="#4a403b"/>
   <text x="486" y="430" font-size="16" fill="#33302a">Аркс Люцис</text>
   <circle cx="520" cy="480" r="4" fill="#4a403b" opacity="0.6"/>
-  <text x="532" y="485" font-size="13" fill="#6d6350" font-style="italic">порт-ворота — ?</text>
+  <text x="532" y="485" font-size="13" fill="#6d6350" font-style="italic">порт-ворота (устье, б/и)</text>
   <circle cx="540" cy="415" r="13" fill="#7a4a32"/><text x="540" y="420" font-size="13" fill="#fff" text-anchor="middle">А4</text>
   <text x="465" y="360" font-size="13" fill="#8a7f66" font-style="italic" text-anchor="middle">«щит» между берегом и центром</text>
 
@@ -41,6 +50,14 @@
   <path d="M1120,205 C1175,130 1330,108 1432,158 C1523,203 1545,300 1503,382 C1462,458 1350,512 1240,492 C1130,472 1082,382 1092,300 C1097,252 1102,232 1120,205 Z"
         fill="#e7ddc0" stroke="#8a7f66" stroke-width="2.5"/>
   <text x="1300" y="155" font-size="26" letter-spacing="4" fill="#6d6350" text-anchor="middle">ВЕЗАНТИЯ</text>
+
+  <!-- верховые пустоши (плато над лесами) -->
+  <path d="M1108,290 C1102,258 1126,236 1156,241 C1182,246 1188,272 1172,290 C1152,304 1116,308 1108,290 Z" fill="#ab9c86" opacity="0.75"/>
+  <text x="1140" y="228" font-size="11" fill="#84765f" font-style="italic" text-anchor="middle">пустоши (торф, ведьмины камни)</text>
+
+  <!-- марши южнее устья -->
+  <path d="M1478,398 C1500,392 1516,402 1514,420 C1512,438 1494,450 1476,444 C1462,438 1464,408 1478,398 Z" fill="#8fae87" opacity="0.8"/>
+  <text x="1505" y="462" font-size="10" fill="#5c7a55" font-style="italic" text-anchor="middle">солёные марши</text>
 
   <!-- горы Везантии -->
   <path d="M1150,320 l14,-26 14,26 z M1185,300 l14,-26 14,26 z M1220,320 l14,-26 14,26 z M1255,300 l14,-26 14,26 z M1180,355 l14,-26 14,26 z M1245,352 l14,-26 14,26 z" fill="#7d6f57"/>
@@ -76,6 +93,11 @@
   <!-- ============ ХАДДУМ (срезан нижним/правым обрезом) ============ -->
   <path d="M1022,705 C1085,638 1205,612 1332,628 C1452,643 1560,636 1600,655 L1600,1000 L1052,1000 C1010,905 992,782 1022,705 Z"
         fill="#e7ddc0" stroke="#8a7f66" stroke-width="2.5"/>
+  <!-- степь-кромка (пустыня наступает на неё) -->
+  <path d="M1035,712 C1120,678 1300,663 1450,678 C1548,688 1592,696 1600,699 L1600,748 C1590,742 1540,733 1440,722 C1300,707 1140,722 1062,760 C1050,744 1040,728 1035,712 Z"
+        fill="#cfc98f" opacity="0.85"/>
+  <text x="1520" y="712" font-size="12" fill="#8a8352" font-style="italic" text-anchor="middle">степь-кромка</text>
+
   <!-- пустыня -->
   <path d="M1060,760 C1140,720 1300,705 1440,720 C1540,731 1590,740 1600,745 L1600,880 C1500,895 1250,900 1120,880 C1070,870 1050,820 1060,760 Z"
         fill="#e0cb96" opacity="0.9"/>
@@ -107,7 +129,22 @@
   <text x="1315" y="975" font-size="15" fill="#f2efe2">Аннувэль</text>
   <text x="1315" y="991" font-size="11" fill="#eef3ea" font-style="italic">столица</text>
 
+  <!-- хребет дождевой тени (разрыв — ворота дороги) -->
+  <path d="M1152,916 l12,-24 12,24 z M1182,910 l12,-24 12,24 z M1212,916 l12,-24 12,24 z M1242,908 l12,-24 12,24 z M1272,914 l12,-24 12,24 z" fill="#7d6f57"/>
+  <path d="M1362,912 l12,-24 12,24 z M1392,906 l12,-24 12,24 z M1422,914 l12,-24 12,24 z M1452,908 l12,-24 12,24 z M1482,914 l12,-24 12,24 z M1512,908 l12,-24 12,24 z M1545,914 l12,-24 12,24 z" fill="#7d6f57"/>
+  <text x="1240" y="874" font-size="12" fill="#6d6350" font-style="italic" text-anchor="end">хребет (дождевая тень, б/и) ·</text>
+  <text x="1240" y="889" font-size="12" fill="#6d6350" font-style="italic" text-anchor="end">разрыв = ворота дороги</text>
+  <path d="M1328,905 C1332,920 1336,932 1341,948" fill="none" stroke="#8a6f42" stroke-width="2" stroke-dasharray="6 5"/>
+
   <!-- ============ МОРЕ ============ -->
+  <!-- островная дуга (затонувшее продолжение гряды Везантии) -->
+  <ellipse cx="1258" cy="524" rx="8" ry="5" fill="#e7ddc0" stroke="#8a7f66" stroke-width="1.5"/>
+  <ellipse cx="1290" cy="546" rx="6" ry="4" fill="#e7ddc0" stroke="#8a7f66" stroke-width="1.5"/>
+  <ellipse cx="1332" cy="602" rx="6" ry="4" fill="#e7ddc0" stroke="#8a7f66" stroke-width="1.5"/>
+  <ellipse cx="1312" cy="628" rx="8" ry="5" fill="#e7ddc0" stroke="#8a7f66" stroke-width="1.5"/>
+  <text x="1240" y="550" font-size="12" fill="#6d6350" font-style="italic" text-anchor="end">островная дуга — «утонувшие</text>
+  <text x="1240" y="565" font-size="12" fill="#6d6350" font-style="italic" text-anchor="end">сёстры» гряды (якоря редки)</text>
+
   <circle cx="1345" cy="568" r="6" fill="#4a403b"/>
   <text x="1360" y="565" font-size="14" fill="#33302a">Мирсаль</text>
   <text x="1360" y="581" font-size="11" fill="#6d6350" font-style="italic">погасший маяк (А3, акт I)</text>
@@ -119,6 +156,7 @@
 
   <path d="M1497,352 C1350,240 900,300 620,410 C575,428 545,440 528,462" fill="none" stroke="#3f6884" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#arr)"/>
   <text x="900" y="300" font-size="14" fill="#3f6884" font-style="italic">~месяц · флот в сцепке (А4)</text>
+  <text x="900" y="320" font-size="12" fill="#3f6884" font-style="italic">голый океан — якорей нет</text>
 
   <path d="M1180,915 C1160,945 1150,965 1145,990" fill="none" stroke="#3f6884" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#arr)"/>
   <text x="1108" y="935" font-size="13" fill="#3f6884" font-style="italic" text-anchor="end">дальний южный океан → Катена</text>

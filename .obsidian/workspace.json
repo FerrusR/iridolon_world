@@ -11,12 +11,14 @@
             "id": "8aea433748d3b98c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "99_Sketches/Схема ближнего мира.svg"
+                "file": "00_Meta/Foundry_модули_v14_аудит.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Схема ближнего мира"
+              "icon": "lucide-file",
+              "title": "Foundry_модули_v14_аудит"
             }
           }
         ]
@@ -182,68 +184,33 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "floating": {
-    "id": "5dff9ae7170bea9b",
-    "type": "floating",
-    "children": [
-      {
-        "id": "58671a73360b1432",
-        "type": "window",
-        "children": [
-          {
-            "id": "97da1ba16ab8f2d6",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "3b444f9d5a502b39",
-                "type": "leaf",
-                "state": {
-                  "type": "image",
-                  "state": {
-                    "file": "99_Sketches/Схема ближнего мира.svg"
-                  },
-                  "icon": "lucide-image",
-                  "title": "Схема ближнего мира"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 0,
-        "y": 0,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "3b444f9d5a502b39",
+  "active": "8aea433748d3b98c",
   "lastOpenFiles": [
-    "01_World/_Index.md.tmp.280818.ee0f99c710ad",
-    "00_Meta/Open_Questions.md.tmp.280818.5922e54534e9",
-    "00_Meta/Open_Questions.md.tmp.280818.871ca08f79b2",
-    "02_Regions/Эландрия.md.tmp.280818.7fb427311a68",
-    "01_World/Религия сегодня.md.tmp.280818.ff73ddcccd79",
-    "01_World/Боги/Жизнь (бог).md.tmp.280818.27e872d24946",
-    "01_World/Боги/Время (бог).md.tmp.280818.4e9de7381b2b",
-    "01_World/Народы.md.tmp.280818.684b725b4f0b",
-    "01_World/Народы.md.tmp.280818.fcf2f228432b",
-    "01_World/История/Демоническая война.md.tmp.280818.d6dff8a590b1",
-    "01_World/Форма мира.md.tmp.280818.0bfcb05f5fb6",
+    "99_Sketches/Схема ближнего мира.svg",
+    "00_Meta/Foundry_модули_v14_аудит.md",
+    "05_Campaign/Арка 1.md",
+    "05_Campaign/Front — Барон.md.tmp.57245.bd16db122db3",
+    "05_Campaign/Арка 1.md.tmp.57245.c7b6e6f4b104",
+    "05_Campaign/Арка 1.md.tmp.57245.90ac3ecb5993",
+    "05_Campaign/Арка 1.md.tmp.57245.ab130c416aba",
+    "05_Campaign/Арка 1.md.tmp.57245.bde148309e58",
+    "05_Campaign/Front — Барон.md.tmp.32680.9184b7457a61",
+    "05_Campaign/Front — Барон.md.tmp.32680.a5eeab360f96",
+    "05_Campaign/Арка 1.md.tmp.32680.3d36e8a01b7b",
     "01_World/Аэльтимор.md",
+    "05_Campaign/Арка 1.md.tmp.32680.58e379db65c3",
+    "01_World/История/Демоническая война.md",
+    "00_Meta/Open_Questions.md",
+    "01_World/Метафизика магии.md.tmp.465504.aa5c2cbd4040",
+    "99_Sketches/Карта — бриф для Inkarnate.md",
     "02_Regions/Королевство Магнуса.md",
     "02_Regions/Эландрия.md",
-    "99_Sketches/Схема ближнего мира.svg",
-    "99_Sketches/Карта — бриф для Inkarnate.md",
     "01_World/История/Таймлайн мира.md",
     "02_Regions/Мирсаль.md",
     "04_NPCs/Главный маршал.md",
     "04_NPCs/Кустос.md",
     "01_World/Форма мира.md",
     "04_NPCs/Архимаг юга.md",
-    "00_Meta/Open_Questions.md",
     "02_Regions/Аструм.md",
     "02_Regions/Хаддум.md",
     "04_NPCs/Варгрим Камнебородый.md",
@@ -255,9 +222,6 @@
     "02_Regions/Сольмаре.md",
     "02_Regions/Порто-Кьяро.md",
     "04_NPCs/Изгра Легконогая.md",
-    "04_NPCs/Кадреш.md",
-    "04_NPCs/Каргул Ненасытный.md",
-    "04_NPCs/Наккрит.md",
     "05_Campaign/Доска кампании.canvas",
     "05_Campaign/Пререквизиты финала.canvas",
     "05_Campaign/Арка 1.canvas"
