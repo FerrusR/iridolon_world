@@ -69,12 +69,22 @@ def classify(rest):
     ws = value[len(core):]                 # пробелы перед комментарием
     if core == "":
         return "comment_only", None, comment
-    quoted = (len(core) >= 2 and core[0] == core[-1] and core[0] in "\"'")
-    has_link = "[[" in core
-    if has_link and not quoted:
+    # Значение целиком — квотированный скаляр  "..." / '...'  → корректно при любом содержимом.
+    if len(core) >= 2 and core[0] == core[-1] and core[0] in "\"'":
+        return "ok", None, comment
+    # Ломает свойство именно [[...]] БЕЗ кавычки прямо перед ним (Obsidian: оранжевый чип).
+    # Корректный flow-список  arcs: ["[[Арка 1]]"]  — внутри кавычки, его НЕ трогаем.
+    unq = any(core[m.start()-1:m.start()] not in ("\"", "'")
+              for m in re.finditer(r"\[\[", core))
+    if not unq:
+        return "ok", None, comment
+    # Авто-починка (обернуть в кавычки целиком) годна для скаляра и одиночной ссылки
+    # [[X]]; для flow-коллекции ([..]/{..}) так делать нельзя — только предупреждаем.
+    scalar_link = core.startswith("[[") or core[0] not in "[{"
+    if scalar_link:
         fixed = '"' + core.replace("\\", "\\\\").replace('"', '\\"') + '"' + ws + comment
         return "unquoted_link", fixed, comment
-    return "ok", None, comment
+    return "unquoted_link", None, comment
 
 
 def process(text, do_fix=False):
@@ -108,7 +118,7 @@ def process(text, do_fix=False):
         if kind == "unquoted_link":
             issues.append((lineno, "WARN", "unquoted_link",
                            f"{key.strip()}: значение со ссылкой без кавычек"))
-            if do_fix:
+            if do_fix and fixed is not None:
                 nl = "\n" if raw.endswith("\n") else ""
                 lines[idx] = f"{indent}{key}:{sep}{fixed}{nl}"
                 changed = True

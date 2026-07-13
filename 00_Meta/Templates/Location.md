@@ -1,6 +1,7 @@
 ---
 type: location
 loc_type:            # city | ruin | dungeon | wilds | landmark
+arcs:                # ОБЯЗАТЕЛЬНО ≥1: ["[[Арка 1]]"]; вне арок → ["фон"]
 region:              # [[Регион]]
 status:              # inhabited | ruined | contested | hidden
 tags: []

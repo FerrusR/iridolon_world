@@ -1,5 +1,6 @@
 ---
 type: npc
+arcs: ["фон"]
 status: alive
 region: "[[Браздур]]"
 faction: корона Браздура

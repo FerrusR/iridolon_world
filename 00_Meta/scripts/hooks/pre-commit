@@ -1,40 +1,49 @@
 #!/bin/sh
-# pre-commit — не даёт закоммитить битый YAML-фронтматтер (properties) в волте.
-# Ставится в .git/hooks/pre-commit. Обход разово:  git commit --no-verify
+# pre-commit — проверка frontmatter в волте перед коммитом.
+#   1) lint_frontmatter.py --check  — механика YAML (кавычки у ссылок), по всему волту.
+#   2) check_schema.py   --staged   — обязательные поля (arcs / место у NPC), только для
+#                                     staged .md (легаси-пробелы в незатронутых файлах не мешают).
+# Обход разово:  git commit --no-verify
 #
-# Каноничная копия лежит в 00_Meta/scripts/hooks/ (версионируется).
-# Переустановить после клонирования волта:
-#   ln -sf ../../00_Meta/scripts/hooks/pre-commit .git/hooks/pre-commit
-#   (или)  cp 00_Meta/scripts/hooks/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit
+# Каноничная копия — в 00_Meta/scripts/hooks/ (версионируется). Переустановить:
+#   cp 00_Meta/scripts/hooks/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit
 
 VAULT="$(git rev-parse --show-toplevel)"
-SCRIPT="$VAULT/00_Meta/scripts/lint_frontmatter.py"
+LINT="$VAULT/00_Meta/scripts/lint_frontmatter.py"
+SCHEMA="$VAULT/00_Meta/scripts/check_schema.py"
 
-# Нет скрипта — не мешаем коммиту.
-[ -f "$SCRIPT" ] || exit 0
-
-# Нет python3 — предупреждаем, но не блокируем.
 if ! command -v python3 >/dev/null 2>&1; then
-  echo "⚠️  pre-commit: python3 не найден — проверка фронтматтера пропущена."
+  echo "⚠️  pre-commit: python3 не найден — проверки frontmatter пропущены."
   exit 0
 fi
 
-python3 "$SCRIPT" "$VAULT" --check
-status=$?
+fail=0
 
-# Код 2 = не установлен pyyaml. Не блокируем, только подсказываем.
-if [ "$status" = "2" ]; then
-  echo "⚠️  pre-commit: нужен pyyaml —  pip install pyyaml --break-system-packages"
-  echo "    (проверка фронтматтера пропущена)"
-  exit 0
+# 1) YAML-механика (весь волт)
+if [ -f "$LINT" ]; then
+  python3 "$LINT" "$VAULT" --check
+  s=$?
+  if [ "$s" = "2" ]; then
+    echo "⚠️  pre-commit: нужен pyyaml —  pip install pyyaml --break-system-packages"
+    echo "    (проверки frontmatter пропущены)"
+    exit 0
+  fi
+  [ "$s" != "0" ] && fail=1
 fi
 
-if [ "$status" != "0" ]; then
+# 2) Схема обязательных полей (только staged-файлы)
+if [ -f "$SCHEMA" ]; then
+  python3 "$SCHEMA" --staged
+  s=$?
+  [ "$s" != "0" ] && [ "$s" != "2" ] && fail=1
+fi
+
+if [ "$fail" != "0" ]; then
   echo ""
-  echo "⛔ Коммит остановлен: в свойствах есть проблемы (см. выше)."
-  echo "   Починить:   python3 \"00_Meta/scripts/lint_frontmatter.py\" . --fix"
-  echo "   Затем:      git add -u   и повторить коммит"
-  echo "   Пропустить: git commit --no-verify"
+  echo "⛔ Коммит остановлен: проблемы во frontmatter (см. выше)."
+  echo "   YAML-механика:      python3 \"00_Meta/scripts/lint_frontmatter.py\" . --fix"
+  echo "   Схема (arcs/место): заполни поля  или  python3 \"00_Meta/scripts/check_schema.py\" . --fix"
+  echo "   Пропустить разово:  git commit --no-verify"
   exit 1
 fi
 
