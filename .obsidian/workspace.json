@@ -11,17 +11,14 @@
             "id": "8aea433748d3b98c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "05_Campaign/Пререквизиты финала.canvas",
-                "viewState": {
-                  "x": -390,
-                  "y": -65,
-                  "zoom": -0.9354118821414479
-                }
+                "file": "05_Campaign/_Index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Пререквизиты финала"
+              "icon": "lucide-file",
+              "title": "_Index"
             }
           }
         ]
@@ -189,6 +186,21 @@
   },
   "active": "8aea433748d3b98c",
   "lastOpenFiles": [
+    "05_Campaign/Sessions/Session_04.md",
+    "05_Campaign/_Index.md",
+    "99_Sketches/Портреты богов/Пантеон — контактный лист.png",
+    "00_Meta/Templates/Session.md",
+    "05_Campaign/Transcripts/Session_04_transcript.md",
+    "05_Campaign/Transcripts",
+    "05_Campaign/Session_TODOs.md",
+    "05_Campaign/Sessions",
+    "05_Campaign/Арка 1.md",
+    "01_World/_Index.md",
+    "00_Meta/Open_Questions.md",
+    "00_Meta/Session_Pipeline_Plan.md",
+    "01_World/Языки.md",
+    "00_Meta/Архитектурные_приоритеты.md",
+    "05_Campaign/Пререквизиты финала.canvas",
     "05_Campaign/Пререквизиты финала — чеклист.md",
     "05_Campaign/Принципы подачи.md",
     "00_Meta/ComfyUI Checkpoint Guide.md",
@@ -201,10 +213,7 @@
     "01_World/Плохие земли.md.tmp.1007488.bbcf5af15e6c",
     "00_Meta/Open_Questions.md.tmp.1007488.66958b837994",
     "01_World/Обряд суда.md",
-    "00_Meta/Open_Questions.md.tmp.122512.e363adb0ac2f",
-    "01_World/Народы.md.tmp.122512.244af0a9ab07",
     "01_World/Плохие земли.md",
-    "99_Sketches/Портреты богов/Пантеон — контактный лист.png",
     "04_NPCs/Тот-Кто-Внял.md",
     "04_NPCs/Торбранд III.md",
     "04_NPCs/Тхарнагош.md",
@@ -212,25 +221,13 @@
     "06_Mechanics/Проводник.md",
     "06_Mechanics/Анти-нежитная алхимия (орден Мораны) — TODO.md",
     "06_Mechanics/PF2e_Mythic_Rules_Issues_and_Fixes.md",
-    "05_Campaign/Пререквизиты финала.canvas",
     "05_Campaign/Арки — структура и связь.md",
     "05_Campaign/Доска кампании.canvas",
     "05_Campaign/Дэшборд — NPC и локации.md",
     "00_Meta/Референсы.md",
-    "04_NPCs/Урзог Говорящий с Предками.md",
-    "04_NPCs/Раймондо Аурелли.md",
-    "04_NPCs/Наккрит.md",
-    "04_NPCs/Кустос.md",
-    "04_NPCs/Каргул Ненасытный.md",
-    "04_NPCs/Изгра Легконогая.md",
-    "04_NPCs/Драумир и Азгарот.md",
     "99_Sketches/Портреты богов/Магнус — Справедливость (канон).png",
     "99_Sketches/Портреты богов/Лире — Удача (канон).png",
     "99_Sketches/Портреты богов/Вирелла — Жизнь (канон).png",
-    "05_Campaign/Арка 4.md",
-    "05_Campaign/Арка 5.md",
-    "05_Campaign/Арка 6.md",
-    "01_World/Боги/Справедливость (бог).md",
     "99_Sketches/Схема ближнего мира.svg",
     "99_Sketches/Портреты богов/Морана — Смерть (канон).png",
     "99_Sketches/Портреты богов/Темпус — Время (канон).png",
