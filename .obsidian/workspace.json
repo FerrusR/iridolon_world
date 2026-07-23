@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05_Campaign/_Index.md",
+                "file": "05_Campaign/Session_TODOs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_Index"
+              "title": "Session_TODOs"
             }
           }
         ]
@@ -186,13 +186,16 @@
   },
   "active": "8aea433748d3b98c",
   "lastOpenFiles": [
-    "05_Campaign/Sessions/Session_04.md",
+    "CLAUDE.md",
+    "Session_04.md",
+    "05_Campaign/Session_TODOs.md",
+    "06_Mechanics/_Index.md",
     "05_Campaign/_Index.md",
+    "05_Campaign/Transcripts/Session_04_transcript.md",
+    "05_Campaign/Sessions/Session_04.md",
     "99_Sketches/Портреты богов/Пантеон — контактный лист.png",
     "00_Meta/Templates/Session.md",
-    "05_Campaign/Transcripts/Session_04_transcript.md",
     "05_Campaign/Transcripts",
-    "05_Campaign/Session_TODOs.md",
     "05_Campaign/Sessions",
     "05_Campaign/Арка 1.md",
     "01_World/_Index.md",
@@ -221,10 +224,7 @@
     "06_Mechanics/Проводник.md",
     "06_Mechanics/Анти-нежитная алхимия (орден Мораны) — TODO.md",
     "06_Mechanics/PF2e_Mythic_Rules_Issues_and_Fixes.md",
-    "05_Campaign/Арки — структура и связь.md",
     "05_Campaign/Доска кампании.canvas",
-    "05_Campaign/Дэшборд — NPC и локации.md",
-    "00_Meta/Референсы.md",
     "99_Sketches/Портреты богов/Магнус — Справедливость (канон).png",
     "99_Sketches/Портреты богов/Лире — Удача (канон).png",
     "99_Sketches/Портреты богов/Вирелла — Жизнь (канон).png",
