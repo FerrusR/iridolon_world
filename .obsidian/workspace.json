@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07_PCs/_Index.md",
+                "file": "02_Regions/Королевство Магнуса.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_Index"
-            }
-          },
-          {
-            "id": "00521bd048c5bc31",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04_NPCs/Бьянка Сальвиати.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Бьянка Сальвиати"
+              "title": "Королевство Магнуса"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -56,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -68,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "бьянка",
+                "query": "Догана",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,8 +76,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -200,56 +186,56 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "00521bd048c5bc31",
+  "active": "8aea433748d3b98c",
   "lastOpenFiles": [
-    "07_PCs/_Index.md",
-    "02_Regions/Королевство Магнуса.md",
-    "01_World/Формы власти.md",
-    "02_Regions/Нагорья Везантии.md",
-    "02_Regions/Мирсаль.md",
-    "02_Regions/Урнаг-Долл.md",
-    "02_Regions/Фальконере.md",
-    "02_Regions/Хаддум.md",
+    "99_Sketches/Карта — бриф для Inkarnate.md.tmp.178184.15ef298a2d18",
+    "00_Meta/Closed_Questions.md.tmp.178184.dfd75b5f6d2f",
+    "00_Meta/Open_Questions.md.tmp.178184.fa60f5092888",
+    "00_Meta/Open_Questions.md.tmp.178184.7019a3e69bc9",
+    "01_World/История/Таймлайн древности.md.tmp.178184.d75b873b6479",
+    "02_Regions/Тарнхольд.md.tmp.178184.f749e03e4387",
+    "03_Factions/Орки нагорий.md.tmp.178184.00e549de84f7",
+    "03_Factions/Орки нагорий.md.tmp.178184.c425ec85617e",
+    "00_Meta/Свод мира.md.tmp.178184.6cc6b25bd992",
+    "02_Regions/Стартовый регион.md.tmp.178184.778db61198a8",
+    "02_Regions/Нагорья Везантии.md.tmp.178184.34e3245f5920",
     "02_Regions/Эландрия.md",
-    "02_Regions/Сольмаре.md",
-    "03_Factions/Культ Пепельной Матери.md",
-    "03_Factions/Караванный Союз.md",
-    "03_Factions/Дети Шторма.md",
-    "03_Factions/Гильдия Навигаторов.md",
-    "99_Sketches/Схема — Сольмаре.svg",
-    "99_Sketches/Карта — Сольмаре (city-бриф).md.tmp.572754.fd2fa3368cdf",
-    "00_Meta/Open_Questions.md.tmp.572754.413b56241f80",
-    "02_Regions/Сольмаре.md.tmp.572754.df3e3fdb1ef9",
-    "02_Regions/Сольмаре.md.tmp.572754.bfa2e96090dd",
-    "02_Regions/Сольмаре.md.tmp.572754.5a354412dd18",
-    "02_Regions/Сольмаре.md.tmp.572754.06fd5850fd12",
-    "00_Meta/Open_Questions.md",
-    "00_Meta/Open_Questions.md.tmp.569900.7ac5b9d11ac4",
-    "02_Regions/Сольмаре.md.tmp.569900.2cb0dda42ac6",
-    "02_Regions/Сольмаре.md.tmp.569900.ee5f3bb2bd94",
-    "02_Regions/Сольмаре.md.tmp.569900.1686c3bde28e",
-    "04_NPCs/Чезаре Гальярди.md",
-    "99_Sketches/Карта — Сольмаре (city-бриф).md",
-    "99_Sketches/Карта — бриф для Inkarnate.md",
-    "05_Campaign/Советы на загрузку (player-facing).md",
-    "00_Meta/_Index.md",
-    "00_Meta/ComfyUI Checkpoint Guide.md",
-    "00_Meta/Референсы.md",
-    "01_World/Народы.md",
-    "01_World/История/Демоническая война.md",
+    "CLAUDE.md",
+    "00_Meta/Свод мира.md",
+    "06_Mechanics/Болт против небожителей.md",
+    "04_NPCs/Купец Лире.md",
+    "00_Meta/README.md",
     "05_Campaign/Арка 1.md",
-    "07_PCs/Starlord (черновик).md",
-    "99_Sketches/Портреты богов/Пантеон — контактный лист.png",
-    "05_Campaign/Пререквизиты финала.canvas",
-    "05_Campaign/Доска кампании.canvas",
-    "99_Sketches/Портреты богов/Магнус — Справедливость (канон).png",
-    "99_Sketches/Портреты богов/Лире — Удача (канон).png",
-    "99_Sketches/Портреты богов/Вирелла — Жизнь (канон).png",
+    "05_Campaign/Арка 1.canvas",
+    "06_Mechanics/Шаблон — Чужой.md",
+    "06_Mechanics/Реликвии — хоумрул.md",
     "99_Sketches/Схема ближнего мира.svg",
-    "99_Sketches/Портреты богов/Морана — Смерть (канон).png",
-    "99_Sketches/Портреты богов/Темпус — Время (канон).png",
-    "99_Sketches/Портреты богов/_Финалы (канон)/Темпус — Время (канон).png",
-    "99_Sketches/Портреты богов/_Финалы (канон)/Магнус — Справедливость (канон).png",
-    "05_Campaign/Арка 1.canvas"
+    "99_Sketches/tokens/Бьянка Сальвиати.webp",
+    "99_Sketches/tokens/Бьянка Сальвиати (подполье).webp",
+    "99_Sketches/Схема — Сольмаре.svg",
+    "99_Sketches/Карта — Ратуша Сольмаре.md",
+    "99_Sketches/Карта — Порт и склады.md",
+    "99_Sketches/Карта — Солёные марши.md",
+    "02_Regions/Солёные марши и варницы.md",
+    "99_Sketches/Карта — Некрополь Сольмаре.md",
+    "02_Regions/Некрополь Сольмаре.md",
+    "04_NPCs/Ансельмо Лукри.md",
+    "04_NPCs/Архимаг юга.md",
+    "04_NPCs/Чезаре Гальярди.md",
+    "00_Meta/Open_Questions.md",
+    "99_Sketches/Карта — Дом Сальвиати.md",
+    "02_Regions/Дом Сальвиати.md",
+    "02_Regions/Порт Сольмаре.md",
+    "02_Regions/Ратуша Сольмаре.md",
+    "00_Meta/Session_Pipeline_Plan.md",
+    "00_Meta/ComfyUI Checkpoint Guide.md",
+    "99_Sketches/tokens/_work/bianca_podpolye/bianca_C1_src.png",
+    "99_Sketches/tokens/_work/bianca_podpolye/bianca_A_unify_00003_.png",
+    "99_Sketches/tokens/_work/bianca_podpolye/bianca_A_unify_00002_.png",
+    "99_Sketches/tokens/_work/bianca_podpolye/bianca_A_unify_00001_.png",
+    "99_Sketches/tokens/_work/bianca_podpolye/bianca_A_subjectA.png",
+    "99_Sketches/tokens/_work/bianca_podpolye/bianca_A_prevA.png",
+    "05_Campaign/Пререквизиты финала.canvas",
+    "05_Campaign/Доска кампании.canvas"
   ]
 }

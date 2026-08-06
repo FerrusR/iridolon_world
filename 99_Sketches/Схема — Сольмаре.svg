@@ -162,11 +162,12 @@
   </g>
 
   <!-- ============ ЗАСТЕНЬЕ ============ -->
-  <!-- некрополь (за стеной, СЗ) -->
+  <!-- некрополь (за стеной, ЮЗ — сухой пригорок у кромки маршей) -->
   <g>
-    <text x="384" y="196" font-size="14" fill="#5d534e" text-anchor="middle">Некрополь ✝ (за стеной)</text>
-    <path d="M356,208 v14 M350,214 h12 M392,214 v14 M386,220 h12 M420,206 v14 M414,212 h12" stroke="#5d534e" stroke-width="2"/>
-    <text x="384" y="244" font-size="11" fill="#6d6350" font-style="italic" text-anchor="middle">сломанная смерть — ночная нежить</text>
+    <ellipse cx="372" cy="724" rx="66" ry="32" fill="#ded2b4" stroke="#8a7f66" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <text x="372" y="710" font-size="14" fill="#5d534e" text-anchor="middle">Некрополь ✝ (за стеной, ЮЗ)</text>
+    <path d="M344,724 v13 M338,729 h12 M376,724 v13 M370,729 h12 M404,722 v13 M398,727 h12" stroke="#5d534e" stroke-width="2"/>
+    <text x="372" y="752" font-size="11" fill="#6d6350" font-style="italic" text-anchor="middle">сухой пригорок у кромки маршей</text>
   </g>
   <!-- шрам мора → беженцы (снаружи западной стены) -->
   <ellipse cx="352" cy="486" rx="70" ry="46" fill="#b5aaa2" opacity="0.8"/>
@@ -195,7 +196,7 @@
   <g fill="#3f6884" font-style="italic" font-size="11">
     <text x="570" y="448" text-anchor="end">штурм ратуши · portent 3</text>
     <text x="778" y="666" text-anchor="end">порча зерна · улика B</text>
-    <text x="384" y="258" text-anchor="middle">G1 · ночная нежить</text>
+    <text x="372" y="772" text-anchor="middle">G1 · ночная нежить → уходит в марши</text>
     <text x="352" y="512" text-anchor="middle">толпа для «протестов» · portent 2</text>
     <text x="560" y="812" text-anchor="start">тихий ход барона в марши</text>
   </g>

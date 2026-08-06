@@ -1,0 +1,6 @@
+# LoRA training build artifacts — not part of the vault, do not commit
+/_lora_token_style/
+
+# Token production scratch — сырьё/промежуточные рендеры токенов, в гит не идут.
+# Под гит кладём только финальные токены в 99_Sketches/tokens/*.webp
+/99_Sketches/tokens/_work/

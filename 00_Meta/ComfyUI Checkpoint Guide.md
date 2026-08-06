@@ -53,6 +53,38 @@ For SFW character art:
 - Keep `rating_safe` in the positive tags.
 DreamShaper does not need any of this.
 
+## LoRAs
+
+Install location: `/home/ferrus/comfy/ComfyUI/models/loras/`
+(sibling of `checkpoints/`; drop the `.safetensors` there and it appears in the **Load LoRA**
+/ `LoraLoader` node). A LoRA sits *on top of* a checkpoint — insert **Load LoRA** between the
+checkpoint loader and the sampler; it modifies both `MODEL` and `CLIP`. `strength_model` drives
+style intensity; keep `strength_clip` equal unless you have a reason to split them. LoRAs can be
+chained (stack multiple Load LoRA nodes).
+
+### pf2token — NPC token style (ours)
+Custom style-LoRA that reproduces the Paizo painted **token-bust** look for homebrew NPCs.
+Trained on SDXL base 1.0 (kohya sd-scripts). See `_lora_token_style/` for the project.
+
+- **File:** `pf2token_sdxl-000006.safetensors` — **epoch 6 is the pick** (epoch 8 = backup).
+  Do NOT use the final epoch (`pf2token_sdxl.safetensors` = e12): it over-trains and drifts from
+  the tight token cutout into a full portrait on gray.
+- **Trigger word:** `pf2token` (must be in the prompt).
+- **Pair with:** DreamShaper XL — best match for the semi-realistic painterly style. (Pony works
+  too but needs its `score_*` tags and skews the look.)
+- **Strength:** `0.7–0.85`. Lower if faces distort; higher if the style is too weak.
+- **Prompt shape:** `pf2token, a <race> character, bust portrait, <role/gear>, plain white background`
+  (e.g. `pf2token, a dwarf character, bust portrait, warrior, heavy armor, plain white background`).
+- **Negative:** `gray background, gradient, full body` (nudges it toward a clean plain background).
+- **The LoRA only does the art style.** A game-ready token = art → **remove background** (rembg →
+  transparent PNG) → Foundry adds the token ring. Don't expect the raw output to be ring-cropped.
+
+### Using LoRAs in general
+- Match the LoRA's base family to the checkpoint (our SDXL LoRAs → SDXL checkpoints only).
+- A trained trigger word must appear in the prompt or the LoRA barely fires.
+- If a style LoRA over-bakes (blown highlights, mangled detail), drop `strength_model` first,
+  then try an earlier epoch/version.
+
 ## General notes
 - Both are SDXL-family — always use ~1 megapixel SDXL resolutions, not 512×512.
 - If a generation looks washed out on DreamShaper, you're probably running too many
