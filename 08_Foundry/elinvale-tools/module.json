@@ -1,0 +1,48 @@
+{
+  "id": "elinvale-tools",
+  "title": "Elinvale tools",
+  "description": "Единый модуль-контейнер для хоумбрю авторского мира (PF2e). Пак deities — пятёрка скованных богов (Темпус, Вирелла, Морана, Магнус, Лире); новые паки (предметы, монстры, журналы, макросы) добавляются сюда же.",
+  "version": "0.1.0",
+  "authors": [{ "name": "Ferrus" }],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": { "minimum": "8.0.0" }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "deities",
+      "label": "Боги Элинваля",
+      "path": "packs/deities",
+      "type": "Item",
+      "system": "pf2e",
+      "banner": "systems/pf2e/assets/compendium-banner/green.webp",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "items",
+      "label": "Предметы Элинваля",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "pf2e",
+      "banner": "systems/pf2e/assets/compendium-banner/red.webp",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Элинваль",
+      "sorting": "m",
+      "color": "#3b2524",
+      "packs": ["deities", "items"]
+    }
+  ]
+}
