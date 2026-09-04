@@ -1,0 +1,23 @@
+{
+    "_id": "ElinGiftOmen0001",
+    "img": "icons/magic/control/modfiy-luck-fortune-brown.webp",
+    "name": "Дурное предзнаменование",
+    "type": "action",
+    "system": {
+        "slug": "elinvale-gift-foretold-misfortune",
+        "actionType": { "value": "reaction" },
+        "actions": { "value": null },
+        "category": null,
+        "description": {
+            "value": "<p><strong>Frequency</strong> once per hour; <strong>Trigger</strong> существо в пределах 30 ft, которое ты видишь, делает attack roll или saving throw.</p><p><strong>Effect</strong> Существо перебрасывает и берёт худший результат (misfortune).</p>"
+        },
+        "traits": { "value": ["concentrate", "fortune", "misfortune", "magical"], "rarity": "unique" },
+        "frequency": { "value": 1, "max": 1, "per": "PT1H" },
+        "selfEffect": {
+            "uuid": "Compendium.elinvale-tools.items.Item.ElinFxMisfort001",
+            "name": "Откат"
+        },
+        "rules": [],
+        "publication": { "title": "Реликвии Элинваля", "license": "ORC", "remaster": true }
+    }
+}

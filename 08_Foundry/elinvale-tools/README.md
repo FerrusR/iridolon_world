@@ -11,11 +11,8 @@
 механические поля PF2e — Divine Font, Divine Skill, Divine Attribute, Favored Weapon и
 домены (primary + alternate). Текст — player-facing.
 
-Пак **items** — реликвии PC. Первая: **Парные пистолеты** (реликвия Starlord) —
-дар *«Каморы стихий»*: свободным действием раз за ход настрой пару на одну стихию
-(огонь / холод / электричество / кислота), и Strikes бьют выбранным типом вместо колющего.
-Реализовано нативными rule elements (RollOption-тоггл + DamageDice override,
-привязанный к самому оружию через `{item|_id}-damage`) — без макросов. Подробнее ниже.
+Пак **items** — реликвии PC (по одной на игрока) с их Gift 1 и seed-свойствами.
+Канон механики — в волте: `06_Mechanics/Реликвии — хоумрул.md`. Подробнее ниже.
 
 ---
 
@@ -99,32 +96,53 @@ systemctl --user start foundry.service
 
 ---
 
-## Реликвия: Парные пистолеты — как это работает
+## Реликвии PC — как это устроено
 
-**Дар «Каморы стихий» (Gift 1, Minor).** У оружия есть переключатель типа урона,
-реализованный тремя механизмами PF2e без единого макроса:
+Пять реликвий, по одной на игрока. Общая схема одинакова:
 
-- **`RollOption`** (`option: "elemental-chamber"`, `toggleable: true`) — рисует рядом со
-  Strike пистолетов чекбокс + выпадающий список из четырёх стихий (fire / cold /
-  electricity / acid). Включённый чекбокс со стихией даёт роллопцию вида
-  `elemental-chamber:fire`; выключенный — обычный колющий.
-- **Четыре `DamageDice`** с `override.damageType` и предикатом на нужную стихию. Селектор
-  **`{item|_id}-damage`** привязывает override **только к этим пистолетам** — на кулаки и
-  другое оружие персонажа он не протекает. Бонусных костей не добавляется (только
-  `override`), так что DPR остаётся в мартиал-полосе — меняется лишь тип урона.
+- **Реликвия-предмет** (weapon / equipment). Носимые/телесные реликвии — invested
+  worn equipment (инвестируешь → дар и seed включаются; снял/разинвестировал — гаснут).
+  Пистолеты — weapon (дар активен, пока в руках).
+- **`GrantItem`** на реликвии: пока предмет экипирован/инвестирован, соответствующий
+  **дар-действие** сам появляется на вкладке **Actions**. Снял предмет — действие исчезает
+  (rule elements физических предметов подавляются, когда предмет не экипирован/не
+  инвестирован).
+- **Дар-действие** (type `action`) несёт `actionType` (action/reaction), `frequency`
+  once per hour и `selfEffect` → при использовании автоматически вешает
+  **кулдаун-эффект «Дар реликвии — кулдаун (1 ч)»** (общий на все дары; тикает игровым
+  временем). В описании — только механика + кликабельные ссылки (`@Check`, `@Damage`,
+  `@UUID` на эффекты для перетаскивания). Флейвор Ferrus дописывает сам.
+- **Seed-свойства** с бонусом к навыку зашиты как `FlatModifier` (item bonus) прямо на
+  реликвии — применяются, пока инвестировано. Рост до +2 на relic 9 — поднять `value`
+  вручную. Seed'ы-флейвор (осечки в чужой руке, «жуть в зеркалах») не автоматизированы.
 
-**Как пользоваться за столом.** Пистолеты должны быть экипированы (in hand). На вкладке
-**Actions** у их Strike появляется тоггл **«Каморы стихий: тип урона»**. Свободным
-действием (раз за ход) игрок ставит галку и выбирает стихию — следующие Strikes бьют этим
-типом вместо piercing. Снял галку — снова колющий. Патрон/порох всё так же расходуется
-(канал снабжения — дварфы Сольмаре).
+**Кликабельно из карточки действия** (посылаешь действие в чат): `@Template` — кнопка
+поставить шаблон (Frost Slick), `@Check` — сейв, `@Damage` — ролл урона/лечения (Rewind
+даёт healing-ролл с кнопкой «apply healing» = предотвращённый урон), `@UUID` — перетащить
+эффект (panache, resistance, откат, кулдаун).
 
-**Сид-свойство «Чужой руке не даётся»** оставлено флейвором в описании и не
-автоматизировано — осечки в чужих руках отыгрывает мастер.
+Что **не** автоматизировано намеренно (отыгрыш вручную): применение difficult terrain и
+prone, перезарядка, вражеские сейвы, перемещение, вражеский перебросок misfortune.
 
-> Рост дара по сюжету (g2 крит-рычаги, g3 комбо стихий, g5 именная через отца) пока не
-> вшит — добавим отдельными rule elements, когда линия дойдёт. Канон механики — в волте:
-> `06_Mechanics/Реликвии — хоумрул.md`.
+| PC | Реликвия (файл) | Дар (Gift 1) | Авто-механика |
+|---|---|---|---|
+| Тео (Starlord) | Парные пистолеты · `starlord-pistols.json` | Ледяная наледь / *Frost Slick* (`◆◆`, 1/h) | GrantItem→action, кулдаун, **@Template** (10-ft burst) + `@Check[reflex]` + `@Damage[1d6[cold]]` |
+| Артур | Золотой шар · `arthur-orb.json` | Отмотка удара / *Rewind the Blow* (`⤾` reaction, 1/h) | +1 item Medicine (Treat Wounds/Battle Medicine), GrantItem→reaction, кулдаун, **@Damage[2d8[healing]]** (кнопка apply healing = предотвращение) |
+| Фейт | Книга Судеб · `fate-book.json` | Дурное предзнаменование / *Foretold Misfortune* (`⤾` reaction, 1/h) | +1 item Occultism, GrantItem→reaction, кулдаун, эффект-**откат** (RollTwice keep lower на след. attack/save) |
+| Кхар'Хадаг | Мутации · `khar-hadag-mutations.json` | Ответная мутация / *Answering Mutation* (`⤾` reaction, 1/h) | +1 item Survival, GrantItem→reaction, кулдаун, эффект-**resistance 5** (ChoiceSet выбор типа, до конца след. хода) |
+| Архелай | Тело и чёрная кровь · `archelaus-body.json` | Хищный бросок / *Predator's Lunge* (`◆` move, 1/h) | +1 item Acrobatics, GrantItem→action, кулдаун, draggable **Effect: Panache** (+5 ft status Speed, `self:effect:panache`) |
+
+**Общие эффекты** (`effect-*.json`): кулдаун-эффект 1 ч (общий), resistance-эффект
+Ответной мутации, откат-эффект Дурного предзнаменования, Effect: Panache. Дар-действия и
+эффекты лежат в том же паке `items` — их можно и перетаскивать вручную, если GrantItem
+почему-то не сработал. Panache — self-contained дубликат: если finisher'ы завязаны на
+встроенный тумблер свашбаклера, используй его.
+
+> **Проверить в Foundry после сборки:** что granted-действие появляется при
+> equip/invest и исчезает при снятии; что `selfEffect` вешает кулдаун по клику на
+> действие; что ChoiceSet Ответной мутации спрашивает тип урона; что `frequency`
+> (`per: "PT1H"`) и RollTwice-откат отрабатывают. Рост даров по сюжету (g2/g3/grand) пока
+> не вшит — добавим rule elements, когда линии дойдут.
 
 ---
 
@@ -149,7 +167,13 @@ elinvale-tools/
 ├── scripts/deploy.sh     сборка + стоп/старт Foundry + чистая выкатка в Data/modules/
 ├── src/deities/          исходники богов (по одному JSON)
 │   ├── tempus.json  virella.json  morana.json  magnus.json  lire.json
-├── src/items/            исходники предметов-реликвий
-│   └── starlord-pistols.json    Парные пистолеты (дар «Каморы стихий»)
+├── src/items/            исходники реликвий, даров и эффектов
+│   ├── starlord-pistols.json  arthur-orb.json  fate-book.json
+│   ├── khar-hadag-mutations.json  archelaus-body.json      (реликвии-предметы)
+│   ├── gift-frost-slick.json  gift-rewind-the-blow.json
+│   ├── gift-foretold-misfortune.json  gift-answering-mutation.json
+│   ├── gift-predators-lunge.json                            (дары, type action)
+│   ├── effect-cooldown-relic-gift.json  effect-answering-mutation.json
+│   ├── effect-foretold-misfortune-rider.json  effect-panache.json  (эффекты)
 └── README.md             этот файл
 ```

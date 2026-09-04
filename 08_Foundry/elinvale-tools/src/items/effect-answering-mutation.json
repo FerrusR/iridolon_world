@@ -1,0 +1,51 @@
+{
+    "_id": "ElinFxResist0001",
+    "img": "icons/creatures/slimes/slime-blob-pseudopods-green.webp",
+    "name": "Ответная мутация",
+    "type": "effect",
+    "system": {
+        "slug": "elinvale-answering-mutation",
+        "description": {
+            "value": "<p><strong>Resistance 5</strong> к выбранному типу урона (physical или energy) до конца твоего следующего хода. При наложении выбери тип — он применяется к триггерному инстансу и держится до конца следующего хода.</p>"
+        },
+        "duration": {
+            "value": 1,
+            "unit": "rounds",
+            "sustained": false,
+            "expiry": "turn-end"
+        },
+        "level": { "value": 1 },
+        "start": { "value": 0, "initiative": null },
+        "tokenIcon": { "show": true },
+        "badge": null,
+        "context": null,
+        "unidentified": false,
+        "traits": { "value": ["morph"], "rarity": "unique" },
+        "rules": [
+            {
+                "key": "ChoiceSet",
+                "flag": "type",
+                "prompt": "PF2E.SpecificRule.Prompt.DamageType",
+                "choices": [
+                    { "value": "bludgeoning" },
+                    { "value": "piercing" },
+                    { "value": "slashing" },
+                    { "value": "acid" },
+                    { "value": "cold" },
+                    { "value": "electricity" },
+                    { "value": "fire" },
+                    { "value": "sonic" },
+                    { "value": "force" },
+                    { "value": "vitality" },
+                    { "value": "void" }
+                ]
+            },
+            {
+                "key": "Resistance",
+                "type": "{item|flags.pf2e.rulesSelections.type}",
+                "value": 5
+            }
+        ],
+        "publication": { "title": "Реликвии Элинваля", "license": "ORC", "remaster": true }
+    }
+}

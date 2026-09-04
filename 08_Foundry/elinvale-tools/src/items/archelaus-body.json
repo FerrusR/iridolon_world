@@ -1,0 +1,39 @@
+{
+    "_id": "ElinRelicBody001",
+    "img": "icons/creatures/magical/spirit-fear-energy-pink.webp",
+    "name": "Тело и чёрная кровь (реликвия)",
+    "type": "equipment",
+    "system": {
+        "slug": "elinvale-archelaus-body",
+        "traits": { "value": ["invested", "magical"], "rarity": "unique" },
+        "level": { "value": 1 },
+        "price": { "value": { "gp": 0 } },
+        "quantity": 1,
+        "bulk": { "value": 0 },
+        "hardness": 0,
+        "hp": { "value": 0, "max": 0 },
+        "usage": { "value": "worn" },
+        "equipped": { "carryType": "worn", "invested": false },
+        "size": "med",
+        "material": { "grade": null, "type": null },
+        "baseItem": null,
+        "containerId": null,
+        "description": {
+            "value": "<p>Формальный предмет-маркер, держи инвестированным.</p><p><strong></strong> @UUID[Compendium.elinvale-tools.items.Item.ElinGiftLunge001]{Хищный бросок} — появляется в Actions, пока инвестировано.</p><p><strong>+1 item bonus к Acrobatics (автоматизировано).</p>"
+        },
+        "rules": [
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.elinvale-tools.items.Item.ElinGiftLunge001"
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "acrobatics",
+                "type": "item",
+                "value": 1,
+                "label": "Неживая грация"
+            }
+        ],
+        "publication": { "title": "Реликвии Элинваля", "license": "ORC", "remaster": true }
+    }
+}

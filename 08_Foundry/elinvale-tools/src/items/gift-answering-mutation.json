@@ -1,0 +1,23 @@
+{
+    "_id": "ElinGiftMutat001",
+    "img": "icons/creatures/slimes/slime-blob-pseudopods-green.webp",
+    "name": "Ответная мутация",
+    "type": "action",
+    "system": {
+        "slug": "elinvale-gift-answering-mutation",
+        "actionType": { "value": "reaction" },
+        "actions": { "value": null },
+        "category": null,
+        "description": {
+            "value": "<p><strong>Frequency</strong> once per hour; <strong>Trigger</strong> ты получаешь physical или energy урон.</p><p><strong>Effect</strong> Получаешь <strong>resistance 5</strong> к этому типу урона: применяется к триггерному инстансу и держится до конца твоего следующего хода. @UUID[Compendium.elinvale-tools.items.Item.ElinFxResist0001]{Ответная мутация} (при наложении выбери тип урона).</p>"
+        },
+        "traits": { "value": ["concentrate", "morph", "magical"], "rarity": "unique" },
+        "frequency": { "value": 1, "max": 1, "per": "PT1H" },
+        "selfEffect": {
+            "uuid": "Compendium.elinvale-tools.items.Item.ElinFxCooldown01",
+            "name": "Дар реликвии — кулдаун (1 ч)"
+        },
+        "rules": [],
+        "publication": { "title": "Реликвии Элинваля", "license": "ORC", "remaster": true }
+    }
+}

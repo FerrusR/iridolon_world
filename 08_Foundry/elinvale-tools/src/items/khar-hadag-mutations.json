@@ -1,0 +1,39 @@
+{
+    "_id": "ElinRelicMutn001",
+    "img": "icons/creatures/tentacles/tentacle-eyes-yellow-pink.webp",
+    "name": "Мутации (реликвия)",
+    "type": "equipment",
+    "system": {
+        "slug": "elinvale-khar-hadag-mutations",
+        "traits": { "value": ["invested", "magical"], "rarity": "unique" },
+        "level": { "value": 1 },
+        "price": { "value": { "gp": 0 } },
+        "quantity": 1,
+        "bulk": { "value": 0 },
+        "hardness": 0,
+        "hp": { "value": 0, "max": 0 },
+        "usage": { "value": "worn" },
+        "equipped": { "carryType": "worn", "invested": false },
+        "size": "med",
+        "material": { "grade": null, "type": null },
+        "baseItem": null,
+        "containerId": null,
+        "description": {
+            "value": "<p><strong>Реликвии-предмета нет</strong> — это мутации самого PC; формальный предмет-маркер, держи инвестированным.</p><p> +1 item bonus к Survival (автоматизировано).</p>"
+        },
+        "rules": [
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.elinvale-tools.items.Item.ElinGiftMutat001"
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "survival",
+                "type": "item",
+                "value": 1,
+                "label": "Дитя зоны (реликвия)"
+            }
+        ],
+        "publication": { "title": "Реликвии Элинваля", "license": "ORC", "remaster": true }
+    }
+}

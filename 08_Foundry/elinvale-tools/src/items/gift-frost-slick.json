@@ -1,0 +1,23 @@
+{
+    "_id": "ElinGiftFrost001",
+    "img": "icons/magic/water/barrier-ice-wall-snow.webp",
+    "name": "Ледяная наледь",
+    "type": "action",
+    "system": {
+        "slug": "elinvale-gift-frost-slick",
+        "actionType": { "value": "action" },
+        "actions": { "value": 2 },
+        "category": null,
+        "description": {
+            "value": "<p><strong>Frequency</strong> once per hour; <strong>Interact</strong>.</p><p><strong>Effect</strong> Помести @Template[burst|distance:10] в пределах 30 ft — difficult terrain на 1 минуту. Существо, начинающее ход или входящее в затронутый квадрат во время move action: @Check[reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)] — провал: @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}; крит-провал: @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} + @Damage[1d6[cold]].</p><p> Как часть той же активации — бесплатно перезаряди оба пистолета.</p><hr/>"
+        },
+        "traits": { "value": ["manipulate", "magical"], "rarity": "unique" },
+        "frequency": { "value": 1, "max": 1, "per": "PT1H" },
+        "selfEffect": {
+            "uuid": "Compendium.elinvale-tools.items.Item.ElinFxCooldown01",
+            "name": "Дар реликвии — кулдаун (1 ч)"
+        },
+        "rules": [],
+        "publication": { "title": "Реликвии Элинваля", "license": "ORC", "remaster": true }
+    }
+}

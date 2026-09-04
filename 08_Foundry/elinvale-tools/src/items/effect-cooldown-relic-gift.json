@@ -1,0 +1,27 @@
+{
+    "_id": "ElinFxCooldown01",
+    "img": "icons/magic/time/hourglass-brown-orange.webp",
+    "name": "Дар реликвии — кулдаун (1 ч)",
+    "type": "effect",
+    "system": {
+        "slug": "elinvale-relic-gift-cooldown",
+        "description": {
+            "value": "<p><strong>Frequency:</strong> once per hour. Пока этот эффект висит, дар реликвии недоступен. Вешается автоматически при использовании дара; истекает сам через 1 час игрового времени.</p>"
+        },
+        "duration": {
+            "value": 1,
+            "unit": "hours",
+            "sustained": false,
+            "expiry": null
+        },
+        "level": { "value": 1 },
+        "start": { "value": 0, "initiative": null },
+        "tokenIcon": { "show": true },
+        "badge": null,
+        "context": null,
+        "unidentified": false,
+        "traits": { "value": [], "rarity": "unique" },
+        "rules": [],
+        "publication": { "title": "Реликвии Элинваля", "license": "ORC", "remaster": true }
+    }
+}

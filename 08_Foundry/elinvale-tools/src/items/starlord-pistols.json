@@ -41,45 +41,12 @@
         "grade": null,
         "containerId": null,
         "description": {
-            "value": ""
+            "value": "<p><em>Реликвия. Дварфийская механика, редкое эльфийское вещество с края диска, арканная работа Аструма — собрать это мог один мастер в мире, отец Тео.</em></p><p><strong>Аспекты:</strong> Water, Earth.</p><hr /><p><strong>Gift 1 (Minor) — «Ледяная наледь» / Frost Slick</strong></p><p><strong>Activate</strong> [two-actions] (Interact) — выстрел ледяным зарядом в землю (тратит 1 round); <strong>Frequency</strong> once per hour.</p><p><strong>Effect</strong> Круг 10-ft radius в пределах 30 футов покрывается льдом и становится difficult terrain на 1 минуту. Существо, входящее в затронутый квадрат во время move action, делает <strong>Reflex save</strong> (DC = выше class DC или spell DC владельца): провал — prone; критический провал — prone + 1d6 cold.</p><p><strong>Rider.</strong> Как часть той же активации — бесплатно перезаряди оба пистолета.</p><hr /><p><strong>Seed «Чужой руке не даётся».</strong> В руках любого, кроме владельца, пистолеты бьют осечками — душа отца не признаёт чужой руки.</p><p><em>Примечание для сборки: зона наледи, prone и перезарядка не автоматизированы правилами — отыгрывать вручную либо повесить макрос/эффект. Смена типа урона на реликвии не реализуется: её закрывает классовая способность Тео.</em></p>"
         },
         "rules": [
             {
-                "key": "RollOption",
-                "domain": "all",
-                "option": "elemental-chamber",
-                "toggleable": true,
-                "label": "Стихийное оружие: тип урона",
-                "suboptions": [
-                    { "label": "Огонь", "value": "fire" },
-                    { "label": "Холод (вода)", "value": "cold" },
-                    { "label": "Электричество (воздух)", "value": "electricity" },
-                    { "label": "Кислота (земля)", "value": "acid" }
-                ]
-            },
-            {
-                "key": "DamageDice",
-                "selector": "{item|_id}-damage",
-                "override": { "damageType": "fire" },
-                "predicate": ["elemental-chamber:fire"]
-            },
-            {
-                "key": "DamageDice",
-                "selector": "{item|_id}-damage",
-                "override": { "damageType": "cold" },
-                "predicate": ["elemental-chamber:cold"]
-            },
-            {
-                "key": "DamageDice",
-                "selector": "{item|_id}-damage",
-                "override": { "damageType": "electricity" },
-                "predicate": ["elemental-chamber:electricity"]
-            },
-            {
-                "key": "DamageDice",
-                "selector": "{item|_id}-damage",
-                "override": { "damageType": "acid" },
-                "predicate": ["elemental-chamber:acid"]
+                "key": "GrantItem",
+                "uuid": "Compendium.elinvale-tools.items.Item.ElinGiftFrost001"
             }
         ],
         "publication": { "title": "Боги Элинваля", "license": "ORC", "remaster": true }
