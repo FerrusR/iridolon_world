@@ -19,13 +19,9 @@
         "baseItem": null,
         "containerId": null,
         "description": {
-            "value": "<p><strong>Реликвии-предмета нет</strong> — это мутации самого PC; формальный предмет-маркер, держи инвестированным.</p><p> +1 item bonus к Survival (автоматизировано).</p>"
+            "value": "<p><strong>Реликвии-предмета нет</strong> — это мутации самого PC; формальный предмет-маркер, держи инвестированным.</p>\n<p>+1 item bonus к Survival, пока инвестирован.</p>\n<hr />\n<p><strong>Activate—Ответная мутация</strong> <span class=\"action-glyph\">R</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> ты получаешь physical или energy урон.</p>\n<hr />\n<p><strong>Effect</strong> Получаешь <strong>resistance 5</strong> к этому типу урона: применяется к триггерному инстансу и держится до конца твоего следующего хода. @UUID[Compendium.elinvale-tools.items.Item.ElinFxResist0001]{Ответная мутация} (при наложении выбери тип урона).</p>"
         },
         "rules": [
-            {
-                "key": "GrantItem",
-                "uuid": "Compendium.elinvale-tools.items.Item.ElinGiftMutat001"
-            },
             {
                 "key": "FlatModifier",
                 "selector": "survival",

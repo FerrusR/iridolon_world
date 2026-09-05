@@ -19,7 +19,7 @@
         "baseItem": null,
         "containerId": null,
         "description": {
-            "value": "<p>Инвестируй, чтобы активировать дар и seed.</p>\n<p>Служит healer's tools (набор носить не нужно); +1 item bonus к Medicine, пока инвестирован.</p>\n<hr />\n<p><strong>Activate—Отмена удара</strong> <span class=\"action-glyph\">R</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> существо в пределах 30 ft, которое ты видишь, получает урон.</p>\n<hr />\n<p><strong>Effect</strong> Предотврати 2d8 урона: @Damage[2d8[healing]]. Если лечение превысило урон, считается, что попадания не было, и все эффекты попадания отменяются (например, persistent damage).</p>"
+            "value": "<p>Служит healer's tools (набор носить не нужно); +1 item bonus к Medicine, пока инвестирован.</p>\n<hr />\n<p><strong>Activate—Отмена удара</strong> <span class=\"action-glyph\">R</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> существо в пределах 30 ft, которое ты видишь, получает урон.</p>\n<hr />\n<p><strong>Effect</strong> Силой времени удар частично отматывается: цель получает <strong>1d8+4</strong> временных HP, которые в первую очередь поглощают урон триггерного попадания — @UUID[Compendium.elinvale-tools.items.Item.ElinFxRewind0001]{Отмена удара}. Наложи эффект на цель <em>до</em> применения урона (Foundry снимает урон с временных HP первыми). Если буфер полностью поглотил удар, попадание считается несостоявшимся — on-hit эффекты (например, persistent damage) отменяются на усмотрение мастера.</p>"
         },
         "rules": [
             {

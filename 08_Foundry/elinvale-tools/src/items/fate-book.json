@@ -19,13 +19,9 @@
         "baseItem": null,
         "containerId": null,
         "description": {
-            "value": "<p>+1 item bonus к Occultism (автоматизировано)</p>"
+            "value": "<p>+1 item bonus к Occultism, пока инвестирован.</p>\n<hr />\n<p><strong>Activate—Дурное предзнаменование</strong> <span class=\"action-glyph\">R</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> существо в пределах 30 ft, которое ты видишь, делает attack roll или saving throw.</p>\n<hr />\n<p><strong>Effect</strong> Существо перебрасывает и берёт худший результат (misfortune) — переброс врага делаешь вручную. Откат: @UUID[Compendium.elinvale-tools.items.Item.ElinFxMisfort001]{Дурное предзнаменование — откат}.</p>"
         },
         "rules": [
-            {
-                "key": "GrantItem",
-                "uuid": "Compendium.elinvale-tools.items.Item.ElinGiftOmen0001"
-            },
             {
                 "key": "FlatModifier",
                 "selector": "occultism",

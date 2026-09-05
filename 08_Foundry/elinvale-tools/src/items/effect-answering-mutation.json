@@ -27,17 +27,17 @@
                 "flag": "type",
                 "prompt": "PF2E.SpecificRule.Prompt.DamageType",
                 "choices": [
-                    { "value": "bludgeoning" },
-                    { "value": "piercing" },
-                    { "value": "slashing" },
-                    { "value": "acid" },
-                    { "value": "cold" },
-                    { "value": "electricity" },
-                    { "value": "fire" },
-                    { "value": "sonic" },
-                    { "value": "force" },
-                    { "value": "vitality" },
-                    { "value": "void" }
+                    { "value": "bludgeoning", "label": "PF2E.TraitBludgeoning" },
+                    { "value": "piercing", "label": "PF2E.TraitPiercing" },
+                    { "value": "slashing", "label": "PF2E.TraitSlashing" },
+                    { "value": "acid", "label": "PF2E.TraitAcid" },
+                    { "value": "cold", "label": "PF2E.TraitCold" },
+                    { "value": "electricity", "label": "PF2E.TraitElectricity" },
+                    { "value": "fire", "label": "PF2E.TraitFire" },
+                    { "value": "sonic", "label": "PF2E.TraitSonic" },
+                    { "value": "force", "label": "PF2E.TraitForce" },
+                    { "value": "vitality", "label": "PF2E.TraitVitality" },
+                    { "value": "void", "label": "PF2E.TraitVoid" }
                 ]
             },
             {

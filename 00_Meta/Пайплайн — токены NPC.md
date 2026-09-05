@@ -111,6 +111,13 @@ modern clothing, armor, weapon
    под наш стиль). Первый прогон докачивает модель.
 3. Забери RGBA-вырез (`get_history` → `get_image`). Проверь альфу (кромка/волосы).
 
+> **Как файл ComfyUI попадает в волт (важно для сэндбокса):** `get_image action:"get"` с
+> `save_dir` = **реальный путь волта** `/home/ferrus/Claude/Projects/Homebrew world/99_Sketches/tokens/_work/<slug>`.
+> ComfyUI-MCP крутится на машине Ferrus, где волт — реальный путь, тот же, что смонтирован в
+> сэндбокс, поэтому вырез (или батч) сразу падает в `_work/`. Без `save_dir` `get_image` кладёт
+> PNG в `/tmp/comfyui-images` **на стороне ComfyUI** — сэндбокс/файл-тулзы его не видят.
+> `token_frame.py` затем гоняется в сэндбоксе по mnt-пути.
+
 ### 5. Композит субъекта — срез по кольцу
 `00_Meta/scripts/token_frame.py`: вписывает вырез и срезает низ круговой маской по кольцу
 (верх/бока свободны). Рисует превью с макетом кольца.
@@ -130,7 +137,9 @@ python3 "00_Meta/scripts/token_frame.py" \
 - Сырьё (батч, вырез, все композиты) → `99_Sketches/tokens/_work/<slug>/`.
 - `GEN_PARAMS.md` рядом с сырьём: дата, образ, выбранный кадр, все параметры, промпт, **seed**,
   финальная команда `token_frame.py`.
-- Проверь, что гит видит только финал: `git add -n 99_Sketches/tokens`.
+- Проверь, что гит видит только финал, **read-only** (не бери `.git/index.lock`):
+  `git check-ignore 99_Sketches/tokens/<Имя NPC>.webp` (пусто = НЕ игнорится, попадёт в гит) и
+  `git check-ignore 99_Sketches/tokens/_work/<slug>/...` (непусто = сырьё в игноре). **Не** `git add -n` — см. [[CLAUDE|Git — гигиена]].
 
 ### 7. Настройки в Foundry (Prototype Token)
 - **Subject Texture** = путь к `<Имя>.webp`.

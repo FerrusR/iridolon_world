@@ -20,19 +20,26 @@ argument-hint: <Имя NPC> (напр. Симоне Кальдана)
 3. **Генерация.** Промпт по шаблону из SOP (триггер `pf2token` первым словом). Собери граф
    вручную (LoraLoader, strength 0.9/1.0) и `enqueue_workflow`: 1024×1024, batch 4, steps 8,
    cfg 2.0, `dpmpp_sde`/`karras`, seed записать. Забери батч, покажи, **дай выбрать кадр**.
+   ⚠️ **Как файл ComfyUI попадает в волт:** `get_image action:"get"` с `save_dir` =
+   **реальный путь волта** `/home/ferrus/Claude/Projects/Homebrew world/99_Sketches/tokens/_work/<slug>`.
+   ComfyUI-MCP крутится на машине Ferrus, где волт — реальный путь, тот же, что смонтирован в
+   сэндбокс, поэтому файл сразу падает в `_work/`. Без `save_dir` `get_image` кладёт PNG в
+   `/tmp/comfyui-images` **на стороне ComfyUI** — сэндбокс его не видит. `token_frame.py` затем
+   гоняй в сэндбоксе по mnt-пути (`.../mnt/Homebrew world/...`).
 
 4. **Матирование.** `upload_image` выбранного → `remove_background` (`BiRefNet_toonout`) →
    забери RGBA-вырез, проверь кромку.
 
-5. **Композит.** Скачай вырез в `_work`. Прогони `00_Meta/scripts/token_frame.py`
+5. **Композит.** Скачай вырез в `_work` тем же приёмом (`get_image action:"get"` с
+   `save_dir`=…/`_work/<slug>`, см. шаг 3). Прогони `00_Meta/scripts/token_frame.py`
    (`--canvas 512`, подбери `--height-frac` ~0.78 и `--cap-frac` ~0.55; низ срезается по
    кольцу). Сделай 2–3 варианта, покажи превью, **дай выбрать/подкрутить**.
    Правила кадра: разрыв кольца только сверху и по бокам; низ вписан по окружности;
    показывай бюст, не только лицо.
 
 6. **Экспорт.** Финал (out_subject, БЕЗ кольца) → `99_Sketches/tokens/$ARGUMENTS.webp` (q80,
-   **только webp** — png не держим). Сырьё → `99_Sketches/tokens/_work/<slug>/` (в .gitignore). Запиши
-   `GEN_PARAMS.md` (параметры + seed + финальная команда). Проверь `git add -n 99_Sketches/tokens`.
+   **только webp** — png не держим). Сырьё → `99_Sketches/tokens/_work/<slug>/` (в .gitignore). Запиши `GEN_PARAMS.md` (параметры + seed + финальная команда). Проверь раскладку read-only:
+   `git check-ignore 99_Sketches/tokens/$ARGUMENTS.webp` (пусто = попадёт в гит). НЕ `git add -n` — берёт `.git/index.lock`.
 
 7. **Напомни Foundry-настройки:** Subject Texture = файл, Ring Enabled, Lock Artwork Rotation,
    Fit Mode = Standard.

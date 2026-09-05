@@ -11,17 +11,30 @@
             "id": "8aea433748d3b98c",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "99_Sketches/tokens/Бьянка Сальвиати (подполье).webp"
+              },
+              "icon": "lucide-image",
+              "title": "Бьянка Сальвиати (подполье)"
+            }
+          },
+          {
+            "id": "5341905daf0426ef",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "07_PCs/Вампир (черновик).md",
+                "file": "05_Campaign/Session_TODOs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вампир (черновик)"
+              "title": "Session_TODOs"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -55,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Козимо",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -71,7 +84,10 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
@@ -186,56 +202,55 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "1ba2772807493d09",
+  "active": "5341905daf0426ef",
   "lastOpenFiles": [
-    "08_Foundry/elinvale-tools/src/items/arthur-orb.json.tmp.1467441.b88a7925456c",
-    "08_Foundry/elinvale-tools/src/items/gift-frost-slick.json.tmp.1464475.602955a6e80a",
-    "08_Foundry/elinvale-tools/src/items/gift-frost-slick.json.tmp.1464475.32632e6f26ff",
-    "08_Foundry/elinvale-tools/README.md.tmp.1303962.f1d95f0d345e",
-    "08_Foundry/elinvale-tools/README.md.tmp.1303962.9804fba6f891",
-    "08_Foundry/elinvale-tools/README.md.tmp.1303962.c3492f4f6068",
-    "08_Foundry/elinvale-tools/src/items/gift-predators-lunge.json.tmp.1303962.e68f21200e68",
-    "08_Foundry/elinvale-tools/src/items/gift-rewind-the-blow.json.tmp.1303962.50b52acb9190",
-    "08_Foundry/elinvale-tools/src/items/gift-frost-slick.json.tmp.1303962.e83811a2f34b",
-    "08_Foundry/elinvale-tools/src/items/effect-panache.json",
-    "08_Foundry/elinvale-tools/src/items/effect-panache.json.tmp.1303962.83e91b4a5a46",
-    "07_PCs/Кхар'Хадаг (черновик).md",
-    "07_PCs/Фейт — предыстория (игрок).md",
-    "07_PCs/Артур Барбридж (черновик).md",
-    "07_PCs/Артур — предыстория (игрок).md",
-    "07_PCs/Starlord (черновик).md",
-    "99_Sketches/Vezantia.webp",
-    "05_Campaign/Нулевая сессия — заметки.md",
-    "00_Meta/Session_Pipeline_Plan.md",
-    "00_Meta/Архитектурные_приоритеты.md",
-    "00_Meta/Пайплайн — токены NPC.md",
-    "00_Meta/CLAUDE_instructions.md",
-    "00_Meta/Closed_Questions.md",
-    "00_Meta/ComfyUI Checkpoint Guide.md",
-    "00_Meta/Foundry_модули_v14_аудит.md",
-    "00_Meta/Open_Questions.md",
-    "00_Meta/README.md",
-    "00_Meta/Референсы.md",
-    "05_Campaign/Принципы подачи.md",
-    "05_Campaign/Советы на загрузку (player-facing).md",
-    "05_Campaign/Дэшборд — NPC и локации.md",
-    "05_Campaign/Интерлюдия — Путеводная звезда.md",
-    "05_Campaign/Питч.md",
-    "06_Mechanics/Шаблон — Чужой.md",
-    "06_Mechanics/Реликвии — хоумрул.md",
-    "06_Mechanics/Проводник.md",
-    "06_Mechanics/Болт против небожителей.md",
-    "99_Sketches/Схема — Сольмаре.svg",
-    "08_Foundry/elinvale-tools/node_modules/nedb-promises/logo.svg",
-    "05_Campaign/Арка 1.canvas",
-    "99_Sketches/Схема ближнего мира.svg",
-    "99_Sketches/tokens/Бьянка Сальвиати.webp",
+    "05_Campaign/Арка 1/Глава 1 - strong start и бродячая деревня.md",
+    "02_Regions/Сольмаре.md.tmp.1892274.7299a4ce454d",
+    "02_Regions/Сольмаре.md.tmp.1892274.7302e9d04ea9",
+    "99_Sketches/tokens/Teo-hooded.lossless.webp",
+    "04_NPCs/Проходные NPC — заготовки (Арка 1).md",
+    "02_Regions/Сольмаре.md",
+    "04_NPCs/Козимо.md.tmp.1821323.bb123820d4ae",
+    "02_Regions/Некрополь Сольмаре.md.tmp.1821323.dc39da07bcdd",
+    "02_Regions/Сольмаре.md.tmp.1821323.5d49f7007a93",
+    "02_Regions/Сольмаре.md.tmp.1821323.1a686866b57f",
+    "02_Regions/Сольмаре.md.tmp.1821323.faee33423792",
+    "02_Regions/Сольмаре.md.tmp.1821323.01962dc69fab",
+    "05_Campaign/Арка 1/Глава 2 - знакомство с городом.md",
     "99_Sketches/tokens/Бьянка Сальвиати (подполье).webp",
-    "99_Sketches/tokens/_work/bianca_podpolye/bianca_C1_src.png",
-    "99_Sketches/tokens/_work/bianca_podpolye/bianca_A_unify_00003_.png",
-    "99_Sketches/tokens/_work/bianca_podpolye/bianca_A_unify_00002_.png",
-    "99_Sketches/tokens/_work/bianca_podpolye/bianca_A_unify_00001_.png",
-    "05_Campaign/Пререквизиты финала.canvas",
-    "05_Campaign/Доска кампании.canvas"
+    "99_Sketches/tokens/Джулиано.webp",
+    "99_Sketches/tokens/Бьянка Сальвиати.webp",
+    "07_PCs/Вампир (черновик).md",
+    "99_Sketches/tokens/Козимо.webp",
+    "99_Sketches/tokens/_work/gatta/gattas2_00003_.png",
+    "99_Sketches/tokens/_work/gatta/gattas2_00002_.png",
+    "99_Sketches/tokens/_work/gatta/gattas2_00001_.png",
+    "99_Sketches/tokens/_work/gatta/gattas1_00004_.png",
+    "99_Sketches/tokens/_work/gatta/gattas1_00002_.png",
+    "00_Meta/Пайплайн — токены NPC.md.tmp.1556774.9d9259c9056a",
+    "00_Meta/commands/token.md.tmp.1556774.c3e06f12bb34",
+    "99_Sketches/tokens/_work/bianca/GEN_PARAMS.md",
+    "00_Meta/Пайплайн — токены NPC.md",
+    "00_Meta/commands/token.md",
+    "99_Sketches/tokens/_work/giuliano/GEN_PARAMS.md",
+    "Храм Виреллы (Сольмаре).md",
+    "05_Campaign/Дэшборд — NPC и локации.md",
+    "05_Campaign/Доска кампании.canvas",
+    "02_Regions/Некрополь Сольмаре.md",
+    "99_Sketches/tokens/_work/kozimo/GEN_PARAMS.md",
+    "04_NPCs/Козимо.md",
+    "00_Meta/Closed_Questions.md",
+    "05_Campaign/Советы на загрузку (player-facing).md",
+    "00_Meta/Session_Pipeline_Plan.md",
+    "04_NPCs/Гхорбаш Собиратель Брошенных (черновик).md",
+    "04_NPCs/Бьерин.md",
+    "04_NPCs/Бруно Лишо.md",
+    "04_NPCs/Архимаг юга.md",
+    "04_NPCs/Ансельмо Лукри.md",
+    "04_NPCs/Амаранта.md",
+    "04_NPCs/Азгур Седая Тропа.md",
+    "04_NPCs/_Index.md",
+    "05_Campaign/Арка 1.canvas",
+    "05_Campaign/Пререквизиты финала.canvas"
   ]
 }

@@ -1,7 +1,7 @@
 {
     "_id": "ElinRelicBody001",
     "img": "icons/creatures/magical/spirit-fear-energy-pink.webp",
-    "name": "Тело и чёрная кровь (реликвия)",
+    "name": "Странные способности (реликвия)",
     "type": "equipment",
     "system": {
         "slug": "elinvale-archelaus-body",
@@ -19,13 +19,9 @@
         "baseItem": null,
         "containerId": null,
         "description": {
-            "value": "<p>Формальный предмет-маркер, держи инвестированным.</p><p><strong></strong> @UUID[Compendium.elinvale-tools.items.Item.ElinGiftLunge001]{Хищный бросок} — появляется в Actions, пока инвестировано.</p><p><strong>+1 item bonus к Acrobatics (автоматизировано).</p>"
+            "value": "<p>Формальный предмет-маркер, держи инвестированным.</p>\n<p>+1 item bonus к Acrobatics, пока инвестирован.</p>\n<hr />\n<p><strong>Activate—Хищный бросок</strong> <span class=\"action-glyph\">A</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> <strong>Stride</strong> до своей Speed; это перемещение не провоцирует reactions. Если заканчиваешь движение в пределах досягаемости ближнего боя от существа — получаешь <strong>panache</strong>: @UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]{Effect: Panache}.</p>"
         },
         "rules": [
-            {
-                "key": "GrantItem",
-                "uuid": "Compendium.elinvale-tools.items.Item.ElinGiftLunge001"
-            },
             {
                 "key": "FlatModifier",
                 "selector": "acrobatics",

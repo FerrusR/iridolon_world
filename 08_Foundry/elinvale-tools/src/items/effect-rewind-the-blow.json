@@ -1,0 +1,34 @@
+{
+    "_id": "ElinFxRewind0001",
+    "img": "icons/magic/time/hourglass-tilted-glowing-gold.webp",
+    "name": "Отмена удара",
+    "type": "effect",
+    "system": {
+        "slug": "elinvale-rewind-the-blow",
+        "description": {
+            "value": "<p><strong>Отмена удара силой времени.</strong> Время частично отматывает удар: цель получает <strong>1d8+4</strong> временных HP (значение бросается при наложении), которые в первую очередь поглощают урон триггерного попадания. Излишек временных HP теряется при спадении эффекта.</p>\n<p>Если этот буфер полностью поглотил урон, попадание считается несостоявшимся — на усмотрение мастера отменяются и его on-hit эффекты (например, persistent damage).</p>"
+        },
+        "duration": {
+            "value": 1,
+            "unit": "rounds",
+            "sustained": false,
+            "expiry": "turn-end"
+        },
+        "level": { "value": 1 },
+        "start": { "value": 0, "initiative": null },
+        "tokenIcon": { "show": true },
+        "badge": {
+            "type": "formula",
+            "value": "1d8+4",
+            "evaluate": true,
+            "reevaluate": null
+        },
+        "context": null,
+        "unidentified": false,
+        "traits": { "value": [], "rarity": "unique" },
+        "rules": [
+            { "key": "TempHP", "value": "@item.badge.value" }
+        ],
+        "publication": { "title": "Реликвии Элинваля", "license": "ORC", "remaster": true }
+    }
+}

@@ -6,7 +6,7 @@
     "system": {
         "slug": "elinvale-foretold-misfortune-rider",
         "description": {
-            "value": "<p><strong>Fate balances the scale.</strong> Твой следующий attack roll или saving throw под misfortune (бросаешь дважды, берёшь худший) до конца твоего следующего хода.</p>"
+            "value": "<p> Твой следующий attack roll или saving throw под misfortune (бросаешь дважды, берёшь худший) до конца твоего следующего хода.</p>"
         },
         "duration": {
             "value": 1,
@@ -23,9 +23,7 @@
         "traits": { "value": ["misfortune"], "rarity": "unique" },
         "rules": [
             { "key": "RollTwice", "removeAfterRoll": true, "selector": "attack-roll", "keep": "lower" },
-            { "key": "RollTwice", "removeAfterRoll": true, "selector": "saving-throw", "keep": "lower" },
-            { "key": "GrantItem", "uuid": "Compendium.elinvale-tools.items.Item.ElinFxCooldown01"
-}
+            { "key": "RollTwice", "removeAfterRoll": true, "selector": "saving-throw", "keep": "lower" }
         ],
         "publication": { "title": "Реликвии Элинваля", "license": "ORC", "remaster": true }
     }
