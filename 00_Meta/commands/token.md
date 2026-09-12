@@ -6,42 +6,42 @@ argument-hint: <Имя NPC> (напр. Симоне Кальдана)
 Сделай токен для NPC: **$ARGUMENTS**
 
 Полный процесс и все параметры — в `00_Meta/Пайплайн — токены NPC.md`. Следуй ему.
-Ниже — рабочая последовательность; на шагах с выбором ОСТАНАВЛИВАЙСЯ и показывай варианты.
+Портрет делаем в **Nano Banana**, матт и срез — локально. На шагах с выбором ОСТАНАВЛИВАЙСЯ.
 
-1. **Облик.** Прочитай `04_NPCs/$ARGUMENTS.md`. Если `## Образ` = TBD — предложи 2–4
-   концепта (опора на роль/регион/палитру), дождись выбора, зафиксируй в файле и сними
-   пункт из `00_Meta/Open_Questions.md`.
+1. **Облик.** Прочитай `04_NPCs/$ARGUMENTS.md` (у текстурных NPC — файл региона). Если `## Образ`
+   = TBD — предложи 2–4 концепта (роль/регион/палитра), дождись выбора, зафиксируй, сними пункт
+   из `00_Meta/Open_Questions.md`.
 
-2. **Проверь окружение.** `get_system_stats`; модели `list_local_models` (checkpoint
-   `dreamshaperXL_lightningDPMSDE`, lora `pf2token_sdxl`); нода `comfyui-rmbg`
-   (`list_installed_nodes`). Нет ноды → `install_custom_node comfyui-rmbg` + `restart_comfyui`;
-   если MCP потерял процесс — попроси пользователя запустить ComfyUI вручную.
+2. **Портрет в Nano Banana.** Дай промпт по канону: **bust portrait, three-quarter view**, явная
+   этничность/возраст, черты лица, наряд/палитра, аксессуар. Правки (одежда и т.п.) — как ПРАВКУ
+   загруженного кадра (Nano Banana держит лицо между итерациями), не новой генерацией.
 
-3. **Генерация.** Промпт по шаблону из SOP (триггер `pf2token` первым словом). Собери граф
-   вручную (LoraLoader, strength 0.9/1.0) и `enqueue_workflow`: 1024×1024, batch 4, steps 8,
-   cfg 2.0, `dpmpp_sde`/`karras`, seed записать. Забери батч, покажи, **дай выбрать кадр**.
-   ⚠️ **Как файл ComfyUI попадает в волт:** `get_image action:"get"` с `save_dir` =
-   **реальный путь волта** `/home/ferrus/Claude/Projects/Homebrew world/99_Sketches/tokens/_work/<slug>`.
-   ComfyUI-MCP крутится на машине Ferrus, где волт — реальный путь, тот же, что смонтирован в
-   сэндбокс, поэтому файл сразу падает в `_work/`. Без `save_dir` `get_image` кладёт PNG в
-   `/tmp/comfyui-images` **на стороне ComfyUI** — сэндбокс его не видит. `token_frame.py` затем
-   гоняй в сэндбоксе по mnt-пути (`.../mnt/Homebrew world/...`).
+3. **Фон под матт — плоский белый (КРИТИЧНО).** Последней правкой попроси заменить фон на плоский
+   бесшовный белый студийный: без сцены/предметов/дыма/градиента, тень за спиной убрать, ровный
+   фронтальный свет (тёмный капюшон должен отделяться от белого чёткой кромкой), голова+плечи целиком
+   с запасом; лицо/одежду/позу не менять. Тёмный фон матт не берёт — вернись и переделай.
 
-4. **Матирование.** `upload_image` выбранного → `remove_background` (`BiRefNet_toonout`) →
-   забери RGBA-вырез, проверь кромку.
+4. **Проверь окружение для матта.** `get_system_stats`; нода `comfyui-rmbg`. Нет ноды →
+   `install_custom_node comfyui-rmbg` + `restart_comfyui`; если MCP потерял процесс — попроси
+   запустить ComfyUI вручную.
 
-5. **Композит.** Скачай вырез в `_work` тем же приёмом (`get_image action:"get"` с
-   `save_dir`=…/`_work/<slug>`, см. шаг 3). Прогони `00_Meta/scripts/token_frame.py`
-   (`--canvas 512`, подбери `--height-frac` ~0.78 и `--cap-frac` ~0.55; низ срезается по
-   кольцу). Сделай 2–3 варианта, покажи превью, **дай выбрать/подкрутить**.
-   Правила кадра: разрыв кольца только сверху и по бокам; низ вписан по окружности;
-   показывай бюст, не только лицо.
+5. **Матирование.** `upload_image` кадра → `remove_background` (`BiRefNet_toonout`) → RGBA-вырез.
+   **Проверь альфу на пурпуре/шахматке (не на превью — оно флэттит прозрачность)** + углы альфы и bbox.
+   ⚠️ **Файл ComfyUI → волт:** `get_image action:"get"` с `save_dir` = **реальный путь волта**
+   `/home/ferrus/Claude/Projects/Homebrew world/99_Sketches/tokens/_work/<slug>` (без него PNG уйдёт в
+   `/tmp/comfyui-images` на стороне ComfyUI, сэндбокс его не видит). `token_frame.py` гоняй по mnt-пути.
 
-6. **Экспорт.** Финал (out_subject, БЕЗ кольца) → `99_Sketches/tokens/$ARGUMENTS.webp` (q80,
-   **только webp** — png не держим). Сырьё → `99_Sketches/tokens/_work/<slug>/` (в .gitignore). Запиши `GEN_PARAMS.md` (параметры + seed + финальная команда). Проверь раскладку read-only:
-   `git check-ignore 99_Sketches/tokens/$ARGUMENTS.webp` (пусто = попадёт в гит). НЕ `git add -n` — берёт `.git/index.lock`.
+6. **Композит.** Высокий кадр (до пояса/кистей) — сначала обрежь до головы+груди (обнули альфу ниже
+   линии рук), иначе голова мелкая. `00_Meta/scripts/token_frame.py --canvas 512`, подбери
+   `--height-frac` (~0.82–0.90) и `--cap-frac` (~0.55–0.60); низ срезается по кольцу. 2–3 варианта,
+   превью, **дай выбрать**. Кадр: разрыв кольца только сверху/по бокам; бюст, не одно лицо.
 
-7. **Напомни Foundry-настройки:** Subject Texture = файл, Ring Enabled, Lock Artwork Rotation,
+7. **Экспорт.** Финал (out_subject, БЕЗ кольца) → `99_Sketches/tokens/$ARGUMENTS.webp` (q80,
+   **только webp**). Сырьё → `99_Sketches/tokens/_work/<slug>/` (в .gitignore). Запиши `GEN_PARAMS.md`
+   (образ, промпты Nano Banana + правка фона, финальная команда). Проверь read-only:
+   `git check-ignore 99_Sketches/tokens/$ARGUMENTS.webp` (пусто = попадёт в гит). **НЕ** `git add -n` — берёт `.git/index.lock`.
+
+8. **Напомни Foundry-настройки:** Subject Texture = файл, Ring Enabled, Lock Artwork Rotation,
    Fit Mode = Standard.
 
 Покажи финал через present_files и жди подтверждения.

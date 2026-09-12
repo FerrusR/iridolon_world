@@ -9,7 +9,7 @@
             "value": "<p> Твой следующий attack roll или saving throw под misfortune (бросаешь дважды, берёшь худший) до конца твоего следующего хода.</p>"
         },
         "duration": {
-            "value": 1,
+            "value": 0,
             "unit": "rounds",
             "sustained": false,
             "expiry": "turn-end"

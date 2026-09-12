@@ -19,7 +19,7 @@
         "baseItem": null,
         "containerId": null,
         "description": {
-            "value": "<p>Формальный предмет-маркер, держи инвестированным.</p>\n<p>+1 item bonus к Acrobatics, пока инвестирован.</p>\n<hr />\n<p><strong>Activate—Хищный бросок</strong> <span class=\"action-glyph\">A</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> <strong>Stride</strong> до своей Speed; это перемещение не провоцирует reactions. Если заканчиваешь движение в пределах досягаемости ближнего боя от существа — получаешь <strong>panache</strong>: @UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]{Effect: Panache}.</p>"
+            "value": "<p>+1 item bonus к Acrobatics</p>\n<hr />\n<p><strong>Activate—Хищный бросок</strong> <span class=\"action-glyph\">A</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> <strong>Stride</strong> до своей Speed +15ft; это перемещение не провоцирует reactions. Если заканчиваешь движение в пределах досягаемости ближнего боя от враждебного существа — получаешь <strong>panache</strong>: @UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]{Effect: Panache}.</p>"
         },
         "rules": [
             {
@@ -27,7 +27,7 @@
                 "selector": "acrobatics",
                 "type": "item",
                 "value": 1,
-                "label": "Неживая грация"
+                "label": "Неземная грация"
             }
         ],
         "publication": { "title": "Реликвии Элинваля", "license": "ORC", "remaster": true }
