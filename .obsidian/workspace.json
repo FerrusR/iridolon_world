@@ -11,30 +11,17 @@
             "id": "8aea433748d3b98c",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "99_Sketches/tokens/Бьянка Сальвиати (подполье).webp"
-              },
-              "icon": "lucide-image",
-              "title": "Бьянка Сальвиати (подполье)"
-            }
-          },
-          {
-            "id": "5341905daf0426ef",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Meta/commands/token.md",
+                "file": "06_Mechanics/Чужой — Ужас и отражения.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "token"
+              "title": "Чужой — Ужас и отражения"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Козимо",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -202,17 +189,33 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "1ba2772807493d09",
+  "active": "8aea433748d3b98c",
   "lastOpenFiles": [
+    "08_Foundry/elinvale-tools/styles/music-cues.css",
+    "08_Foundry/elinvale-tools/esmodules/music-cues.mjs",
+    "08_Foundry/elinvale-tools/styles",
+    "08_Foundry/elinvale-tools/esmodules",
+    "08_Foundry/macros/dread-reflections.js",
+    "08_Foundry/macros",
+    "07_PCs/Артур — предыстория (игрок).md",
+    "05_Campaign/Интерлюдия — Порто-Кьяро.md",
+    "05_Campaign/Арка 1/Глава 3 - Летний Сад и дракон.md",
+    "05_Campaign/Арка 1/Глава 2 - знакомство с городом.md",
+    "04_NPCs/Ла Гатта.md",
+    "99_Sketches/tokens/Бьянка Сальвиати (подполье).webp",
+    "02_Regions/Сольмаре.md",
+    "04_NPCs/Проходные NPC — заготовки (Арка 1).md",
+    "05_Campaign/Session_TODOs.md",
+    "05_Campaign/Sessions/sedfDNqFs",
+    "05_Campaign/Transcripts/Session_01_transcript.md",
+    "05_Campaign/Sessions/Session_01.md",
+    "00_Meta/commands/token.md",
+    "05_Campaign/Transcripts",
+    "05_Campaign/Sessions",
+    "00_Meta/LLM_Context.md",
+    "00_Meta/LLM_Context.md.tmp.1464052.28cf6d2c91fd",
     "00_Meta/commands/token.md.tmp.1462836.ae08b4c42412",
-    "00_Meta/Пайплайн — токены NPC.md.tmp.1462836.4a69b0fee3ea",
     "00_Meta/Пайплайн — токены NPC.md",
-    "00_Meta/commands/token.md.tmp.1419405.0b5119f9d4c1",
-    "00_Meta/Пайплайн — токены NPC.md.tmp.1419405.e3200813b155",
-    "00_Meta/Пайплайн — токены NPC.md.tmp.1419405.5d8a38640121",
-    "00_Meta/Пайплайн — токены NPC.md.tmp.1419405.64709c00969f",
-    "00_Meta/Пайплайн — токены NPC.md.tmp.1419405.3c7d502034de",
-    "00_Meta/Пайплайн — токены NPC.md.tmp.1419405.ce4e1d4d383c",
     "99_Sketches/tokens/_work/la_gatta/GEN_PARAMS.md",
     "99_Sketches/tokens/Ла Гатта.webp",
     "99_Sketches/tokens/_work/la_gatta/v2_preview.png",
@@ -223,11 +226,7 @@
     "99_Sketches/tokens/_work/la_gatta/_check_white_magenta.png",
     "99_Sketches/tokens/_work/la_gatta/lagatta_white_cut_00001_.png",
     "99_Sketches/tokens/_work/la_gatta/_check_gc_magenta.png",
-    "99_Sketches/tokens/_work/la_gatta/lagatta_cutout_gc.png",
-    "99_Sketches/tokens/_work/la_gatta",
     "02_Regions/Аструм.md",
-    "06_Mechanics/Чужой — Ужас и отражения.md.tmp.1399247.0e293d8dc5b9",
-    "00_Meta/Open_Questions.md.tmp.1399247.96fb74d8be1c",
     "04_NPCs/Культистка Порто-Кьяро.md",
     "06_Mechanics/Чужой — Ужас и отражения.md",
     "04_NPCs/Раймондо Аурелли.md",
@@ -235,23 +234,11 @@
     "05_Campaign/Арка 1.md",
     "05_Campaign/Арка 1.canvas",
     "06_Mechanics/Шаблон — Чужой.md",
-    "05_Campaign/Session_TODOs.md",
     "05_Campaign/Арка 1/Глава 1 - strong start и бродячая деревня.md",
-    "04_NPCs/Проходные NPC — заготовки (Арка 1).md",
-    "02_Regions/Сольмаре.md",
-    "05_Campaign/Арка 1/Глава 2 - знакомство с городом.md",
     "07_PCs/Вампир (черновик).md",
     "99_Sketches/tokens/_work/bianca/GEN_PARAMS.md",
-    "00_Meta/commands/token.md",
     "99_Sketches/tokens/_work/giuliano/GEN_PARAMS.md",
-    "Храм Виреллы (Сольмаре).md",
-    "05_Campaign/Дэшборд — NPC и локации.md",
     "05_Campaign/Доска кампании.canvas",
-    "02_Regions/Некрополь Сольмаре.md",
-    "99_Sketches/tokens/_work/kozimo/GEN_PARAMS.md",
-    "04_NPCs/Козимо.md",
-    "00_Meta/Closed_Questions.md",
-    "05_Campaign/Советы на загрузку (player-facing).md",
     "05_Campaign/Пререквизиты финала.canvas"
   ]
 }

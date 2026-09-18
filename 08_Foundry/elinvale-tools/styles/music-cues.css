@@ -1,0 +1,179 @@
+/* Музыкальный пульт — elinvale-tools */
+
+.elinvale-music-cues .window-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 6px;
+  overflow: hidden;
+}
+
+.elinvale-music-cues .cues-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 0 0 auto;
+}
+
+.elinvale-music-cues .cues-toolbar .cues-filter {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 26px;
+}
+
+.elinvale-music-cues button {
+  flex: 0 0 auto;
+  width: auto;
+  line-height: 1;
+}
+
+.elinvale-music-cues .cues-toolbar .stop {
+  padding: 0 8px;
+  height: 26px;
+}
+
+.elinvale-music-cues .mini {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+}
+
+.elinvale-music-cues .mini.danger:hover {
+  color: var(--color-level-error, #b03030);
+}
+
+.elinvale-music-cues .cue-list {
+  flex: 1 1 auto;
+  list-style: none;
+  margin: 0;
+  padding: 0 2px 40px 2px;
+  overflow-y: auto;
+}
+
+.elinvale-music-cues .row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: calc(var(--depth, 0) * 14px);
+  padding: 2px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.elinvale-music-cues .row + .row {
+  margin-top: 2px;
+}
+
+.elinvale-music-cues .row.folder {
+  background: rgba(0, 0, 0, 0.08);
+  font-weight: bold;
+}
+
+.elinvale-music-cues .row .handle {
+  opacity: 0.35;
+  cursor: grab;
+  font-size: 11px;
+}
+
+.elinvale-music-cues .row .play {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.elinvale-music-cues .row .fields {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.elinvale-music-cues .row input.label {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 22px;
+  background: transparent;
+  border: 1px solid transparent;
+  font-weight: inherit;
+}
+
+.elinvale-music-cues .row input.label:hover,
+.elinvale-music-cues .row input.label:focus {
+  border-color: var(--color-border-light-tertiary, #7a7971);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.elinvale-music-cues .row .track {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 18px;
+  padding: 0 4px;
+  font-size: 11px;
+  opacity: 0.8;
+  border: 1px dashed transparent;
+  border-radius: 3px;
+}
+
+.elinvale-music-cues .row .track span {
+  flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.elinvale-music-cues .row .track .mini {
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+}
+
+.elinvale-music-cues .row.cue[data-uuid=""] .track {
+  border-color: var(--color-border-light-tertiary, #7a7971);
+  opacity: 0.55;
+  font-style: italic;
+}
+
+.elinvale-music-cues .row.is-missing .track {
+  color: var(--color-level-warning, #c9922e);
+  opacity: 1;
+}
+
+.elinvale-music-cues .row.is-playing {
+  border-color: #4b8b3b;
+  background: rgba(75, 139, 59, 0.18);
+}
+
+.elinvale-music-cues .row.is-playing .play i::before {
+  content: "\f028"; /* volume-high: видно, что этот трек играет */
+}
+
+.elinvale-music-cues .row.drop-target {
+  border-color: var(--color-shadow-primary, #ff6400);
+  box-shadow: 0 0 4px var(--color-shadow-primary, #ff6400);
+}
+
+.elinvale-music-cues .row.dragging {
+  opacity: 0.4;
+}
+
+.elinvale-music-cues .row.filtered-out {
+  display: none;
+}
+
+.elinvale-music-cues .hint {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 4px 6px;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+/* кнопка в шапке вкладки Playlists */
+button.elinvale-cues-open {
+  flex: 0 0 auto;
+  width: auto;
+  padding: 0 6px;
+  white-space: nowrap;
+}

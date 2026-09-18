@@ -3,7 +3,11 @@
   "title": "Elinvale tools",
   "description": "Единый модуль-контейнер для хоумбрю авторского мира (PF2e). Пак deities — пятёрка скованных богов (Темпус, Вирелла, Морана, Магнус, Лире); новые паки (предметы, монстры, журналы, макросы) добавляются сюда же.",
   "version": "0.1.0",
-  "authors": [{ "name": "Ferrus" }],
+  "authors": [
+    {
+      "name": "Ferrus"
+    }
+  ],
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -13,10 +17,18 @@
       {
         "id": "pf2e",
         "type": "system",
-        "compatibility": { "minimum": "8.0.0" }
+        "compatibility": {
+          "minimum": "8.0.0"
+        }
       }
     ]
   },
+  "esmodules": [
+    "esmodules/music-cues.mjs"
+  ],
+  "styles": [
+    "styles/music-cues.css"
+  ],
   "packs": [
     {
       "name": "deities",
@@ -25,7 +37,10 @@
       "type": "Item",
       "system": "pf2e",
       "banner": "systems/pf2e/assets/compendium-banner/green.webp",
-      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "items",
@@ -34,7 +49,10 @@
       "type": "Item",
       "system": "pf2e",
       "banner": "systems/pf2e/assets/compendium-banner/red.webp",
-      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -42,7 +60,10 @@
       "name": "Элинваль",
       "sorting": "m",
       "color": "#3b2524",
-      "packs": ["deities", "items"]
+      "packs": [
+        "deities",
+        "items"
+      ]
     }
   ]
 }
