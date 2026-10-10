@@ -1,0 +1,29 @@
+{
+    "_id": "ElinTreeBranch01",
+    "img": "icons/commodities/materials/plant-sprout-seed-brown-green.webp",
+    "name": "Ветвь Древа",
+    "type": "equipment",
+    "system": {
+        "slug": "elinvale-tree-branch",
+        "traits": {
+            "value": ["magical", "plant"],
+            "rarity": "unique"
+        },
+        "level": { "value": 3 },
+        "price": { "value": { "gp": 0 } },
+        "quantity": 1,
+        "bulk": { "value": 0.1 },
+        "hardness": 0,
+        "hp": { "value": 0, "max": 0 },
+        "usage": { "value": "held-in-one-hand" },
+        "size": "med",
+        "material": { "grade": null, "type": null },
+        "baseItem": null,
+        "containerId": null,
+        "description": {
+            "value": "<hr />\n<p><strong>Activate—Укрытие Древа</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Дальность - прикосновение. Наложить <em>sanctuary</em> 1-го ранга на 1 минуту: @UUID[Compendium.elinvale-tools.items.Item.ElinFxTreeWard01]{Укрытие Древа}.</p>"
+        },
+        "rules": [],
+        "publication": { "title": "Предметы Элинваля", "license": "ORC", "remaster": true }
+    }
+}

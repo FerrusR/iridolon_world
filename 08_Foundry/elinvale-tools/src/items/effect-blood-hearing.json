@@ -1,0 +1,34 @@
+{
+    "_id": "ElinFxBloodHear1",
+    "img": "icons/svg/blood.svg",
+    "name": "Чуткий слух",
+    "type": "effect",
+    "system": {
+        "slug": "elinvale-blood-hearing",
+        "description": {
+            "value": "<p>Ты слышишь сердцебиение как <strong>imprecise bloodsense 30 ft</strong>.</p>"
+        },
+        "duration": {
+            "value": 10,
+            "unit": "minutes",
+            "sustained": false,
+            "expiry": "turn-start"
+        },
+        "level": { "value": 1 },
+        "start": { "value": 0, "initiative": null },
+        "tokenIcon": { "show": true },
+        "badge": null,
+        "context": null,
+        "unidentified": false,
+        "traits": { "value": [], "rarity": "unique" },
+        "rules": [
+            {
+                "key": "Sense",
+                "selector": "bloodsense",
+                "acuity": "imprecise",
+                "range": 30
+            }
+        ],
+        "publication": { "title": "Реликвии Элинваля", "license": "ORC", "remaster": true }
+    }
+}

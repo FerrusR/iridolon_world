@@ -1,0 +1,29 @@
+{
+    "_id": "ElinFxSummerBld1",
+    "img": "icons/magic/nature/symbol-sun-yellow.webp",
+    "name": "Сила жизни",
+    "type": "effect",
+    "system": {
+        "slug": "elinvale-summer-in-blood",
+        "description": {
+            "value": "<p><strong>resistance void 2</strong>. В начале каждого боя: 3 временных HP (@UUID[Compendium.elinvale-tools.items.Item.ElinFxSummerSrg1]{Сила жизни: прилив})."
+        },
+        "duration": {
+            "value": -1,
+            "unit": "unlimited",
+            "sustained": false,
+            "expiry": null
+        },
+        "level": { "value": 1 },
+        "start": { "value": 0, "initiative": null },
+        "tokenIcon": { "show": true },
+        "badge": null,
+        "context": null,
+        "unidentified": false,
+        "traits": { "value": [], "rarity": "unique" },
+        "rules": [
+            { "key": "Resistance", "type": "void", "value": 2 }
+        ],
+        "publication": { "title": "Предметы Элинваля", "license": "ORC", "remaster": true }
+    }
+}

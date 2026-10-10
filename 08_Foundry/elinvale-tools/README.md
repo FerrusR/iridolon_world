@@ -130,10 +130,10 @@ prone, перезарядка, вражеские сейвы, перемещен
 | Артур | Золотой шар · `arthur-orb.json` | Отмотка удара / *Rewind the Blow* (`⤾` reaction, 1/h) | +1 item Medicine (Treat Wounds/Battle Medicine), GrantItem→reaction, кулдаун, **@Damage[2d8[healing]]** (кнопка apply healing = предотвращение) |
 | Фейт | Книга Судеб · `fate-book.json` | Дурное предзнаменование / *Foretold Misfortune* (`⤾` reaction, 1/h) | +1 item Occultism, GrantItem→reaction, кулдаун, эффект-**откат** (RollTwice keep lower на след. attack/save) |
 | Кхар'Хадаг | Мутации · `khar-hadag-mutations.json` | Ответная мутация / *Answering Mutation* (`⤾` reaction, 1/h) | +1 item Survival, GrantItem→reaction, кулдаун, эффект-**resistance 5** (ChoiceSet выбор типа, до конца след. хода) |
-| Архелай | Тело и чёрная кровь · `archelaus-body.json` | Хищный бросок / *Predator's Lunge* (`◆` move, 1/h) | +1 item Acrobatics, GrantItem→action, кулдаун, draggable **Effect: Panache** (+5 ft status Speed, `self:effect:panache`) |
+| Архелай | Тело и чёрная кровь · `archelaus-body.json` | Слышащий кровь / *Blood-Hearing* (`◆` concentrate, 1/day) | +1 item Acrobatics, постоянный **darkvision** (`Sense`), draggable эффект **Слышащий кровь** на 10 мин (`Sense` bloodsense imprecise 30 ft — Visioner его понимает) |
 
 **Общие эффекты** (`effect-*.json`): кулдаун-эффект 1 ч (общий), resistance-эффект
-Ответной мутации, откат-эффект Дурного предзнаменования, Effect: Panache. Дар-действия и
+Ответной мутации, откат-эффект Дурного предзнаменования, Effect: Panache, эффект «Слышащий кровь». Дар-действия и
 эффекты лежат в том же паке `items` — их можно и перетаскивать вручную, если GrantItem
 почему-то не сработал. Panache — self-contained дубликат: если finisher'ы завязаны на
 встроенный тумблер свашбаклера, используй его.
@@ -143,6 +143,41 @@ prone, перезарядка, вражеские сейвы, перемещен
 > действие; что ChoiceSet Ответной мутации спрашивает тип урона; что `frequency`
 > (`per: "PT1H"`) и RollTwice-откат отрабатывают. Рост даров по сюжету (g2/g3/grand) пока
 > не вшит — добавим rule elements, когда линии дойдут.
+
+---
+
+## Награды Главы 3 — Ветвь Древа и «Сила жизни»
+
+Канон механики — `06_Mechanics/Ветвь Древа.md` и Глава 3 § Сухое русло и лесное озеро.
+
+- **Ветвь Древа** (`tree-branch.json`, equipment, held in 1 hand, L). Активация описана в
+  тексте предмета в формате `Activate— ◆◆ (manipulate)` + `Frequency once per day`, поэтому
+  **PF2e Item Activations** сам создаёт действие «Activation: Укрытие Древа» с счётчиком 1/день
+  (сбрасывается на Rest for the Night). В карточке действия — ссылка на эффект. Флейвор после блока
+  Activate не писать: Item Activations копирует в действие всё, что идёт после него.
+  Скрытое свойство («узнаёт хозяйку») в Foundry не внесено — оно только в волте.
+- **Укрытие Древа** (`effect-tree-ward.json`) — sanctuary на 1 минуту. Перетаскивать **с
+  карточки активации** (или с действия на листе владельца) на токен цели: PF2e запоминает
+  происхождение эффекта, и formula-badge `@item.origin.system.attributes.classOrSpellDC.value`
+  считает DC владельца ветви. DC виден на значке эффекта и в чате; в описании эффекта кнопка
+  спаса Воли для атакующего (`@Check[will|dc:resolve(@item.badge.value)]`). Если тянуть из
+  компендиума, DC возьмётся у того, на кого повесили.
+- **Сила жизни** (`effect-summer-in-blood.json`, slug `elinvale-summer-in-blood`) — resistance
+  void 2, без срока; ГМ вешает искупавшимся и снимает на выходе из леса.
+- **Прилив** (`effect-summer-surge.json`) — TempHP 3, длительность encounter. Выдаёт его
+  `esmodules/summer-in-blood.mjs` на хуке `combatStart`, **только пока включён тумблер**
+  Game Settings → Module Settings → «Сила жизни: прилив в начале боя» (world, только ГМ,
+  по умолчанию выключен). Включён — в начале боя прилив получает каждый участник с «Силой
+  жизни»; выключен — хук ничего не делает. Включать, когда партия получила баф, выключать на
+  выходе из леса. С хотбара: макрос `game.modules.get("elinvale-tools").api.toggleSummerSurge()`
+  (ещё есть `setSummerSurge(true|false)` и `isSummerSurgeActive()`). В конце боя PF2e снимает
+  прилив вместе с остатком временных HP. Хук работает у ГМ: начинать бой должен ГМ.
+
+> **Проверить в Foundry после выкатки:** ветвь в руке → на листе появилось действие с
+> 1/день; «Use» → карточка с DC; перетащить «Укрытие Древа» с карточки на союзника →
+> на значке DC владельца; кнопка Will в эффекте бросает против него. Повесить «Силу
+> жизни», включить тумблер → Begin Combat → у носителя 3 temp HP и эффект прилива; End
+> Combat → прилив ушёл; выключить тумблер → новый бой без прилива.
 
 ---
 
@@ -209,6 +244,7 @@ elinvale-tools/
 ├── scripts/deploy.sh     сборка + стоп/старт Foundry + чистая выкатка в Data/modules/
 ├── esmodules/music-cues.mjs   музыкальный пульт (интерфейс, грузится Foundry в рантайме)
 ├── styles/music-cues.css      стили пульта
+├── esmodules/summer-in-blood.mjs   «Сила жизни»: тумблер + прилив temp HP на старте боя
 ├── src/deities/          исходники богов (по одному JSON)
 │   ├── tempus.json  virella.json  morana.json  magnus.json  lire.json
 ├── src/items/            исходники реликвий, даров и эффектов
@@ -219,5 +255,7 @@ elinvale-tools/
 │   ├── gift-predators-lunge.json                            (дары, type action)
 │   ├── effect-cooldown-relic-gift.json  effect-answering-mutation.json
 │   ├── effect-foretold-misfortune-rider.json  effect-panache.json  (эффекты)
+│   ├── tree-branch.json  effect-tree-ward.json                  (Ветвь Древа, Гл. 3)
+│   ├── effect-summer-in-blood.json  effect-summer-surge.json    (Сила жизни, Гл. 3)
 └── README.md             этот файл
 ```

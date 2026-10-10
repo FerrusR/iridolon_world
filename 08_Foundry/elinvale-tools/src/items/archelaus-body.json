@@ -5,21 +5,46 @@
     "type": "equipment",
     "system": {
         "slug": "elinvale-archelaus-body",
-        "traits": { "value": ["invested", "magical"], "rarity": "unique" },
-        "level": { "value": 1 },
-        "price": { "value": { "gp": 0 } },
+        "traits": {
+            "value": [
+                "invested",
+                "magical"
+            ],
+            "rarity": "unique"
+        },
+        "level": {
+            "value": 1
+        },
+        "price": {
+            "value": {
+                "gp": 0
+            }
+        },
         "quantity": 1,
-        "bulk": { "value": 0 },
+        "bulk": {
+            "value": 0
+        },
         "hardness": 0,
-        "hp": { "value": 0, "max": 0 },
-        "usage": { "value": "worn" },
-        "equipped": { "carryType": "worn", "invested": false },
+        "hp": {
+            "value": 0,
+            "max": 0
+        },
+        "usage": {
+            "value": "worn"
+        },
+        "equipped": {
+            "carryType": "worn",
+            "invested": false
+        },
         "size": "med",
-        "material": { "grade": null, "type": null },
+        "material": {
+            "grade": null,
+            "type": null
+        },
         "baseItem": null,
         "containerId": null,
         "description": {
-            "value": "<p>+1 item bonus к Acrobatics</p>\n<hr />\n<p><strong>Activate—Хищный бросок</strong> <span class=\"action-glyph\">A</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> <strong>Stride</strong> до своей Speed +15ft; это перемещение не провоцирует reactions. Если заканчиваешь движение в пределах досягаемости ближнего боя от враждебного существа — получаешь <strong>panache</strong>: @UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]{Effect: Panache}.</p>"
+            "value": "<p>+1 item bonus к Acrobatics</p>\n<p><strong>Darkvision</strong></p>\n<hr />\n<p><strong>Activate—Чуткий слух</strong> <span class=\"action-glyph\">A</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Сфокусировавшись, ты начинаешь слышать сердцебиение существ вокруг как <strong>imprecise sense 30 ft</strong>. @UUID[Compendium.elinvale-tools.items.Item.ElinFxBloodHear1]{Чуткий слух}</p>"
         },
         "rules": [
             {
@@ -28,8 +53,16 @@
                 "type": "item",
                 "value": 1,
                 "label": "Неземная грация"
+            },
+            {
+                "key": "Sense",
+                "selector": "darkvision"
             }
         ],
-        "publication": { "title": "Реликвии Элинваля", "license": "ORC", "remaster": true }
+        "publication": {
+            "title": "Реликвии Элинваля",
+            "license": "ORC",
+            "remaster": true
+        }
     }
 }

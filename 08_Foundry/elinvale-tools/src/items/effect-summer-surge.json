@@ -1,0 +1,29 @@
+{
+    "_id": "ElinFxSummerSrg1",
+    "img": "icons/magic/life/heart-hand-gold-green.webp",
+    "name": "Сила жизни: прилив",
+    "type": "effect",
+    "system": {
+        "slug": "elinvale-summer-surge",
+        "description": {
+            "value": "<p>3 временных HP на этот бой. Вешается сам в начале боя на каждого, на ком @UUID[Compendium.elinvale-tools.items.Item.ElinFxSummerBld1]{Сила жизни}. Уходит с концом боя вместе с оставшимися временными HP.</p>"
+        },
+        "duration": {
+            "value": -1,
+            "unit": "encounter",
+            "sustained": false,
+            "expiry": null
+        },
+        "level": { "value": 1 },
+        "start": { "value": 0, "initiative": null },
+        "tokenIcon": { "show": false },
+        "badge": null,
+        "context": null,
+        "unidentified": false,
+        "traits": { "value": [], "rarity": "unique" },
+        "rules": [
+            { "key": "TempHP", "value": 3 }
+        ],
+        "publication": { "title": "Предметы Элинваля", "license": "ORC", "remaster": true }
+    }
+}

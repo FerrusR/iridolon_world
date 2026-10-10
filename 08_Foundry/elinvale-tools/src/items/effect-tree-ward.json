@@ -1,0 +1,32 @@
+{
+    "_id": "ElinFxTreeWard01",
+    "img": "icons/magic/nature/leaf-elm-sparkle-glow-green.webp",
+    "name": "Укрытие Древа",
+    "type": "effect",
+    "system": {
+        "slug": "elinvale-tree-ward",
+        "description": {
+            "value": "<p>Ветвь Древа укрывает тебя (<em>sanctuary</em> 1-го ранга). Кто пытается тебя атаковать, каждый раз проходит @Check[will|dc:resolve(@item.badge.value)]. DC стоит на значке эффекта.</p>\n<p>Если ты используешь враждебное действие, укрытие спадает.</p>\n<hr />\n<p><strong>Critical Success</strong> Укрытие спадает.</p>\n<p><strong>Success</strong> Существо может провести эту атаку и другие атаки по тебе в этот ход.</p>\n<p><strong>Failure</strong> Существо не может тебя атаковать и теряет действие. В этот ход оно больше не пытается тебя атаковать.</p>\n<p><strong>Critical Failure</strong> Существо теряет действие и не может пытаться тебя атаковать, пока действует укрытие.</p>\n<hr />\n<p><em>Перетаскивай эффект с карточки активации ветви или с её действия на листе владельца: тогда DC берётся у него. Если перетащить из компендиума, DC будет того, на кого эффект повесили.</em></p>"
+        },
+        "duration": {
+            "value": 1,
+            "unit": "minutes",
+            "sustained": false,
+            "expiry": "turn-start"
+        },
+        "level": { "value": 1 },
+        "start": { "value": 0, "initiative": null },
+        "tokenIcon": { "show": true },
+        "badge": {
+            "type": "formula",
+            "value": "@item.origin.system.attributes.classOrSpellDC.value",
+            "evaluate": true,
+            "reevaluate": null
+        },
+        "context": null,
+        "unidentified": false,
+        "traits": { "value": [], "rarity": "unique" },
+        "rules": [],
+        "publication": { "title": "Предметы Элинваля", "license": "ORC", "remaster": true }
+    }
+}

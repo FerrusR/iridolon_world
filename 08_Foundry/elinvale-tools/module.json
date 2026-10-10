@@ -24,7 +24,8 @@
     ]
   },
   "esmodules": [
-    "esmodules/music-cues.mjs"
+    "esmodules/music-cues.mjs",
+    "esmodules/summer-in-blood.mjs"
   ],
   "styles": [
     "styles/music-cues.css"
