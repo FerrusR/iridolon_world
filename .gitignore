@@ -4,3 +4,6 @@
 # Token production scratch — сырьё/промежуточные рендеры токенов, в гит не идут.
 # Под гит кладём только финальные токены в 99_Sketches/tokens/*.webp
 /99_Sketches/tokens/_work/
+
+# Модели для локальных скриптов (BiRefNet-ToonOut ONNX ~1 ГБ, качает remove_bg.py) — в гит не идут.
+/_models/
