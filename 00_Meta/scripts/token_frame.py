@@ -27,8 +27,17 @@ def content_bbox(rgba, thr=16):
     return xs.min(), ys.min(), xs.max() + 1, ys.max() + 1
 
 
-def place(cut_path, canvas, height_frac, top_frac):
-    im = Image.open(cut_path).convert("RGBA")
+def solidify(im, opaque_from):
+    """Альфа >= opaque_from -> 255: GPT Image отдаёт тело с альфой ~253, кольцо просвечивало бы."""
+    if opaque_from >= 255:
+        return im
+    arr = np.array(im)
+    arr[:, :, 3][arr[:, :, 3] >= opaque_from] = 255
+    return Image.fromarray(arr, "RGBA")
+
+
+def place(cut_path, canvas, height_frac, top_frac, opaque_from):
+    im = solidify(Image.open(cut_path).convert("RGBA"), opaque_from)
     l, t, r, b = content_bbox(im)
     c = im.crop((l, t, r, b))
     cw, ch = c.size
@@ -54,8 +63,8 @@ def cut_mask(canvas, ring_template, rc_frac, cap_frac, aa_disk=1.3, aa_cap=7.0):
 
 
 def build(cut_path, out_subject, out_preview, canvas, ring_template,
-          height_frac, top_frac, rc_frac, cap_frac):
-    subj = place(cut_path, canvas, height_frac, top_frac)
+          height_frac, top_frac, rc_frac, cap_frac, opaque_from=240):
+    subj = place(cut_path, canvas, height_frac, top_frac, opaque_from)
     allow = cut_mask(canvas, ring_template, rc_frac, cap_frac)
     arr = np.array(subj).astype(np.float32)
     arr[:, :, 3] *= allow
@@ -89,6 +98,9 @@ if __name__ == "__main__":
     ap.add_argument("--top-frac", type=float, default=0.05)
     ap.add_argument("--rc-frac", type=float, default=RING_INNER, help="радиус среза (доля base)")
     ap.add_argument("--cap-frac", type=float, default=0.52, help="выше этой доли холста — свободный разрыв")
+    ap.add_argument("--opaque-from", type=int, default=240,
+                    help="альфа >= N становится 255 (почти-непрозрачное тело из GPT Image); 255 = выкл")
     a = ap.parse_args()
     build(a.cutout, a.out_subject, a.out_preview, a.canvas,
-          a.ring_template or a.canvas, a.height_frac, a.top_frac, a.rc_frac, a.cap_frac)
+          a.ring_template or a.canvas, a.height_frac, a.top_frac, a.rc_frac, a.cap_frac,
+          a.opaque_from)

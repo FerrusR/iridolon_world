@@ -3,8 +3,8 @@
 Общие правила проекта живут в **`CLAUDE.md`** — это единый файл для всех агентов. В начале каждой сессии прочитай его целиком и выполни его шаги «В начале КАЖДОЙ сессии». Где там написано «Claude» или «ты» — это относится и к тебе. Правила сюда не дублируй: меняются они только в `CLAUDE.md`.
 
 ## Что у тебя иначе, чем у Claude
-- **Скиллы** — в `.agents/skills/` (общие с Claude; `.claude/skills` — симлинк на ту же папку): `pf2e-session-prep`, `token`, `pf2e-review`. Вызов: `$pf2e-session-prep`, `$token <Имя NPC>`, `$pf2e-review <путь к черновику>`.
+- **Скиллы** — в `.agents/skills/` (общие с Claude; `.claude/skills` — симлинк на ту же папку): `pf2e-session-prep`, `token`, `pf2e-review`, `foundry-pf2e`, `pf2e-macros`. Вызов: `$pf2e-session-prep`, `$token <Имя NPC>`, `$pf2e-review <путь к черновику>`; `$foundry-pf2e` и `$pf2e-macros` — для работы с модулем `elinvale-tools` и макросами.
 - **Проекта claude.ai у тебя нет.** Листы подготовки и прочие черновики веди в `Claude outputs/`; скажи Ferrus, если копию в проекте claude.ai нужно обновить.
-- **Хука проверки схемы нет** (у Claude он срабатывает сам после каждой правки). Поправил файл NPC или локации — запусти `python3 00_Meta/scripts/check_schema.py <файл>` и исправь ERROR.
+- **Хук проверки схемы** — в `.codex/config.toml` (работает, пока проект trusted): после каждой правки `apply_patch` запускает `check_schema.py --hook`. Вернул ERROR — исправь frontmatter. Сомневаешься, что хук сработал — запусти `python3 00_Meta/scripts/check_schema.py <файл>` вручную.
 - **Git** — те же правила, что в `CLAUDE.md`: мутирующие команды и `git status` не запускай, коммитит Ferrus.
 - **Память Claude тебе не видна.** Всё нужное для работы должно быть в волте. Если Ferrus формулирует новое постоянное правило работы — предложи записать его в `CLAUDE.md`.

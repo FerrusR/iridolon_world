@@ -1,0 +1,12 @@
+# Проектный конфиг Codex для волта (грузится, только если проект trusted в ~/.codex/config.toml).
+# Аналог .claude/settings.json: после каждой правки проверяем схему frontmatter.
+# Хуки Codex доверяются отдельно (по хэшу): один раз открой `codex` в волте и выбери «Trust All»
+# (или /hooks). После правки этого файла хук снова попросит подтверждения.
+
+[[hooks.PostToolUse]]
+matcher = "apply_patch"
+
+[[hooks.PostToolUse.hooks]]
+type = "command"
+command = 'python3 "$(git rev-parse --show-toplevel)/00_Meta/scripts/check_schema.py" --hook'
+statusMessage = "Проверка схемы frontmatter"

@@ -43,17 +43,23 @@ def report(im, label):
     a = np.asarray(im.getchannel("A"))
     h, w = a.shape
     k = max(4, min(h, w) // 50)
-    corners = [a[:k, :k], a[:k, -k:], a[-k:, :k], a[-k:, -k:]]
+    # только верхние углы: у поясного кадра фигура уходит за нижний край, там альфа законно 255
+    corners = [a[:k, :k], a[:k, -k:]]
     corner_max = max(int(c.max()) for c in corners)
     clear = float((a == 0).mean())
     partial = float(((a > 0) & (a < 255)).mean())
     ys, xs = np.nonzero(a > 16)
     bbox = (int(xs.min()), int(ys.min()), int(xs.max()), int(ys.max())) if len(xs) else None
     print(f"{label}: {w}x{h}, прозрачно {clear:.0%}, полупрозрачная кромка {partial:.1%}, "
-          f"max альфа в углах {corner_max}, bbox фигуры {bbox}")
+          f"max альфа в верхних углах {corner_max}, bbox фигуры {bbox}")
     ok = corner_max <= 8 and clear > 0.05
     if not ok:
-        print("  ⚠ углы не прозрачны или фон почти не вырезан — прозрачность ненастоящая/неполная.")
+        print("  ⚠ верхние углы не прозрачны или фон почти не вырезан — прозрачность ненастоящая/неполная.")
+    body = a[a > 16]
+    if body.size and float((body == 255).mean()) < 0.5 and float((body >= 240).mean()) > 0.5:
+        # GPT Image (ChatGPT/Codex) отдаёт тело с альфой ~253: на глаз не видно, token_frame.py дотянет до 255
+        print("  ℹ тело фигуры почти, но не полностью непрозрачно (альфа ~240–254) — "
+              "token_frame.py поднимет его до 255 (--opaque-from).")
     return ok
 
 

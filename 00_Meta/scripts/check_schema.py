@@ -20,7 +20,8 @@ check_schema.py — проверка обязательных полей frontma
   python3 check_schema.py [path] --fix        # мигрировать теги арка-N -> поле arcs
   python3 check_schema.py [path] --fix -n     # dry-run миграции (показать, не писать)
   python3 check_schema.py --hook              # для PostToolUse: читает JSON из stdin,
-                                              #   проверяет отредактированный файл, exit 2 (блок) при ERROR
+                                              #   проверяет отредактированный файл, exit 2 (блок) при ERROR;
+                                              #   понимает и Claude (file_path), и Codex (патч apply_patch)
 """
 import os, re, sys, io, json
 
@@ -233,26 +234,45 @@ def run_report(root, do_fix, dry):
     return n_err
 
 
+PATCH_FILE_RE = re.compile(r"^\*\*\* (?:Add File|Update File|Move to): (.+?)\s*$", re.M)
+
+
+def hook_paths(payload):
+    """Пути отредактированных файлов: Claude шлёт file_path, Codex (apply_patch) — текст патча."""
+    ti = payload.get("tool_input") or {}
+    path = ti.get("file_path") or ti.get("filePath")
+    if path:
+        return [path]
+    patch = ti.get("command")
+    if not isinstance(patch, str):
+        return []
+    cwd = payload.get("cwd") or os.getcwd()
+    return [os.path.join(cwd, p) for p in PATCH_FILE_RE.findall(patch)]
+
+
 def run_hook():
     """PostToolUse: читает JSON из stdin, блокирует правку с ошибкой (exit 2)."""
     try:
         payload = json.load(sys.stdin)
     except Exception:
         return 0
-    ti = payload.get("tool_input") or {}
-    path = ti.get("file_path") or ti.get("filePath")
-    if not path or not path.endswith(".md") or not os.path.isfile(path):
-        return 0
     vault = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    if in_skip(os.path.abspath(path), vault):
+    blocked = False
+    for path in hook_paths(payload):
+        if not path.endswith(".md") or not os.path.isfile(path):
+            continue
+        if in_skip(os.path.abspath(path), vault):
+            continue
+        issues = check_file(path)
+        if not issues:
+            continue
+        blocked = True
+        rel = os.path.relpath(path, vault)
+        print(f"⛔ Схема frontmatter: {rel}", file=sys.stderr)
+        for sev, code, msg in issues:
+            print(f"   • [{code}] {msg}", file=sys.stderr)
+    if not blocked:
         return 0
-    issues = check_file(path)
-    if not issues:
-        return 0
-    rel = os.path.relpath(path, vault)
-    print(f"⛔ Схема frontmatter: {rel}", file=sys.stderr)
-    for sev, code, msg in issues:
-        print(f"   • [{code}] {msg}", file=sys.stderr)
     print("   Заполни поля по правилу из 00_Meta/CLAUDE_instructions.md "
           "(arcs: [\"[[Арка N]]\"]; у NPC — region/location).", file=sys.stderr)
     return 2
