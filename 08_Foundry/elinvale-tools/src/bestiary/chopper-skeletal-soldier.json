@@ -1,0 +1,907 @@
+{
+    "_id": "ElinNpcChopSoldr",
+    "img": "modules/pf2e-tokens-myth-and-magic/assets/portraits/pzo2233_skeleton-skeletal-soldier.webp",
+    "items": [
+        {
+            "_id": "gYGAIsy4s4573vnb",
+            "img": "systems/pf2e/icons/equipment/weapons/glaive.webp",
+            "name": "Glaive",
+            "sort": 100000,
+            "system": {
+                "description": {
+                    "gm": "",
+                    "value": "<p>This polearm consists of a long, single-edged blade on the end of a 7-foot pole. It is extremely effective at delivering lethal cuts at a distance.</p>"
+                },
+                "rules": [],
+                "slug": "glaive",
+                "_migration": {
+                    "version": 0.959,
+                    "lastMigration": null,
+                    "previous": null
+                },
+                "traits": {
+                    "otherTags": [],
+                    "value": [
+                        "deadly-d8",
+                        "forceful",
+                        "reach"
+                    ],
+                    "rarity": "common"
+                },
+                "publication": {
+                    "title": "Pathfinder Core Rulebook",
+                    "authors": "",
+                    "license": "OGL",
+                    "remaster": false
+                },
+                "level": {
+                    "value": 0
+                },
+                "quantity": 1,
+                "baseItem": "glaive",
+                "bulk": {
+                    "value": 2
+                },
+                "hp": {
+                    "value": 0,
+                    "max": 0
+                },
+                "hardness": 0,
+                "price": {
+                    "value": {
+                        "gp": 1
+                    }
+                },
+                "equipped": {
+                    "carryType": "worn",
+                    "invested": null,
+                    "handsHeld": 0
+                },
+                "containerId": null,
+                "size": "med",
+                "material": {
+                    "type": null,
+                    "grade": null
+                },
+                "identification": {
+                    "status": "identified",
+                    "unidentified": {
+                        "name": "",
+                        "img": "",
+                        "data": {
+                            "description": {
+                                "value": ""
+                            }
+                        }
+                    }
+                },
+                "usage": {
+                    "value": "held-in-two-hands"
+                },
+                "category": "martial",
+                "group": "polearm",
+                "bonus": {
+                    "value": 0
+                },
+                "damage": {
+                    "dice": 1,
+                    "die": "d8",
+                    "damageType": "slashing",
+                    "persistent": null
+                },
+                "splashDamage": {
+                    "value": 0
+                },
+                "range": null,
+                "expend": null,
+                "ammo": null,
+                "reload": {
+                    "value": null
+                },
+                "grade": null,
+                "runes": {
+                    "potency": 0,
+                    "striking": 0,
+                    "property": []
+                },
+                "specific": null,
+                "subitems": [],
+                "bonusDamage": {
+                    "value": 0
+                }
+            },
+            "type": "weapon",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "ownership": {
+                "default": 0
+            }
+        },
+        {
+            "_id": "QLFWCwzBlvlOn6fq",
+            "img": "systems/pf2e/icons/equipment/weapons/longbow.webp",
+            "name": "Longbow",
+            "sort": 200000,
+            "system": {
+                "description": {
+                    "gm": "",
+                    "value": "<p>This 5-foot-tall bow, usually made of a single piece of elm, hickory, or yew, has a powerful draw and is excellent at propelling arrows with great force and at an extreme distance. You must use two hands to fire a longbow, and it can't be used while mounted.</p>"
+                },
+                "rules": [],
+                "slug": "longbow",
+                "_migration": {
+                    "version": 0.959,
+                    "lastMigration": null,
+                    "previous": null
+                },
+                "traits": {
+                    "otherTags": [],
+                    "value": [
+                        "deadly-d10",
+                        "volley-30"
+                    ],
+                    "rarity": "common"
+                },
+                "publication": {
+                    "title": "Pathfinder Core Rulebook",
+                    "authors": "",
+                    "license": "OGL",
+                    "remaster": false
+                },
+                "level": {
+                    "value": 0
+                },
+                "quantity": 1,
+                "baseItem": "longbow",
+                "bulk": {
+                    "value": 2
+                },
+                "hp": {
+                    "value": 0,
+                    "max": 0
+                },
+                "hardness": 0,
+                "price": {
+                    "value": {
+                        "gp": 6
+                    }
+                },
+                "equipped": {
+                    "carryType": "worn",
+                    "invested": null,
+                    "handsHeld": 0
+                },
+                "containerId": null,
+                "size": "med",
+                "material": {
+                    "type": null,
+                    "grade": null
+                },
+                "identification": {
+                    "status": "identified",
+                    "unidentified": {
+                        "name": "",
+                        "img": "",
+                        "data": {
+                            "description": {
+                                "value": ""
+                            }
+                        }
+                    }
+                },
+                "usage": {
+                    "value": "held-in-one-plus-hands"
+                },
+                "category": "martial",
+                "group": "bow",
+                "bonus": {
+                    "value": 0
+                },
+                "damage": {
+                    "dice": 1,
+                    "die": "d8",
+                    "damageType": "piercing",
+                    "persistent": null
+                },
+                "splashDamage": {
+                    "value": 0
+                },
+                "range": 100,
+                "expend": 1,
+                "ammo": {
+                    "baseType": "arrows",
+                    "builtIn": false,
+                    "capacity": null
+                },
+                "reload": {
+                    "value": "0"
+                },
+                "grade": null,
+                "runes": {
+                    "potency": 0,
+                    "striking": 0,
+                    "property": []
+                },
+                "specific": null,
+                "subitems": [],
+                "bonusDamage": {
+                    "value": 0
+                }
+            },
+            "type": "weapon",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "ownership": {
+                "default": 0
+            }
+        },
+        {
+            "_id": "IKaE64DkfeEobVnG",
+            "img": "systems/pf2e/icons/equipment/armor/chainshirt.webp",
+            "name": "Chain Shirt",
+            "sort": 300000,
+            "system": {
+                "description": {
+                    "gm": "",
+                    "value": "<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+                },
+                "rules": [],
+                "slug": "chain-shirt",
+                "_migration": {
+                    "version": 0.959,
+                    "lastMigration": null,
+                    "previous": null
+                },
+                "traits": {
+                    "otherTags": [],
+                    "value": [
+                        "flexible",
+                        "noisy"
+                    ],
+                    "rarity": "common"
+                },
+                "publication": {
+                    "title": "Pathfinder Core Rulebook",
+                    "authors": "",
+                    "license": "OGL",
+                    "remaster": false
+                },
+                "level": {
+                    "value": 0
+                },
+                "quantity": 1,
+                "baseItem": "chain-shirt",
+                "bulk": {
+                    "value": 1
+                },
+                "hp": {
+                    "value": 0,
+                    "max": 0
+                },
+                "hardness": 0,
+                "price": {
+                    "value": {
+                        "gp": 5
+                    }
+                },
+                "equipped": {
+                    "carryType": "worn",
+                    "invested": null,
+                    "inSlot": false
+                },
+                "containerId": null,
+                "size": "med",
+                "material": {
+                    "type": null,
+                    "grade": null
+                },
+                "identification": {
+                    "status": "identified",
+                    "unidentified": {
+                        "name": "",
+                        "img": "",
+                        "data": {
+                            "description": {
+                                "value": ""
+                            }
+                        }
+                    }
+                },
+                "category": "light",
+                "group": "chain",
+                "acBonus": 2,
+                "strength": 1,
+                "dexCap": 3,
+                "checkPenalty": -1,
+                "speedPenalty": 0,
+                "grade": null,
+                "runes": {
+                    "potency": 0,
+                    "resilient": 0,
+                    "property": []
+                },
+                "subitems": []
+            },
+            "type": "armor",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "ownership": {
+                "default": 0
+            }
+        },
+        {
+            "_id": "9DXa91DK5uR37Y0X",
+            "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
+            "name": "Arrows",
+            "sort": 400000,
+            "system": {
+                "description": {
+                    "gm": "",
+                    "value": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
+                "rules": [],
+                "slug": "arrows",
+                "_migration": {
+                    "version": 0.959,
+                    "lastMigration": null,
+                    "previous": null
+                },
+                "traits": {
+                    "otherTags": [],
+                    "value": [
+                        "consumable"
+                    ],
+                    "rarity": "common"
+                },
+                "publication": {
+                    "title": "Pathfinder Core Rulebook",
+                    "authors": "",
+                    "license": "OGL",
+                    "remaster": false
+                },
+                "level": {
+                    "value": 0
+                },
+                "quantity": 20,
+                "baseItem": "arrows",
+                "bulk": {
+                    "value": 0.1
+                },
+                "hp": {
+                    "value": 0,
+                    "max": 0
+                },
+                "hardness": 0,
+                "price": {
+                    "value": {
+                        "sp": 1
+                    },
+                    "per": 10
+                },
+                "equipped": {
+                    "carryType": "worn"
+                },
+                "containerId": null,
+                "size": "med",
+                "material": {
+                    "type": null,
+                    "grade": null
+                },
+                "identification": {
+                    "status": "identified",
+                    "unidentified": {
+                        "name": "",
+                        "img": "",
+                        "data": {
+                            "description": {
+                                "value": ""
+                            }
+                        }
+                    }
+                },
+                "craftableAs": null,
+                "uses": {
+                    "value": 1,
+                    "max": 1,
+                    "autoDestroy": true
+                }
+            },
+            "type": "ammo",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "ownership": {
+                "default": 0
+            }
+        },
+        {
+            "_id": "ri32o76yg6cyuq05",
+            "flags": {
+                "pf2e": {
+                    "linkedWeapon": "gYGAIsy4s4573vnb"
+                }
+            },
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Glaive",
+            "sort": 500000,
+            "system": {
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 9
+                },
+                "damageRolls": {
+                    "k3GyOyCXwywhRbnC": {
+                        "damage": "1d8+2",
+                        "damageType": "slashing",
+                        "category": null
+                    }
+                },
+                "description": {
+                    "value": "",
+                    "gm": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "",
+                    "authors": ""
+                },
+                "range": null,
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "deadly-d8",
+                        "forceful",
+                        "reach-10"
+                    ],
+                    "otherTags": [],
+                    "config": {}
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                },
+                "action": "strike",
+                "area": null,
+                "subjectToMAP": true
+            },
+            "type": "melee",
+            "effects": [],
+            "folder": null,
+            "ownership": {
+                "default": 0
+            }
+        },
+        {
+            "_id": "wo29s0y8jcz4isnc",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Claw",
+            "sort": 600000,
+            "system": {
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 9
+                },
+                "damageRolls": {
+                    "Qfy1477pTYtEwGoV": {
+                        "damage": "1d4+2",
+                        "damageType": "slashing",
+                        "category": null
+                    }
+                },
+                "description": {
+                    "value": "",
+                    "gm": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "",
+                    "authors": ""
+                },
+                "range": null,
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "agile",
+                        "finesse",
+                        "unarmed"
+                    ],
+                    "otherTags": [],
+                    "config": {}
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                },
+                "action": "strike",
+                "area": null,
+                "subjectToMAP": true
+            },
+            "type": "melee",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "ownership": {
+                "default": 0
+            }
+        },
+        {
+            "_id": "c2kagtputtatmo83",
+            "flags": {
+                "pf2e": {
+                    "linkedWeapon": "QLFWCwzBlvlOn6fq"
+                }
+            },
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Longbow",
+            "sort": 700000,
+            "system": {
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 9
+                },
+                "damageRolls": {
+                    "ptf36uZrPQY08ncH": {
+                        "damage": "1d8",
+                        "damageType": "piercing",
+                        "category": null
+                    }
+                },
+                "description": {
+                    "value": "",
+                    "gm": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "",
+                    "authors": ""
+                },
+                "range": {
+                    "increment": 100,
+                    "max": null
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "deadly-d10",
+                        "volley-30"
+                    ],
+                    "otherTags": [],
+                    "config": {}
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                },
+                "action": "strike",
+                "area": null,
+                "subjectToMAP": true
+            },
+            "type": "melee",
+            "effects": [],
+            "folder": null,
+            "ownership": {
+                "default": 0
+            }
+        },
+        {
+            "_id": "jWKQduPw868WuVOj",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Void Healing",
+            "sort": 800000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>",
+                    "gm": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2",
+                    "authors": ""
+                },
+                "rules": [
+                    {
+                        "key": "ActiveEffectLike",
+                        "mode": "override",
+                        "path": "system.attributes.hp.negativeHealing",
+                        "value": true
+                    }
+                ],
+                "slug": "negative-healing",
+                "traits": {
+                    "value": [],
+                    "otherTags": []
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                }
+            },
+            "type": "action",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "ownership": {
+                "default": 0
+            }
+        },
+        {
+            "_id": "zhuzs5628vicodv5",
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Set Defense",
+            "sort": 900000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>The skeletal soldier sets its glaive (or other reach weapon) to defend the area around it. It gains the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O]{Attack of Opportunity} reaction for that weapon only. This lasts until the skeleton takes an action with the move or attack trait or is destroyed.</p>",
+                    "gm": ""
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "",
+                    "authors": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [],
+                    "otherTags": []
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                }
+            },
+            "type": "action",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "ownership": {
+                "default": 0
+            }
+        },
+        {
+            "_id": "ElinNpcChoChop01",
+            "name": "Рубка корня",
+            "type": "action",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>Начал ход рядом с толстым корнем и рядом нет PC — тратит ход на рубку: корень −1 отметка.</p><p>Не бьёт по PC, если может рубить. Встань между ним и корнем — и он вынужден драться или обходить. Перерубленный корень: часы «Вдох» +1, сердце дёргается, Дарио рычит.</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            }
+        }
+    ],
+    "name": "Рубщик: скелет-воин",
+    "system": {
+        "attributes": {
+            "hp": {
+                "value": 16,
+                "temp": 0,
+                "max": 16,
+                "details": "void healing"
+            },
+            "ac": {
+                "value": 17,
+                "details": ""
+            },
+            "allSaves": {
+                "value": ""
+            },
+            "speed": {
+                "value": 25,
+                "otherSpeeds": [],
+                "details": "",
+                "special": ""
+            },
+            "immunities": [
+                {
+                    "type": "bleed"
+                },
+                {
+                    "type": "death-effects"
+                },
+                {
+                    "type": "disease"
+                },
+                {
+                    "type": "paralyzed"
+                },
+                {
+                    "type": "poison"
+                },
+                {
+                    "type": "unconscious"
+                }
+            ],
+            "resistances": [
+                {
+                    "type": "cold",
+                    "value": 5
+                },
+                {
+                    "type": "electricity",
+                    "value": 5
+                },
+                {
+                    "type": "fire",
+                    "value": 5
+                },
+                {
+                    "type": "piercing",
+                    "value": 5
+                },
+                {
+                    "type": "slashing",
+                    "value": 5
+                }
+            ]
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "details": {
+            "languages": {
+                "value": [],
+                "details": ""
+            },
+            "level": {
+                "value": 1
+            },
+            "blurb": "Орочий воин с погоста, глефа",
+            "publicNotes": "<p>These soldiers continue to follow orders in death, still wielding the armaments they spent a lifetime learning how to use. While frequently made from the bones of humans or dwarves, other types of humanoids are quite common, such as bugbears, hobgoblins, and orcs. Often, these soldiers wield the weapons most common among their people instead of those listed here.</p>\n<hr>\n<p>Among the ranks of the dead, none are so numerous, nor so varied, as the skeleton. While most are almost entirely made from bone, some maintain a few scraps of flesh to aid them in movement, such as wing membranes.</p>",
+            "privateNotes": "",
+            "publication": {
+                "title": "Pathfinder Book of the Dead",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+            }
+        },
+        "resources": {},
+        "_migration": {
+            "version": 0.959,
+            "previous": null
+        },
+        "abilities": {
+            "str": {
+                "mod": 2
+            },
+            "dex": {
+                "mod": 2
+            },
+            "con": {
+                "mod": 3
+            },
+            "int": {
+                "mod": -5
+            },
+            "wis": {
+                "mod": 0
+            },
+            "cha": {
+                "mod": 0
+            }
+        },
+        "perception": {
+            "details": "",
+            "mod": 5,
+            "senses": [
+                {
+                    "type": "darkvision"
+                }
+            ],
+            "vision": true
+        },
+        "saves": {
+            "fortitude": {
+                "value": 6,
+                "saveDetail": ""
+            },
+            "reflex": {
+                "value": 7,
+                "saveDetail": ""
+            },
+            "will": {
+                "value": 5,
+                "saveDetail": ""
+            }
+        },
+        "skills": {
+            "acrobatics": {
+                "base": 5
+            },
+            "athletics": {
+                "base": 7
+            },
+            "stealth": {
+                "base": 5
+            }
+        },
+        "traits": {
+            "value": [
+                "evil",
+                "mindless",
+                "skeleton",
+                "undead",
+                "unholy"
+            ],
+            "rarity": "common",
+            "size": {
+                "value": "med"
+            }
+        }
+    },
+    "type": "npc",
+    "effects": [],
+    "prototypeToken": {
+        "name": "Рубщик",
+        "actorLink": false,
+        "displayName": 20,
+        "displayBars": 40,
+        "disposition": -1,
+        "width": 1,
+        "height": 1,
+        "bar1": {
+            "attribute": "attributes.hp"
+        },
+        "texture": {
+            "src": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo2233_skeleton-skeletal-soldier.webp"
+        },
+        "ring": {
+            "enabled": false
+        },
+        "flags": {
+            "pf2e": {
+                "linkToActorSize": true,
+                "autoscale": true
+            }
+        }
+    }
+}

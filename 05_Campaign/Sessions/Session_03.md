@@ -1,8 +1,8 @@
 ---
 type: session
 number: 3
-date_real:            # заполнить вручную
-level:                # уровень партии на момент сессии
+date_real: 2026-10-10
+level: 2
 participants:
   - "Антон (Фэйт)"
   - "Руслан (Лео)"

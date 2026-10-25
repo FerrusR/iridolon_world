@@ -1,0 +1,1052 @@
+{
+    "_id": "ElinNpcDario0001",
+    "name": "Дарио Мальсементе",
+    "type": "npc",
+    "img": "modules/pf2e-tokens-characters/assets/tokens/gmg-necromancer.webp",
+    "items": [
+        {
+            "_id": "1gpQXNR9p7henV5H",
+            "img": "systems/pf2e/icons/default-icons/spellcastingEntry.svg",
+            "name": "Occult Innate Spells",
+            "sort": 100000,
+            "system": {
+                "autoHeightenLevel": {
+                    "value": null
+                },
+                "description": {
+                    "value": ""
+                },
+                "prepared": {
+                    "value": "innate"
+                },
+                "proficiency": {
+                    "value": 1
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": ""
+                },
+                "rules": [],
+                "showSlotlessLevels": {
+                    "value": false
+                },
+                "slots": {},
+                "slug": null,
+                "spelldc": {
+                    "dc": 21,
+                    "value": 13
+                },
+                "tradition": {
+                    "value": "occult"
+                },
+                "traits": {},
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                }
+            },
+            "type": "spellcastingEntry",
+            "effects": []
+        },
+        {
+            "_id": "DarioShieldSpell",
+            "img": "systems/pf2e/icons/spells/shield.webp",
+            "name": "Shield",
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block} reaction with your magic shield. The shield has Hardness 5. You can use the spell's reaction to reduce damage from any spell or magical effect, even if it doesn't deal physical damage. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Jemq5UknGdMO7b73]{Spell Effect: Shield}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.QF6RDlCoTvkVHRo4]{Effect: Shield Immunity}</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The shield's Hardness increases by 5.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": "until the start of your next turn"
+                },
+                "level": {
+                    "value": 1
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": ""
+                },
+                "requirements": "",
+                "rules": [],
+                "target": {
+                    "value": ""
+                },
+                "time": {
+                    "value": "1"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "divine",
+                        "occult"
+                    ],
+                    "value": [
+                        "cantrip",
+                        "concentrate",
+                        "force"
+                    ]
+                },
+                "slug": "shield",
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                },
+                "location": {
+                    "value": "1gpQXNR9p7henV5H"
+                }
+            },
+            "type": "spell",
+            "effects": []
+        },
+        {
+            "_id": "DarioBlurSpell01",
+            "img": "systems/pf2e/icons/spells/blur.webp",
+            "name": "Blur",
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
+                "description": {
+                    "value": "<p>The target's form appears blurry. It becomes @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}. As the nature of this effect still leaves the target's location obvious, the target can't use this concealment to Hide or Sneak.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": "1 minute"
+                },
+                "level": {
+                    "value": 2
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": "touch"
+                },
+                "requirements": "",
+                "rules": [],
+                "target": {
+                    "value": "1 creature"
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "occult"
+                    ],
+                    "value": [
+                        "concentrate",
+                        "illusion",
+                        "manipulate",
+                        "visual"
+                    ]
+                },
+                "slug": "blur",
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                },
+                "location": {
+                    "value": "1gpQXNR9p7henV5H",
+                    "heightenedLevel": 2,
+                    "uses": {
+                        "value": 1,
+                        "max": 1
+                    }
+                }
+            },
+            "type": "spell",
+            "effects": []
+        },
+        {
+            "_id": "OBcrUfqXaRXucSGZ",
+            "img": "systems/pf2e/icons/spells/chill-touch.webp",
+            "name": "Void Warp",
+            "sort": 200000,
+            "system": {
+                "area": null,
+                "cost": {
+                    "value": ""
+                },
+                "counteraction": false,
+                "damage": {
+                    "0": {
+                        "applyMod": false,
+                        "category": null,
+                        "formula": "2d4",
+                        "kinds": [
+                            "damage"
+                        ],
+                        "materials": [],
+                        "type": "void"
+                    }
+                },
+                "defense": {
+                    "save": {
+                        "basic": true,
+                        "statistic": "fortitude"
+                    }
+                },
+                "description": {
+                    "value": "<p>You call upon the Void to harm life force. The target takes 2d4 void damage with a basic Fortitude save. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
+                },
+                "duration": {
+                    "sustained": false,
+                    "value": ""
+                },
+                "heightening": {
+                    "damage": {
+                        "0": "1d4"
+                    },
+                    "interval": 1,
+                    "type": "interval"
+                },
+                "level": {
+                    "value": 1
+                },
+                "location": {
+                    "value": "1gpQXNR9p7henV5H"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "range": {
+                    "value": "30 feet"
+                },
+                "requirements": "",
+                "rules": [],
+                "slug": "void-warp",
+                "target": {
+                    "value": "1 living creature"
+                },
+                "time": {
+                    "value": "2"
+                },
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
+                        "arcane",
+                        "divine",
+                        "occult"
+                    ],
+                    "value": [
+                        "cantrip",
+                        "concentrate",
+                        "manipulate",
+                        "void"
+                    ]
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                }
+            },
+            "type": "spell",
+            "effects": []
+        },
+        {
+            "_id": "hSIjATz6wXS5AlBC",
+            "img": "icons/weapons/maces/mace-round-steel.webp",
+            "name": "Light Mace",
+            "sort": 300000,
+            "system": {
+                "baseItem": "light-mace",
+                "bonus": {
+                    "value": 0
+                },
+                "bonusDamage": {
+                    "value": 0
+                },
+                "bulk": {
+                    "value": 0.1
+                },
+                "category": "simple",
+                "containerId": null,
+                "damage": {
+                    "damageType": "bludgeoning",
+                    "dice": 1,
+                    "die": "d4"
+                },
+                "description": {
+                    "value": "<p>A light mace has a short wooden or metal shaft ending with a dense metal head. Used much like a club, it delivers heavy bludgeoning blows, but with extra power derived from the head's metal ridges or spikes.</p>"
+                },
+                "equipped": {
+                    "carryType": "worn",
+                    "handsHeld": 0,
+                    "invested": null
+                },
+                "expend": null,
+                "group": "club",
+                "hardness": 0,
+                "hp": {
+                    "max": 0,
+                    "value": 0
+                },
+                "level": {
+                    "value": 0
+                },
+                "material": {
+                    "grade": null,
+                    "type": null
+                },
+                "price": {
+                    "value": {
+                        "sp": 4
+                    }
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
+                },
+                "quantity": 1,
+                "range": null,
+                "reload": {
+                    "value": null
+                },
+                "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "striking": 0
+                },
+                "size": "med",
+                "slug": "light-mace",
+                "splashDamage": {
+                    "value": 0
+                },
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "agile",
+                        "finesse",
+                        "shove"
+                    ]
+                },
+                "usage": {
+                    "value": "held-in-one-hand"
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                }
+            },
+            "type": "weapon",
+            "effects": []
+        },
+        {
+            "_id": "QQXMLJd5WLldP21P",
+            "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/cloak-of-the-bat.webp",
+            "name": "Hooded Robe",
+            "sort": 400000,
+            "system": {
+                "acBonus": 0,
+                "baseItem": "explorers-clothing",
+                "bulk": {
+                    "value": 0.1
+                },
+                "category": "unarmored",
+                "checkPenalty": 0,
+                "containerId": null,
+                "description": {
+                    "value": "<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
+                },
+                "dexCap": 5,
+                "equipped": {
+                    "carryType": "worn",
+                    "inSlot": true,
+                    "invested": null
+                },
+                "group": "cloth",
+                "hardness": 0,
+                "hp": {
+                    "max": 0,
+                    "value": 0
+                },
+                "level": {
+                    "value": 0
+                },
+                "material": {
+                    "grade": null,
+                    "type": null
+                },
+                "price": {
+                    "value": {
+                        "sp": 1
+                    }
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder NPC Core"
+                },
+                "quantity": 1,
+                "rules": [],
+                "runes": {
+                    "potency": 0,
+                    "property": [],
+                    "resilient": 0
+                },
+                "size": "med",
+                "slug": "explorers-clothing",
+                "speedPenalty": 0,
+                "strength": null,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "comfort"
+                    ]
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                }
+            },
+            "type": "armor",
+            "effects": []
+        },
+        {
+            "_id": "Xo7vz0G7GjTFg4yo",
+            "flags": {
+                "pf2e": {
+                    "linkedWeapon": "hSIjATz6wXS5AlBC"
+                }
+            },
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Light Mace",
+            "sort": 500000,
+            "system": {
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 12
+                },
+                "damageRolls": {
+                    "0": {
+                        "damage": "1d4+6",
+                        "damageType": "bludgeoning"
+                    }
+                },
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": ""
+                },
+                "range": null,
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "agile",
+                        "finesse",
+                        "shove"
+                    ]
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                }
+            },
+            "type": "melee",
+            "effects": []
+        },
+        {
+            "_id": "cQNgpbGJ2HqT0Q44",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Fist",
+            "sort": 600000,
+            "system": {
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 12
+                },
+                "damageRolls": {
+                    "iswR188zNNz1VJHP": {
+                        "damage": "1d4+6",
+                        "damageType": "bludgeoning"
+                    }
+                },
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder NPC Core"
+                },
+                "range": null,
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "agile",
+                        "finesse",
+                        "nonlethal",
+                        "unarmed"
+                    ]
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                }
+            },
+            "type": "melee",
+            "effects": []
+        },
+        {
+            "_id": "XCtQzAvxzCKT6NIl",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Stench of Decay",
+            "sort": 700000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "interaction",
+                "description": {
+                    "value": "<p>The necromancer emits a scent of putrid rot in a 5-foot emanation. A living creature that enters or begins its turn in the aura is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": ""
+                },
+                "rules": [
+                    {
+                        "key": "Aura",
+                        "radius": 5,
+                        "slug": "stench-of-decay",
+                        "traits": [
+                            "occult",
+                            "olfactory"
+                        ]
+                    }
+                ],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "aura",
+                        "occult",
+                        "olfactory"
+                    ]
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                }
+            },
+            "type": "action",
+            "effects": []
+        },
+        {
+            "_id": "tMnnKkqtdsnxMe99",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Undead, Arise!",
+            "sort": 800000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>The necromancer summons two Medium undead entities in different empty squares up to 30 feet away. These undead entities can take the form of zombies, skeletons, or ghosts, chosen by the necromancer. The entities block movement as though they were creatures and can be attacked. Each entity has 1 Hit Point and the same AC and saves as the necromancer. They can't take actions of their own and deteriorate if the necromancer is reduced to 0 Hit Points. The necromancer can have up to four undead entities at any given time. If they call another, the oldest undead entity deteriorates.</p><hr /><p><strong>Элинваль.</strong> Мертвецы — орочьи кости погоста. Токены — актор «Мертвец Дарио» (1 HP). Своих ходов у них нет: двигает и бьёт ими Дарио через «Приказ мертвецу» или Undead, Attack!</p>"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "concentrate",
+                        "manipulate",
+                        "occult"
+                    ]
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                }
+            },
+            "type": "action",
+            "effects": []
+        },
+        {
+            "_id": "97BKY16vMkTbaNcV",
+            "img": "systems/pf2e/icons/default-icons/action.svg",
+            "name": "Undead, Attack!",
+            "sort": 900000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 2
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p><strong>Requirements</strong> The necromancer has at least one undead entity active</p><hr /><p><strong>Effect</strong> The necromancer commands all their undead entities to attack. Each entity can Stride up to 20 feet into an empty square and make a Strike. The Strike has a [[/r 1d20+13 #Attack]]{+13} attack modifier and deals @Damage[(2d12-2)[bludgeoning]|traits:magical] damage (or @Damage[(2d12-2)[spirit]|traits:magical]{spirit} damage if the entity is a spirit). The Strike has the magical trait, and no multiple attack penalty applies to it.</p><hr /><p><strong>Элинваль.</strong> Только в Фазе 2 и только при двух мертвецах или меньше.</p>"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "concentrate",
+                        "occult"
+                    ]
+                },
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                }
+            },
+            "type": "action",
+            "effects": []
+        },
+        {
+            "_id": "DarioBracers0001",
+            "img": "icons/equipment/wrist/bracer-segmented-leather.webp",
+            "name": "Bracers of Missile Deflection",
+            "system": {
+                "baseItem": null,
+                "bulk": {
+                    "value": 0.1
+                },
+                "containerId": null,
+                "description": {
+                    "value": "<p>These bracers are made from plates of durable dawnsilver and gleam like the summer sun.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> A ranged weapon attack hits you but doesn't critically hit</p>\n<p><strong>Requirements</strong> You are aware of the attack and not off-guard</p>\n<hr />\n<p><strong>Effect</strong> The bracers send the missile off-course. You gain a +2 circumstance bonus to AC against the triggering attack. If this would cause the attack to be a failure, the attack misses you.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.PeiuJ951kkBPTCSM]{Effect: Bracers of Missile Deflection}</p>"
+                },
+                "hardness": 0,
+                "hp": {
+                    "max": 0,
+                    "value": 0
+                },
+                "level": {
+                    "value": 3
+                },
+                "material": {
+                    "grade": null,
+                    "type": null
+                },
+                "price": {
+                    "value": {
+                        "gp": 52
+                    }
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder GM Core"
+                },
+                "quantity": 1,
+                "rules": [],
+                "size": "med",
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "invested",
+                        "magical"
+                    ]
+                },
+                "usage": {
+                    "value": "wornbracers"
+                },
+                "slug": "bracers-of-missile-deflection",
+                "_migration": {
+                    "version": 0.959,
+                    "previous": null
+                },
+                "equipped": {
+                    "carryType": "worn",
+                    "invested": true
+                }
+            },
+            "type": "equipment",
+            "effects": []
+        },
+        {
+            "_id": "DarioClawsSpirit",
+            "name": "Призрачные когти",
+            "type": "melee",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "system": {
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 12
+                },
+                "damageRolls": {
+                    "main": {
+                        "damage": "2d8+4",
+                        "damageType": "spirit"
+                    }
+                },
+                "description": {
+                    "value": "<p>Когти из ничего. В Фазе 1 — только если загнали в угол; основная атака Фазы 2.</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "range": null,
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "agile",
+                        "magical",
+                        "reach-10"
+                    ]
+                }
+            }
+        },
+        {
+            "_id": "DarioScalesPasv1",
+            "name": "Чешуя",
+            "type": "action",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>+2 status к AC, пока сердце не связано (эффект «Чешуя дракона» на листе — снять, когда корни сомкнутся).</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            }
+        },
+        {
+            "_id": "DarioHeartHolds1",
+            "name": "Сердце держит",
+            "type": "action",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>Пока сердце не связано, Дарио не умирает.</p><p><strong>Фаза 1:</strong> на 0 HP сразу наступает Вдох — морда дракона проступает сквозь него и дышит.</p><p><strong>Перед Фазой 2:</strong> если у него меньше 25 HP, встаёт с 25.</p><p><strong>Фаза 2:</strong> на 0 HP падает, на следующем ударе сердца встаёт с 10 HP.</p><p><strong>Сердце связано:</strong> Чешуя, когти и это свойство пропадают; текущие HP, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} от разрыва связи.</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            }
+        },
+        {
+            "_id": "DarioCommandDead",
+            "name": "Приказ мертвецу",
+            "type": "action",
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>Один мертвец от Undead, Arise! делает одно из:</p><ul><li>Stride до 20 футов;</li><li>Strike [[/r 1d20+13 #Удар мертвеца]]{+13}, @Damage[(2d12-2)[bludgeoning]|traits:magical];</li><li>Grapple [[/r 1d20+13 #Grapple]]{+13} против Fortitude DC цели.</li></ul><p>Схваченного держит мертвец с 1 HP: вырваться — Escape или просто ударить мертвеца.</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "concentrate"
+                    ]
+                }
+            }
+        },
+        {
+            "_id": "DarioBracersReac",
+            "name": "Отбить снаряд (наручи)",
+            "type": "action",
+            "img": "systems/pf2e/icons/actions/Reaction.webp",
+            "system": {
+                "actionType": {
+                    "value": "reaction"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>Bracers of Missile Deflection, 1/day. <strong>Trigger</strong> дальняя атака оружием попала, но не критом. +2 circumstance к AC против неё; может превратить попадание в промах.</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "manipulate"
+                    ]
+                }
+            }
+        },
+        {
+            "_id": "DarioScalesEff01",
+            "name": "Чешуя дракона",
+            "type": "effect",
+            "img": "icons/commodities/leather/scales-brown.webp",
+            "system": {
+                "slug": null,
+                "description": {
+                    "value": "<p>+2 status к AC, пока сердце не связано.</p>"
+                },
+                "duration": {
+                    "value": -1,
+                    "unit": "unlimited",
+                    "sustained": false,
+                    "expiry": null
+                },
+                "level": {
+                    "value": 4
+                },
+                "start": {
+                    "value": 0,
+                    "initiative": null
+                },
+                "tokenIcon": {
+                    "show": true
+                },
+                "badge": null,
+                "context": null,
+                "unidentified": false,
+                "traits": {
+                    "value": [],
+                    "rarity": "unique"
+                },
+                "rules": [
+                    {
+                        "key": "FlatModifier",
+                        "selector": "ac",
+                        "type": "status",
+                        "value": 2
+                    }
+                ],
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                }
+            }
+        }
+    ],
+    "system": {
+        "abilities": {
+            "cha": {
+                "mod": -1
+            },
+            "con": {
+                "mod": 2
+            },
+            "dex": {
+                "mod": 3
+            },
+            "int": {
+                "mod": 4
+            },
+            "str": {
+                "mod": 2
+            },
+            "wis": {
+                "mod": 2
+            }
+        },
+        "attributes": {
+            "ac": {
+                "details": "",
+                "value": 18
+            },
+            "allSaves": {
+                "value": ""
+            },
+            "hp": {
+                "details": "",
+                "max": 50,
+                "temp": 0,
+                "value": 50
+            },
+            "speed": {
+                "otherSpeeds": [],
+                "value": 25
+            }
+        },
+        "details": {
+            "blurb": "Некромант барона под сердцем дракона",
+            "languages": {
+                "details": "",
+                "value": [
+                    "common",
+                    "necril"
+                ]
+            },
+            "level": {
+                "value": 4
+            },
+            "privateNotes": "<p><strong>Основа:</strong> Necromancer (NPC Core, Creature 5), weak вшит в числа; Wave of Death убрана. Сверху слой сердца. Постановка — «Глава 3 - бой у сердца» в волте.</p><p><strong>Местность:</strong> внутри клетки рёбер — standard cover (+2 AC) против дальних атак снаружи; щели между рёбрами — difficult terrain.</p><p><strong>Фаза 1 — дирижёр.</strong> Р1: blur (2) + Undead, Arise! (1). Дальше: shield (1) + Arise (1) + Приказ мертвецу (1). Латают корень — void warp по латающему. Проседает партия — приказ на Grapple/Stride, не на Strike. Реакция: наручи на первое попадание пули/стрелы, дальше Shield Block. Когти — только если загнали.</p><p><strong>Фаза 2 — тварь.</strong> Когти ×2 (agile MAP) или Arise (1) + Undead, Attack! (2) при ≤2 мертвецах. Наручи потрачены (1/day).</p><p><strong>Связано сердце:</strong> снять «Чешую дракона», когти и «Сердце держит» не использовать; AC 18, булава и void warp; frightened 2. Добить или допросить.</p><p><strong>Лут:</strong> Bracers of Missile Deflection; бумаги и вексель с печатью барона (улики B).</p>",
+            "publicNotes": "",
+            "publication": {
+                "title": "Бестиарий Элинваля",
+                "license": "ORC",
+                "remaster": true
+            }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 8,
+            "senses": []
+        },
+        "resources": {
+            "focus": {
+                "max": 1,
+                "value": 1
+            }
+        },
+        "saves": {
+            "fortitude": {
+                "saveDetail": "",
+                "value": 9
+            },
+            "reflex": {
+                "saveDetail": "",
+                "value": 10
+            },
+            "will": {
+                "saveDetail": "",
+                "value": 9
+            }
+        },
+        "skills": {
+            "arcana": {
+                "base": 9
+            },
+            "intimidation": {
+                "base": 6
+            },
+            "occultism": {
+                "base": 11
+            }
+        },
+        "traits": {
+            "rarity": "unique",
+            "size": {
+                "value": "med"
+            },
+            "value": [
+                "human",
+                "humanoid"
+            ]
+        },
+        "_migration": {
+            "version": 0.959,
+            "previous": null
+        }
+    },
+    "prototypeToken": {
+        "name": "Дарио Мальсементе",
+        "actorLink": true,
+        "displayName": 20,
+        "displayBars": 40,
+        "disposition": -1,
+        "width": 1,
+        "height": 1,
+        "bar1": {
+            "attribute": "attributes.hp"
+        },
+        "texture": {
+            "src": "modules/pf2e-tokens-characters/assets/tokens/gmg-necromancer.webp"
+        },
+        "ring": {
+            "enabled": false
+        },
+        "flags": {
+            "pf2e": {
+                "linkToActorSize": true,
+                "autoscale": true
+            }
+        }
+    },
+    "effects": []
+}

@@ -12,7 +12,6 @@ description: Точка входа в мета-папку (правила, не�
 - [[Open_Questions]] — нерешённое; не выдавать за канон
 - [[Архитектурные_приоритеты]] — несущие темы по важности + «Уже залито» (сжатый канон)
 - [[Референсы]] — источники вдохновения (Малазан; Critical Role C4 / Age of Umbra)
-- [[ComfyUI Checkpoint Guide]] — инструкция по генерации изображений
-- [[Пайплайн — токены NPC]] — как сделать VTT-токен NPC для Foundry dynamic ring (Nano Banana или ChatGPT → прозрачный фон → срез по кольцу, без ComfyUI). Быстрый запуск: скилл `token` — `/token <Имя>` в Claude, `$token <Имя>` в Codex (`.agents/skills/token/SKILL.md`)
+- [[Пайплайн — токены NPC]] — как сделать VTT-токен NPC для Foundry dynamic ring (Nano Banana, ChatGPT или Codex → прозрачный фон → срез по кольцу). Быстрый запуск: скилл `token` — `/token <Имя>` в Claude, `$token <Имя>` в Codex (`.agents/skills/token/SKILL.md`)
 - [[README]] — назначение волта
 - Шаблоны заметок — `00_Meta/Templates/` ([[NPC]] · [[Location]] · [[Faction]] · [[God]] · [[Session]])

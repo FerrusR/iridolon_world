@@ -1,6 +1,6 @@
 ---
 type: guide
-description: Пошаговый процесс изготовления VTT-токенов NPC для Foundry Dynamic Token Rings (портрет — Nano Banana, ChatGPT или Codex; прозрачность — из GPT Image или скриптом remove_bg.py, без ComfyUI)
+description: Пошаговый процесс изготовления VTT-токенов NPC для Foundry Dynamic Token Rings (портрет — Nano Banana, ChatGPT или Codex; прозрачность — из GPT Image или скриптом remove_bg.py)
 updated: 2026-10-21
 tags: [meta, pipeline, tokens, nano-banana, chatgpt, codex, birefnet, foundry, dynamic-ring]
 ---
@@ -11,11 +11,11 @@ tags: [meta, pipeline, tokens, nano-banana, chatgpt, codex, birefnet, foundry, d
 фоне, с низом, срезанным по линии кольца. Базовый портрет делаем во **внешнем генераторе (Nano Banana или ChatGPT)**
 или агент генерит его сам **через Codex** (`codex exec`, тот же GPT Image, что в ChatGPT);
 прозрачный фон берём сразу из GPT Image (ChatGPT/Codex), а если не вышло — режем локальным скриптом; затем срез по кольцу.
-**ComfyUI в пайплайне не нужен.** Процесс воспроизводимый; новый токен = повтор
+Процесс воспроизводимый; новый токен = повтор
 шагов с другим описанием. Быстрый запуск — скилл **`token`**: `/token <Имя NPC>` в Claude, `$token <Имя NPC>` в Codex (см. `.agents/skills/token/SKILL.md`).
 
 > Первый прогон на этой методике: [[Ла Гатта]] (2026-09-12).
-> Смежное: [[Token LoRA]]. Референс Foundry: https://foundryvtt.com/article/dynamic-token-rings/
+> Референс Foundry: https://foundryvtt.com/article/dynamic-token-rings/
 
 ## Что такое Dynamic-Ring subject
 Foundry хранит токен из трёх слоёв (Subject / Ring / Background) и собирает их при рендере.
@@ -36,12 +36,9 @@ Foundry рисует сам. Правила кадра:
 - **Сырьё (НЕ под гит):** `99_Sketches/tokens/_work/<slug>/` — исходный портрет, вырез, композиты,
   `GEN_PARAMS.md`. Папка в `.gitignore`.
 
-## Почему Nano Banana, а не LoRA
+## Консистентность NPC
 Идентичность лица держит **референс-картинка**, а не стиль-LoRA. Nano Banana по одному референсу
 даёт «то же лицо в новой сцене/одежде» — ровно то, что нужно для консистентного NPC и его вариантов.
-LoRA `pf2token` усредняет лица (обучалась как *стиль*), поэтому для создания разных лиц не годится —
-её место разве что как опциональный стиль-проход на пачке (см. ниже). Старый путь генерации «с нуля
-через pf2token» — в «Легаси».
 
 ## Prereqs
 - **Nano Banana** (или другой генератор с консистентным персонажем) — для портрета.
@@ -49,7 +46,7 @@ LoRA `pf2token` усредняет лица (обучалась как *стил
 - **Codex CLI** (`codex`, залогинен платным планом ChatGPT; фича `image_generation` включена по умолчанию) —
   чтобы агент генерил портрет сам, без ручного копирования промптов (шаг 2c). Тратит квоту ChatGPT.
 - Для запасного пути B — `00_Meta/scripts/remove_bg.py` + `onnxruntime` (`pip install --user onnxruntime`,
-  один раз). Модель **BiRefNet-ToonOut** (та же, что была в ComfyUI, ONNX ~1 ГБ) скрипт сам скачает в
+  один раз). Модель **BiRefNet-ToonOut** (ONNX ~1 ГБ) скрипт сам скачает в
   `_models/` в корне волта (в гит не идёт). Без сети — скачать вручную по ссылке из сообщения скрипта.
 - Python: Pillow + numpy. Скрипт композита `00_Meta/scripts/token_frame.py`, проверка/вырез — `remove_bg.py`.
 
@@ -180,13 +177,6 @@ v2 `--height-frac 0.90 --cap-frac 0.60` (крупнее лицо).
 (`<Имя> (подполье).webp`). Для сильно другого ракурса/серии — генерируй свежий кадр в генераторе,
 подавая одобренный портрет как референс персонажа.
 
-## Опциональный стиль-проход LoRA (img2img)
-Если нужно стянуть **пачку** токенов из разных источников в единый «домашний» стиль — прогони каждый
-img2img через `pf2token`: `LoadImage → VAEEncode → Checkpoint+LoraLoader(pf2token) → KSampler(denoise
-~0.5, 10–12 steps, cfg 2, dpmpp_sde/karras) → VAEDecode`. Компромисс denoise: 0.4 почти без эффекта,
-0.7 уводит личность. Для одиночного уже-живописного портрета Nano Banana **не нужно** (проверено на
-Ла Гатте, 0.4/0.55/0.7).
-
 ## Грабли и фиксы
 - **Матт тащит фон / выедает капюшон:** причина — тёмный фон/сцена или неровный свет, не слабая
   модель. Лечится **перегенерацией фона в плоский белый** (шаг 3b), а не настройкой матта. Альфу
@@ -208,32 +198,3 @@ img2img через `pf2token`: `LoadImage → VAEEncode → Checkpoint+LoraLoade
 - **Вариант облика:** суффикс в скобках — `<Имя NPC> (подполье).webp`, `… (дизгиз)`, `… (год спустя)`.
   Основной (публичный) облик — без суффикса.
 - Рабочая папка: `99_Sketches/tokens/_work/<латинский-slug>/` (напр. `la_gatta/`, `bianca/`).
-
----
-
-## Легаси — генерация pf2token (архив)
-Старый основной путь: портрет генерился **с нуля в ComfyUI** (DreamShaperXL + LoRA `pf2token`), без
-Nano Banana. Оставлено на случай, если внешний генератор недоступен (единственное место, где ещё нужен ComfyUI). Первый отлад: [[Бьянка Сальвиати]] (2026-08-03).
-
-- **Промпт скупой, как капшены датасета:** `pf2token, a human character, bust portrait, affluent,
-  casual clothing, plain white background`. Стиль зашит в триггер. НЕ дописывай `cinematic / dramatic
-  lighting / highly detailed / painterly digital illustration / three-quarter view` — DreamShaper
-  перебивает LoRA (глянец, драм-свет, сцена на фоне). A/B 2026-08-03: насыщенность 0.62→0.31 при
-  таргете Paizo 0.12 после сокращения промпта.
-- **Этничность людей — явно:** датасет перекошен в Tian Xia, `human` без уточнения дрейфует в
-  азиатскую внешность; пиши происхождение словом, в негатив при нужде `east asian`.
-- **Негатив:** `photorealistic, photograph, 3d render, background scenery, interior, room, candles,
-  furniture, dramatic lighting, bokeh, depth of field, cinematic, vignette, high contrast, gray
-  background, gradient, full body, multiple people, text, watermark, deformed face, extra fingers,
-  blurry, modern clothing, armor, weapon` (`armor, weapon` убрать для бойца).
-- **Граф/параметры:** `CheckpointLoaderSimple → LoraLoader(pf2token, strength_model 0.9/clip 1.0) →
-  CLIPTextEncode×2 → KSampler → VAEDecode → SaveImage`; 1024², batch 4, steps 8, cfg 2.0,
-  `dpmpp_sde`/`karras`, denoise 1.0, seed записать. `generate_image` из MCP LoRA не умеет → граф вручную
-  (а при ложном «not running» — через `batch`).
-- **Воспроизводимость:** батч из 4 при фиксированном seed даёт те же 4 кадра; «вариант N» = batch index N-1.
-- **Вариант-токен через inpaint «всё кроме лица»** (маска keep-лицо, `VAEEncodeForInpaint`, затем
-  лёгкий img2img `unify` denoise 0.30–0.38 от шва) — детали были в версии SOP до 2026-09-12 (см. историю гита).
-- **Грабли ComfyUI-MCP (легаси):** `enqueue_workflow` иногда даёт ложный «ComfyUI is not running», даже когда MCP
-  владеет процессом — графы слать через **`batch` action:"submit"**; файлы забирать `get_image action:"get"` с
-  `save_dir` = реальный путь волта; после `install_custom_node` нужен `restart_comfyui`.
-- `00_Meta/scripts/make_token.py` — простой полностью-круглый статик-токен (без dynamic ring).

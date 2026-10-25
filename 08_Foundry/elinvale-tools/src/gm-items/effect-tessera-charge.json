@@ -1,0 +1,66 @@
+{
+    "_id": "ElinFxTesseraChg",
+    "name": "Заряд Тессеры",
+    "type": "effect",
+    "img": "icons/magic/time/hourglass-tilted-glowing-gold.webp",
+    "system": {
+        "slug": "elinvale-tessera-charge",
+        "description": {
+            "value": "<p>Тессера напитала партию в остановленном времени.</p><ul><li><strong>Полный отдых</strong> (вручную): HP, фокус, ежедневные ресурсы, снять frightened/fatigued.</li><li><strong>+2 status</strong> к атакам, Perception, спасброскам и проверкам навыков до конца боя. Не складывается с другими status-бонусами (bless, heroism).</li><li><strong>Напитанные удары:</strong> все удары в Фазе 2 проходят по сердцу.</li></ul>"
+        },
+        "duration": {
+            "value": -1,
+            "unit": "encounter",
+            "sustained": false,
+            "expiry": null
+        },
+        "level": {
+            "value": 4
+        },
+        "start": {
+            "value": 0,
+            "initiative": null
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "badge": null,
+        "context": null,
+        "unidentified": false,
+        "traits": {
+            "value": [],
+            "rarity": "unique"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "attack",
+                "type": "status",
+                "value": 2
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "perception",
+                "type": "status",
+                "value": 2
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "saving-throw",
+                "type": "status",
+                "value": 2
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "skill-check",
+                "type": "status",
+                "value": 2
+            }
+        ],
+        "publication": {
+            "title": "Элинваль — мастерское",
+            "license": "ORC",
+            "remaster": true
+        }
+    }
+}

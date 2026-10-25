@@ -54,6 +54,30 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "bestiary",
+      "label": "Бестиарий Элинваля",
+      "path": "packs/bestiary",
+      "type": "Actor",
+      "system": "pf2e",
+      "banner": "systems/pf2e/assets/compendium-banner/purple.webp",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "gm-items",
+      "label": "Элинваль — мастерское",
+      "path": "packs/gm-items",
+      "type": "Item",
+      "system": "pf2e",
+      "banner": "systems/pf2e/assets/compendium-banner/orange.webp",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -63,7 +87,9 @@
       "color": "#3b2524",
       "packs": [
         "deities",
-        "items"
+        "items",
+        "bestiary",
+        "gm-items"
       ]
     }
   ]

@@ -1,0 +1,121 @@
+{
+    "_id": "ElinHazTreeRoot1",
+    "name": "Толстый корень Древа",
+    "type": "hazard",
+    "img": "icons/magic/nature/root-vine-barrier-wall-brown.webp",
+    "items": [
+        {
+            "_id": "RootMarksPasv001",
+            "name": "Отметки",
+            "type": "action",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "interaction",
+                "description": {
+                    "value": "<p>HP = отметки рубки (2). Skeletal Soldier ставит 1 отметку за ход, Skeletal Giant — 2. 0 HP — корень перерублен: часы «Вдох» +1. Дыхание толстые корни не трогает.</p><p>Сколько корней уцелело к дыханию, столько проверок Хватки за раунд в Фазе 2.</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            }
+        }
+    ],
+    "system": {
+        "attributes": {
+            "ac": {
+                "value": 10
+            },
+            "emitsSound": false,
+            "hardness": 0,
+            "hasHealth": true,
+            "hp": {
+                "details": "отметки рубки",
+                "max": 2,
+                "temp": 0,
+                "value": 2
+            },
+            "immunities": [],
+            "stealth": {
+                "details": "",
+                "value": 0
+            },
+            "weaknesses": []
+        },
+        "creatureType": "",
+        "details": {
+            "description": "<p>Толстый корень уходит в потолок, к Древу. Обуглен, но держит сердце.</p>",
+            "disable": "<p><strong>Подлатать</strong> (2 действия, рядом): @Check[nature|dc:18] или @Check[religion|dc:18]. Успех +1 HP (снять отметку), крит. успех +2.</p><p><strong>Фаза 2 — Хватка</strong>: проверки у этого корня, см. «Сердце дракона».</p>",
+            "isComplex": false,
+            "level": {
+                "value": 0
+            },
+            "publication": {
+                "title": "Бестиарий Элинваля",
+                "license": "ORC",
+                "remaster": true
+            },
+            "reset": "",
+            "routine": ""
+        },
+        "saves": {
+            "fortitude": {
+                "saveDetail": "",
+                "value": 0
+            },
+            "reflex": {
+                "saveDetail": "",
+                "value": 0
+            },
+            "will": {
+                "saveDetail": "",
+                "value": 0
+            }
+        },
+        "statusEffects": [],
+        "traits": {
+            "rarity": "unique",
+            "size": {
+                "value": "med"
+            },
+            "value": []
+        }
+    },
+    "prototypeToken": {
+        "name": "Корень",
+        "actorLink": false,
+        "displayName": 20,
+        "displayBars": 50,
+        "disposition": -1,
+        "width": 1,
+        "height": 1,
+        "bar1": {
+            "attribute": "attributes.hp"
+        },
+        "texture": {
+            "src": "icons/magic/nature/root-vine-barrier-wall-brown.webp"
+        },
+        "ring": {
+            "enabled": false
+        },
+        "flags": {
+            "pf2e": {
+                "linkToActorSize": true,
+                "autoscale": true
+            }
+        }
+    },
+    "effects": []
+}

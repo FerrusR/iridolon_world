@@ -1,0 +1,299 @@
+{
+    "_id": "ElinHazDragonHrt",
+    "name": "Сердце дракона",
+    "type": "hazard",
+    "img": "icons/commodities/biological/organ-heart-black.webp",
+    "items": [
+        {
+            "_id": "HeartGulRoutine1",
+            "name": "Гул в черепе",
+            "type": "action",
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p><strong>Гул в черепе.</strong> Все в полости, кроме нежити и Дарио: @Check[will|dc:19].</p><ul><li><strong>Успех</strong> — без эффекта.</li><li><strong>Провал</strong> — @Damage[1d6[mental]], нет реакций до начала своего хода.</li><li><strong>Крит. провал</strong> — @Damage[2d6[mental]], нет реакций до начала своего хода.</li></ul><p>Фаза 1, после 3-го деления «Вдоха»: провал @Damage[2d6[mental]]{2d6}, крит. провал @Damage[3d6[mental]]{3d6}.</p><p>Затем часы +1 (Фаза 1 — «Вдох», Фаза 2 — «Второй вдох», с поправкой на Хватку).</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "mental",
+                        "magical"
+                    ]
+                }
+            }
+        },
+        {
+            "_id": "HeartSecondBrth1",
+            "name": "Второе дыхание",
+            "type": "action",
+            "img": "systems/pf2e/icons/actions/FreeAction.webp",
+            "system": {
+                "actionType": {
+                    "value": "free"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p><strong>Фаза 2</strong>, часы «Второй вдох» (4) полны. Из сердца в сторону самой плотной группы PC @Template[cone|distance:30]: @Damage[6d6[spirit]], @Check[reflex|dc:19|basic]. Дарио не задевает. Часы сбрасываются на 0.</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "magical"
+                    ]
+                }
+            }
+        },
+        {
+            "_id": "HeartInhalePasv1",
+            "name": "Вдох",
+            "type": "action",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "interaction",
+                "description": {
+                    "value": "<p><strong>Фаза 1, часы «Вдох» (6):</strong> удар сердца +1, перерублен корень +1, Тессеру сняли со стола +1, провал пробуждения Тессеры +1 (крит. провал +2).</p><p>Часы полны или Дарио упал на 0 HP → морда дракона проступает сквозь Дарио и дышит. Механики нет: сцена Тессеры, время стоит, Ромул. После — Фаза 2.</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            }
+        },
+        {
+            "_id": "HeartPhaseOne001",
+            "name": "Фаза 1 — неуязвимо",
+            "type": "action",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": "<p>Аура сердца: удары проходят насквозь, заклинания не берут. Урон не применять. Тонкие корни сгорают в ауре на глазах у партии.</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            }
+        }
+    ],
+    "system": {
+        "attributes": {
+            "ac": {
+                "value": 20
+            },
+            "emitsSound": "encounter",
+            "hardness": 0,
+            "hasHealth": true,
+            "hp": {
+                "details": "в Фазе 1 неуязвимо",
+                "max": 60,
+                "temp": 0,
+                "value": 60
+            },
+            "immunities": [
+                {
+                    "type": "mental"
+                },
+                {
+                    "type": "bleed"
+                },
+                {
+                    "type": "poison"
+                },
+                {
+                    "type": "blinded"
+                },
+                {
+                    "type": "clumsy"
+                },
+                {
+                    "type": "confused"
+                },
+                {
+                    "type": "controlled"
+                },
+                {
+                    "type": "dazzled"
+                },
+                {
+                    "type": "deafened"
+                },
+                {
+                    "type": "doomed"
+                },
+                {
+                    "type": "drained"
+                },
+                {
+                    "type": "enfeebled"
+                },
+                {
+                    "type": "fascinated"
+                },
+                {
+                    "type": "fatigued"
+                },
+                {
+                    "type": "fleeing"
+                },
+                {
+                    "type": "frightened"
+                },
+                {
+                    "type": "grabbed"
+                },
+                {
+                    "type": "immobilized"
+                },
+                {
+                    "type": "paralyzed"
+                },
+                {
+                    "type": "petrified"
+                },
+                {
+                    "type": "prone"
+                },
+                {
+                    "type": "restrained"
+                },
+                {
+                    "type": "sickened"
+                },
+                {
+                    "type": "slowed"
+                },
+                {
+                    "type": "stunned"
+                },
+                {
+                    "type": "stupefied"
+                },
+                {
+                    "type": "unconscious"
+                }
+            ],
+            "stealth": {
+                "details": "сердце видно сразу; бросок только для места в порядке ходов",
+                "value": 12
+            },
+            "weaknesses": [
+                {
+                    "type": "vitality",
+                    "value": 5
+                }
+            ]
+        },
+        "creatureType": "",
+        "details": {
+            "description": "<p>Полуэфирное сердце висит в рёбрах дракона, внутри грудной клетки, рядом с Дарио. Четыре толстых корня Древа держат его сверху. Тонкие корни раз за разом тянутся к нему и сгорают.</p><p>Ориентир — Gravehall Trap (complex hazard 4).</p>",
+            "disable": "<p><strong>Фаза 1 — латать корень</strong> (2 действия, у повреждённого корня): @Check[nature|dc:18] или @Check[religion|dc:18]. Успех −1 отметка, крит. успех −2.</p><p><strong>Фаза 2 — Хватка корней</strong> (2 действия, у живого корня): @Check[nature|dc:18], @Check[religion|dc:18] или @Check[athletics|dc:18] (trained). Успех +1 Хватка; крит. успех +1 и −1 деление часов. Проверок за раунд — не больше числа уцелевших корней. Ручей даёт стартовую 1.</p><ul><li><strong>1</strong> — часы тикают через раунд;</li><li><strong>2</strong> — часы стоят; сердце off-guard (AC 18);</li><li><strong>3</strong> — сердце связано, hazard выключен. Только при HP сердца ≤ 30.</li></ul>",
+            "isComplex": true,
+            "level": {
+                "value": 4
+            },
+            "publication": {
+                "title": "Бестиарий Элинваля",
+                "license": "ORC",
+                "remaster": true
+            },
+            "reset": "<p>Связанное сердце больше не действует: Древо снова держит крышку. Сбитое до 0 HP, но не связанное — затихает; корни потом нужно восстановить.</p>",
+            "routine": "<p>(1 action) <strong>Гул в черепе.</strong> Все в полости, кроме нежити и Дарио: @Check[will|dc:19].</p><ul><li><strong>Успех</strong> — без эффекта.</li><li><strong>Провал</strong> — @Damage[1d6[mental]], нет реакций до начала своего хода.</li><li><strong>Крит. провал</strong> — @Damage[2d6[mental]], нет реакций до начала своего хода.</li></ul><p>Фаза 1, после 3-го деления «Вдоха»: провал @Damage[2d6[mental]]{2d6}, крит. провал @Damage[3d6[mental]]{3d6}.</p><p>Затем часы +1. Фаза 2: если Дарио на 0 HP — встаёт с 10 HP (Сердце держит).</p><p><strong>Фаза 2</strong> (после дыхания аура гасла): AC 20, HP 60, удары PC напитаны Тессерой и проходят. Precision и криты работают.</p>"
+        },
+        "saves": {
+            "fortitude": {
+                "saveDetail": "",
+                "value": 12
+            },
+            "reflex": {
+                "saveDetail": "",
+                "value": 8
+            },
+            "will": {
+                "saveDetail": "",
+                "value": 0
+            }
+        },
+        "statusEffects": [],
+        "traits": {
+            "rarity": "unique",
+            "size": {
+                "value": "lg"
+            },
+            "value": [
+                "magical"
+            ]
+        }
+    },
+    "prototypeToken": {
+        "name": "Сердце дракона",
+        "actorLink": true,
+        "displayName": 20,
+        "displayBars": 40,
+        "disposition": -1,
+        "width": 2,
+        "height": 2,
+        "bar1": {
+            "attribute": "attributes.hp"
+        },
+        "texture": {
+            "src": "icons/commodities/biological/organ-heart-black.webp"
+        },
+        "ring": {
+            "enabled": false
+        },
+        "flags": {
+            "pf2e": {
+                "linkToActorSize": true,
+                "autoscale": true
+            }
+        }
+    },
+    "effects": []
+}

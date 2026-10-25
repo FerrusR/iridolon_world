@@ -1,0 +1,190 @@
+{
+    "_id": "ElinNpcDarioDead",
+    "name": "Мертвец Дарио",
+    "type": "npc",
+    "img": "modules/pf2e-tokens-bestiaries/tokens/undead/skeletal/skeleton-guard.webp",
+    "items": [
+        {
+            "_id": "DeadStrike000001",
+            "name": "Удар мертвеца",
+            "type": "melee",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "system": {
+                "attackEffects": {
+                    "value": []
+                },
+                "bonus": {
+                    "value": 13
+                },
+                "damageRolls": {
+                    "main": {
+                        "damage": "2d12-2",
+                        "damageType": "bludgeoning"
+                    }
+                },
+                "description": {
+                    "value": "<p>Только через «Приказ мертвецу» или Undead, Attack! Дарио; MAP не применяется.</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "range": null,
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": [
+                        "magical"
+                    ]
+                }
+            }
+        },
+        {
+            "_id": "DeadNoActions001",
+            "name": "Сущность некроманта",
+            "type": "action",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "interaction",
+                "description": {
+                    "value": "<p>Сущность от Undead, Arise! Блокирует движение, её можно атаковать. Своих действий нет. 1 HP, AC и спасброски как у Дарио (без Чешуи). Не больше четырёх; пятый вытесняет старшего. Рассыпается, если Дарио на 0 HP. Grapple через приказ — [[/r 1d20+13 #Grapple]]{+13}.</p><p>В трекер боя не добавлять: ходов нет, XP нет.</p>"
+                },
+                "publication": {
+                    "title": "Бестиарий Элинваля",
+                    "license": "ORC",
+                    "remaster": true
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            }
+        }
+    ],
+    "system": {
+        "abilities": {
+            "str": {
+                "mod": 0
+            },
+            "dex": {
+                "mod": 0
+            },
+            "con": {
+                "mod": 0
+            },
+            "int": {
+                "mod": 0
+            },
+            "wis": {
+                "mod": 0
+            },
+            "cha": {
+                "mod": 0
+            }
+        },
+        "attributes": {
+            "ac": {
+                "details": "",
+                "value": 18
+            },
+            "allSaves": {
+                "value": ""
+            },
+            "hp": {
+                "details": "",
+                "max": 1,
+                "temp": 0,
+                "value": 1
+            },
+            "speed": {
+                "otherSpeeds": [],
+                "value": 20
+            }
+        },
+        "details": {
+            "blurb": "Орочьи кости погоста, сущность Undead, Arise!",
+            "languages": {
+                "details": "",
+                "value": []
+            },
+            "level": {
+                "value": 4
+            },
+            "privateNotes": "",
+            "publicNotes": "",
+            "publication": {
+                "title": "Бестиарий Элинваля",
+                "license": "ORC",
+                "remaster": true
+            }
+        },
+        "initiative": {
+            "statistic": "perception"
+        },
+        "perception": {
+            "details": "",
+            "mod": 8,
+            "senses": []
+        },
+        "resources": {},
+        "saves": {
+            "fortitude": {
+                "saveDetail": "",
+                "value": 9
+            },
+            "reflex": {
+                "saveDetail": "",
+                "value": 10
+            },
+            "will": {
+                "saveDetail": "",
+                "value": 9
+            }
+        },
+        "skills": {},
+        "traits": {
+            "rarity": "unique",
+            "size": {
+                "value": "med"
+            },
+            "value": [
+                "minion",
+                "mindless",
+                "undead"
+            ]
+        }
+    },
+    "prototypeToken": {
+        "name": "Мертвец",
+        "actorLink": false,
+        "displayName": 20,
+        "displayBars": 0,
+        "disposition": -1,
+        "width": 1,
+        "height": 1,
+        "bar1": {
+            "attribute": "attributes.hp"
+        },
+        "texture": {
+            "src": "modules/pf2e-tokens-bestiaries/tokens/undead/skeletal/skeleton-guard.webp"
+        },
+        "ring": {
+            "enabled": false
+        },
+        "flags": {
+            "pf2e": {
+                "linkToActorSize": true,
+                "autoscale": true
+            }
+        }
+    },
+    "effects": []
+}

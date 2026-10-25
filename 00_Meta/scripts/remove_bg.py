@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-remove_bg.py — прозрачный фон для портретов токенов NPC без ComfyUI.
+remove_bg.py — прозрачный фон для портретов токенов NPC.
 
 Два режима:
   check  — проверить картинку, которая УЖЕ пришла с прозрачностью (напр. из ChatGPT / GPT Image):
            есть ли альфа, прозрачны ли углы, сколько фона вырезано; пишет превью на пурпуре.
-  cut    — вырезать плоский белый фон моделью BiRefNet-ToonOut (ONNX, CPU), как раньше делал ComfyUI.
+  cut    — вырезать плоский белый фон моделью BiRefNet-ToonOut (ONNX, CPU).
 
 Примеры:
   python3 00_Meta/scripts/remove_bg.py check portrait.png
