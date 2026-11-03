@@ -25,8 +25,14 @@
   },
   "esmodules": [
     "esmodules/music-cues.mjs",
-    "esmodules/summer-in-blood.mjs"
+    "esmodules/summer-in-blood.mjs",
+    "esmodules/overflowing-power.mjs",
+    "esmodules/time-stop.mjs",
+    "esmodules/mythic-rules.mjs",
+    "esmodules/mythic-feats.mjs",
+    "esmodules/roll-monitor.mjs"
   ],
+  "socket": true,
   "styles": [
     "styles/music-cues.css"
   ],
@@ -78,6 +84,17 @@
         "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "gm-macros",
+      "label": "Элинваль — макросы ГМ",
+      "path": "packs/gm-macros",
+      "type": "Macro",
+      "banner": "systems/pf2e/assets/compendium-banner/orange.webp",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -89,7 +106,8 @@
         "deities",
         "items",
         "bestiary",
-        "gm-items"
+        "gm-items",
+        "gm-macros"
       ]
     }
   ]

@@ -1,0 +1,8 @@
+{
+    "_id": "ElinMcTimeStop01",
+    "name": "Остановка времени",
+    "type": "script",
+    "img": "icons/magic/time/hourglass-yellow-green.webp",
+    "scope": "global",
+    "command": "const api = game.modules.get(\"elinvale-tools\")?.api;\nif (!api?.toggleTimeStop) {\n  ui.notifications.warn(\"Elinvale tools: модуль не загружен или устарел — нет api.toggleTimeStop.\");\n  return;\n}\n// Работает на сцене, открытой у тебя сейчас (canvas.scene), не на активной.\nawait api.toggleTimeStop(canvas.scene);"
+}

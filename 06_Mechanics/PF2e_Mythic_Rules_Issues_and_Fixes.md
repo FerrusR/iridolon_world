@@ -1,5 +1,7 @@
 # PF2e Mythic Rules — Reported Issues & Community Fixes
 
+> Принятые правила стола (Ferrus, 2026-10-26): [[Mythic — хоумрул]]. Эта заметка остаётся исходным обзором community findings; уточнения RAW — в обсуждении, предложения ниже не приняты автоматически.
+
 *Research compiled June 2026. Source: Pathfinder 2e mythic rules from* War of Immortals *(Paizo, 2024). This is a summary of vocal-community sentiment (Paizo forums, review blogs) plus player-made homebrew, not an official errata list.*
 
 ---

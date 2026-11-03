@@ -1,12 +1,12 @@
 {
-    "_id": "ElinFxTesseraChg",
-    "name": "Заряд Тессеры",
+    "_id": "ElinFxOverflowPw",
+    "name": "Переполняющая сила",
     "type": "effect",
     "img": "icons/magic/time/hourglass-tilted-glowing-gold.webp",
     "system": {
-        "slug": "elinvale-tessera-charge",
+        "slug": "elinvale-overflowing-power",
         "description": {
-            "value": "<p>Тессера напитала партию в остановленном времени.</p><ul><li><strong>Полный отдых</strong> (вручную): HP, фокус, ежедневные ресурсы, снять frightened/fatigued.</li><li><strong>+2 status</strong> к атакам, Perception, спасброскам и проверкам навыков до конца боя. Не складывается с другими status-бонусами (bless, heroism).</li><li><strong>Напитанные удары:</strong> все удары в Фазе 2 проходят по сердцу.</li></ul>"
+            "value": "<p><strong>Тебя переполняет сила.</strong></p>"
         },
         "duration": {
             "value": -1,
@@ -55,6 +55,15 @@
                 "selector": "skill-check",
                 "type": "status",
                 "value": 2
+            },
+            {
+                "key": "TokenLight",
+                "value": {
+                    "bright": 10,
+                    "dim": 20,
+                    "color": "#ffb000",
+                    "alpha": 0.4
+                }
             }
         ],
         "publication": {
