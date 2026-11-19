@@ -1,0 +1,66 @@
+{
+    "_id": "ElinFxPlanarPain",
+    "img": "icons/magic/symbols/runes-etched-steel-blade.webp",
+    "name": "Эффект: Сущностная форма (Planar Pain)",
+    "type": "effect",
+    "system": {
+        "slug": "elinvale-effect-planar-pain",
+        "description": {
+            "value": "<p><strong>Planar Pain</strong> (essence power, Soulforger). Атаки soulforged-оружием наносят выбранный тип урона вместо физического, с <strong>+2 status bonus</strong> к урону. Длится 1 минуту или до Dismiss.</p><p>При наложении выбери оружие (soulforged-рапира) и тип урона: acid, cold, electricity, fire, sonic, spirit, vitality или void.</p>"
+        },
+        "duration": {
+            "value": 1,
+            "unit": "minutes",
+            "sustained": false,
+            "expiry": "turn-start"
+        },
+        "level": { "value": 1 },
+        "start": { "value": 0, "initiative": null },
+        "tokenIcon": { "show": true },
+        "badge": null,
+        "context": null,
+        "unidentified": false,
+        "traits": { "value": [], "rarity": "common" },
+        "rules": [
+            {
+                "key": "ChoiceSet",
+                "flag": "weapon",
+                "choices": { "ownedItems": true, "types": ["weapon"] },
+                "prompt": "PF2E.SpecificRule.Prompt.Weapon",
+                "adjustName": false
+            },
+            {
+                "key": "ChoiceSet",
+                "flag": "planarPain",
+                "choices": [
+                    { "label": "PF2E.TraitAcid", "value": "acid" },
+                    { "label": "PF2E.TraitCold", "value": "cold" },
+                    { "label": "PF2E.TraitElectricity", "value": "electricity" },
+                    { "label": "PF2E.TraitFire", "value": "fire" },
+                    { "label": "PF2E.TraitSonic", "value": "sonic" },
+                    { "label": "PF2E.TraitSpirit", "value": "spirit" },
+                    { "label": "PF2E.TraitVitality", "value": "vitality" },
+                    { "label": "PF2E.TraitVoid", "value": "void" }
+                ],
+                "prompt": "PF2E.SpecificRule.Prompt.DamageType",
+                "rollOption": "planar-pain"
+            },
+            {
+                "key": "DamageAlteration",
+                "mode": "override",
+                "property": "damage-type",
+                "selectors": ["{item|flags.system.rulesSelections.weapon}-damage"],
+                "slug": "base",
+                "value": "{item|flags.system.rulesSelections.planarPain}"
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "{item|flags.system.rulesSelections.weapon}-damage",
+                "type": "status",
+                "value": 2,
+                "label": "Planar Pain"
+            }
+        ],
+        "publication": { "title": "Предметы Элинваля", "license": "ORC", "remaster": true }
+    }
+}

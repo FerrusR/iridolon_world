@@ -1,0 +1,26 @@
+{
+    "_id": "ElinActPlanarPn1",
+    "img": "icons/magic/light/swords-light-glowing-white.webp",
+    "name": "Сущностная форма (Planar Pain)",
+    "type": "action",
+    "system": {
+        "slug": "elinvale-essence-form-planar-pain",
+        "actionType": { "value": "action" },
+        "actions": { "value": 1 },
+        "category": "offensive",
+        "description": {
+            "value": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Ты используешь @UUID[Compendium.pf2e.actionspf2e.Item.KMKuJ0onVS72t9Fv]{Manifest Soulforged Armament} и проявляешь <strong>сущностную форму</strong> оружия. Выбери тип урона: acid, cold, electricity, fire, sonic, spirit, vitality или void. Атаки этим оружием наносят выбранный тип вместо физического урона, с +2 status bonus к урону. Через 1 минуту сущностная форма автоматически отзывается (Dismiss).</p><p>@UUID[Compendium.elinvale-tools.items.Item.ElinFxPlanarPain]{Эффект: Сущностная форма (Planar Pain)}</p><hr /><p><strong>Corruption Flaw</strong> (только при soulforged corruption): когда наносишь урон оружием или безоружной атакой, получаешь 2 урона последнего выбранного для Planar Pain типа, даже если этот тип тебе обычно не вредит. На stage 2 сущностная форма не проявляется.</p>"
+        },
+        "frequency": { "max": 1, "per": "day" },
+        "selfEffect": {
+            "name": "Эффект: Сущностная форма (Planar Pain)",
+            "uuid": "Compendium.elinvale-tools.items.Item.ElinFxPlanarPain"
+        },
+        "rules": [],
+        "traits": {
+            "rarity": "common",
+            "value": ["concentrate", "divine", "extradimensional"]
+        },
+        "publication": { "title": "Предметы Элинваля", "license": "ORC", "remaster": true }
+    }
+}

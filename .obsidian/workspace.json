@@ -11,20 +11,42 @@
             "id": "ff7b01f9c2ef6a55",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Claude outputs/Глава 4 — мастерская доска.canvas",
-                "viewState": {
-                  "x": 1621.428013392857,
-                  "y": 1568.882198660714,
-                  "zoom": -1.0506260730699681
-                }
+                "file": "05_Campaign/Арка 1/Глава 4 - город под бароном.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Глава 4 — мастерская доска"
+              "icon": "lucide-file",
+              "title": "Глава 4 - город под бароном"
+            }
+          },
+          {
+            "id": "5842c9eb11e4090f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05_Campaign/Session_TODOs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Session_TODOs"
+            }
+          },
+          {
+            "id": "4356bce056e6a9c2",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -58,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "серебр",
+                "query": "Чезаре",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -192,55 +214,57 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ff7b01f9c2ef6a55",
+  "active": "5842c9eb11e4090f",
   "lastOpenFiles": [
-    "Claude outputs/Глава 4 — мастерская доска.canvas",
-    "05_Campaign/Доска кампании.canvas",
+    "Claude outputs/Подготовка — Сессия 6.md",
+    "05_Campaign/Transcripts/Session_05_transcript.md",
+    "05_Campaign/Sessions/Session_05.md",
+    "05_Campaign/Арка 1/Глава 4 - проникновение в особняк Бьянки.md",
+    "02_Regions/Сольмаре.md",
+    "04_NPCs/Чезаре Гальярди.md",
     "05_Campaign/Арка 1/Глава 4 - город под бароном.md",
+    "05_Campaign/Арка 1.md",
+    "00_Meta/Closed_Questions.md",
+    "Untitled.canvas",
+    "04_NPCs/Корнелия Биланчи.md",
     "05_Campaign/Session_TODOs.md",
+    "08_Foundry/elinvale-tools/README.md.tmp.3225517.1db01318690c",
+    "08_Foundry/elinvale-tools/README.md.tmp.3225517.f96f0061ddb1",
+    "00_Meta/Open_Questions.md.tmp.3225517.7f48b0340da1",
+    "07_PCs/Вампир (черновик).md.tmp.3225517.98dcc6797602",
+    "07_PCs/Вампир (черновик).md.tmp.3225517.c1dfca1a72a5",
+    "07_PCs/Вампир (черновик).md.tmp.3225517.05e1a92ecb75",
+    "08_Foundry/elinvale-tools/src/items/sedVxNESx",
+    "08_Foundry/elinvale-tools/src/items/action-planar-pain.json",
+    "08_Foundry/elinvale-tools/src/items/action-planar-pain.json.tmp.3225517.da0029a8a621",
+    "08_Foundry/elinvale-tools/src/items/effect-planar-pain.json",
+    "Claude outputs/Брейншторм — расследование Главы 4.md",
+    "99_Sketches/Схема — Каталажка (вариант 1).svg",
+    "99_Sketches/Схема — Каталажка (вариант 1).png",
+    "Claude outputs/Глава 4 — мастерская доска.canvas",
+    "99_Sketches/tokens/_work/simone/GEN_PARAMS.md",
+    "99_Sketches/tokens/_work/cesare/GEN_PARAMS.md",
+    "99_Sketches/tokens/Симоне Кальдана.webp",
+    "99_Sketches/tokens/Чезаре Гальярди.webp",
+    "99_Sketches/tokens/_work/cesare/sheet.png",
+    "99_Sketches/tokens/_work/simone/prev_v2.png",
+    "99_Sketches/tokens/_work/simone/subj_v2.png",
+    "99_Sketches/tokens/_work/simone/prev_v1.png",
+    "99_Sketches/tokens/_work/simone/subj_v1.png",
+    "99_Sketches/tokens/_work/cesare/prev_v2.png",
+    "Claude outputs/Черновик — проникновение в особняк Бьянки.md",
+    "99_Sketches/Карта — Каталажка (черновик).md",
+    "05_Campaign/Доска кампании.canvas",
     "05_Campaign/Sessions/Session_04.md",
     "05_Campaign/Transcripts/Session_04_transcript.md",
     "05_Campaign/Арка 1/Глава 3 - Летний Сад и дракон.md",
     "05_Campaign/Арка 1/Глава 3 - бой у сердца.md",
-    "08_Foundry/elinvale-tools/esmodules/overflowing-power.mjs.tmp.2641317.201285d4446e",
-    "08_Foundry/elinvale-tools/esmodules/overflowing-power.mjs.tmp.2641317.1ff480d74674",
-    "08_Foundry/elinvale-tools/packs/gm-macros/000005.ldb",
-    "08_Foundry/elinvale-tools/packs/gm-macros/000004.log",
-    "08_Foundry/elinvale-tools/packs/gm-macros/MANIFEST-000002",
-    "08_Foundry/elinvale-tools/packs/gm-macros/000003.log",
-    "08_Foundry/elinvale-tools/packs/gm-macros/CURRENT",
-    "08_Foundry/elinvale-tools/packs/gm-macros/MANIFEST-000001",
-    "08_Foundry/elinvale-tools/packs/gm-macros/LOG",
-    "08_Foundry/elinvale-tools/packs/gm-macros/LOCK",
-    "08_Foundry/elinvale-tools/art/icons/dark-polyhedron.webp",
-    "02_Regions/Сольмаре.md",
     "04_NPCs/Проходные NPC — заготовки (Арка 1).md",
     "01_World/Экономика и ресурсы.md",
     "99_Sketches/tokens/_work/tessera-icon/GEN_PARAMS.md",
-    "08_Foundry/elinvale-tools/art/icons/tessera.webp",
-    "99_Sketches/tokens/_work/tessera-icon/preview_v2.png",
-    "99_Sketches/tokens/_work/tessera-icon/tessera_v2.png",
-    "99_Sketches/tokens/_work/tessera-icon/ref_gem.png",
-    "99_Sketches/tokens/_work/tessera-icon/ref_pearl.png",
-    "99_Sketches/tokens/_work/tessera-icon/ref_gem.webp",
-    "99_Sketches/tokens/_work/tessera-icon/ref_pearl.webp",
-    "99_Sketches/tokens/_work/tessera-icon/preview_v1.png",
-    "99_Sketches/tokens/_work/tessera-icon/tessera_v1.png",
     "99_Sketches/tokens/_work/dragon_heart/GEN_PARAMS.md",
     "99_Sketches/tokens/_work/dario/GEN_PARAMS.md",
     "Claude outputs/Ревью Codex — финальный бой Главы 3.md",
-    "Claude outputs/Брейншторм — финальный бой Главы 3.md",
-    "02_Regions/Тарнхольд.md",
-    "02_Regions/Стартовый регион.md",
-    "05_Campaign/Советы на загрузку (player-facing).md",
-    "02_Regions/Дом Сальвиати.md",
-    "05_Campaign/Арка 2.md",
-    "00_Meta/Closed_Questions.md",
-    "05_Campaign/Sessions/Session_03.md",
-    "05_Campaign/Transcripts/Session_03_transcript.md",
-    "05_Campaign/Transcripts/Session_01_transcript.md",
-    "05_Campaign/Sessions/Session_01.md",
-    "05_Campaign/Sessions/Session_02.md",
     "05_Campaign/Арка 1.canvas",
     "05_Campaign/Пререквизиты финала.canvas"
   ]

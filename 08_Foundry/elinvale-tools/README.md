@@ -318,6 +318,27 @@ prone, перезарядка, вражеские сейвы, перемещен
 
 ---
 
+## Архелай — Soulforger, Planar Pain
+
+В системе PF2e (8.6.0) у Soulforger Dedication есть текст, но нет автоматизации (`rules: []`),
+поэтому essence power сделан у нас. Soulforged armament Архелая — рапира.
+
+- **Сущностная форма (Planar Pain)** (`action-planar-pain.json`, type action, ◆, 1/день) —
+  перетащить на лист Архелая. Клик «Use» тратит счётчик (сброс на Rest for the Night) и
+  вешает эффект через `selfEffect`. Системное действие Manifest Soulforged Armament остаётся для
+  обычного призыва рапиры без сущностной формы.
+- **Эффект: Сущностная форма (Planar Pain)** (`effect-planar-pain.json`, 1 минута). При наложении
+  два ChoiceSet: оружие (выбрать рапиру) и тип урона из 8. Дальше `DamageAlteration` меняет тип
+  base-урона выбранного оружия, `FlatModifier` даёт +2 status к урону. Precision и модификаторы
+  наследуют тип base-урона. Шаблон — системные Starlit Transformation и Herald's Weapon.
+- **Corruption flaw** не автоматизирован: он только в тексте действия, урон 2 применяется вручную.
+
+> **Проверить в Foundry после выкатки:** «Use» на действии → счётчик 0/1, вылезли два окна
+> выбора, на токене иконка эффекта с типом в названии; бросок урона рапирой показывает
+> выбранный тип и +2 status; через 10 раундов эффект ушёл.
+
+---
+
 ## Скрыть богов Paizo (не удаляя)
 
 Богов Paizo штатно удалить нельзя (системные паки залочены), да и не нужно — достаточно
@@ -398,5 +419,6 @@ elinvale-tools/
 │   ├── effect-foretold-misfortune-rider.json  effect-panache.json  (эффекты)
 │   ├── tree-branch.json  effect-tree-ward.json                  (Ветвь Древа, Гл. 3)
 │   ├── effect-summer-in-blood.json  effect-summer-surge.json    (Сила жизни, Гл. 3)
+│   ├── action-planar-pain.json  effect-planar-pain.json        (Soulforger Архелая)
 └── README.md             этот файл
 ```
