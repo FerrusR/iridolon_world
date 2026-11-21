@@ -4,7 +4,7 @@
 
 ## Что у тебя иначе, чем у Claude
 - **Скиллы** — в `.agents/skills/` (общие с Claude; `.claude/skills` — симлинк на ту же папку): `pf2e-session-prep`, `token`, `pf2e-review`, `foundry-pf2e`, `pf2e-macros`, `humanize`. Вызов: `$pf2e-session-prep`, `$token <Имя NPC>`, `$pf2e-review <путь к черновику>`; `$foundry-pf2e` и `$pf2e-macros` — для работы с модулем `elinvale-tools` и макросами; `$humanize` — для стиля прозы.
-- **Проекта claude.ai у тебя нет.** Листы подготовки и прочие черновики веди в `Claude outputs/`; скажи Ferrus, если копию в проекте claude.ai нужно обновить.
+- **Проекта claude.ai у тебя нет.** Временные чеклисты и черновики веди в `Claude outputs/`; принятые решения сохраняй по разделу «Сохранение решений» в `CLAUDE.md`. Скажи Ferrus, если копию в проекте claude.ai нужно обновить.
 - **Хук проверки схемы** — в `.codex/config.toml` (работает, пока проект trusted): после каждой правки `apply_patch` запускает `check_schema.py --hook`. Вернул ERROR — исправь frontmatter. Сомневаешься, что хук сработал — запусти `python3 00_Meta/scripts/check_schema.py <файл>` вручную.
 - **Git** — те же правила, что в `CLAUDE.md`: мутирующие команды и `git status` не запускай, коммитит Ferrus.
 - **Память Claude тебе не видна.** Всё нужное для работы должно быть в волте. Если Ferrus формулирует новое постоянное правило работы — предложи записать его в `CLAUDE.md`.
