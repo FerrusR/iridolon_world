@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="730" viewBox="0 0 1180 730">
+<rect width="1180" height="730" fill="#161b22"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#e6edf3">
+<text x="40" y="42" font-size="26" font-weight="bold">Бруно · последняя комната</text>
+<text x="40" y="74" font-size="16" fill="#a1abb9">Предложение · 30 × 35 feet · клетка 5 feet · вид сверху</text>
+<rect x="140" y="110" width="384" height="448" fill="#222e3a" stroke="#c4cdd7" stroke-width="5"/>
+<rect x="140" y="110" width="384" height="64" fill="#56422f"/>
+<path d="M140 110 V558" stroke="#5b6571" stroke-width="1"/>
+<path d="M204 110 V558" stroke="#5b6571" stroke-width="1"/>
+<path d="M268 110 V558" stroke="#5b6571" stroke-width="1"/>
+<path d="M332 110 V558" stroke="#5b6571" stroke-width="1"/>
+<path d="M396 110 V558" stroke="#5b6571" stroke-width="1"/>
+<path d="M460 110 V558" stroke="#5b6571" stroke-width="1"/>
+<path d="M524 110 V558" stroke="#5b6571" stroke-width="1"/>
+<path d="M140 110 H524" stroke="#5b6571" stroke-width="1"/>
+<path d="M140 174 H524" stroke="#5b6571" stroke-width="1"/>
+<path d="M140 238 H524" stroke="#5b6571" stroke-width="1"/>
+<path d="M140 302 H524" stroke="#5b6571" stroke-width="1"/>
+<path d="M140 366 H524" stroke="#5b6571" stroke-width="1"/>
+<path d="M140 430 H524" stroke="#5b6571" stroke-width="1"/>
+<path d="M140 494 H524" stroke="#5b6571" stroke-width="1"/>
+<path d="M140 558 H524" stroke="#5b6571" stroke-width="1"/>
+<text x="172" y="101" text-anchor="middle" font-size="16">A</text>
+<text x="236" y="101" text-anchor="middle" font-size="16">B</text>
+<text x="300" y="101" text-anchor="middle" font-size="16">C</text>
+<text x="364" y="101" text-anchor="middle" font-size="16">D</text>
+<text x="428" y="101" text-anchor="middle" font-size="16">E</text>
+<text x="492" y="101" text-anchor="middle" font-size="16">F</text>
+<text x="124" y="149" text-anchor="end" font-size="16">1</text>
+<text x="124" y="213" text-anchor="end" font-size="16">2</text>
+<text x="124" y="277" text-anchor="end" font-size="16">3</text>
+<text x="124" y="341" text-anchor="end" font-size="16">4</text>
+<text x="124" y="405" text-anchor="end" font-size="16">5</text>
+<text x="124" y="469" text-anchor="end" font-size="16">6</text>
+<text x="124" y="533" text-anchor="end" font-size="16">7</text>
+<text x="300" y="149" text-anchor="middle" fill="#f3d58c" font-size="20" font-weight="bold">L</text>
+<text x="364" y="149" text-anchor="middle" fill="#f3d58c" font-size="20" font-weight="bold">Б</text>
+<path d="M204 174 H460" stroke="#cfa878" stroke-width="7"/>
+<path d="M160 176 V224 M184 176 V224" stroke="#cfa878" stroke-width="4"/>
+<path d="M160 180 H184" stroke="#cfa878" stroke-width="3"/>
+<path d="M160 190 H184" stroke="#cfa878" stroke-width="3"/>
+<path d="M160 200 H184" stroke="#cfa878" stroke-width="3"/>
+<path d="M160 210 H184" stroke="#cfa878" stroke-width="3"/>
+<path d="M160 220 H184" stroke="#cfa878" stroke-width="3"/>
+<path d="M480 176 V224 M504 176 V224" stroke="#cfa878" stroke-width="4"/>
+<path d="M480 180 H504" stroke="#cfa878" stroke-width="3"/>
+<path d="M480 190 H504" stroke="#cfa878" stroke-width="3"/>
+<path d="M480 200 H504" stroke="#cfa878" stroke-width="3"/>
+<path d="M480 210 H504" stroke="#cfa878" stroke-width="3"/>
+<path d="M480 220 H504" stroke="#cfa878" stroke-width="3"/>
+<text x="492" y="277" text-anchor="middle" fill="#8bd3aa" font-size="20" font-weight="bold">P</text>
+<rect x="213" y="247" width="46" height="46" fill="#465360" stroke="#afbac7" stroke-width="2"/>
+<path d="M214 248 L258 292 M258 248 L214 292" stroke="#8391a1" stroke-width="2"/>
+<rect x="405" y="439" width="46" height="46" fill="#465360" stroke="#afbac7" stroke-width="2"/>
+<path d="M406 440 L450 484 M450 440 L406 484" stroke="#8391a1" stroke-width="2"/>
+<rect x="278" y="440" width="44" height="44" rx="5" fill="#705138" stroke="#e9a16b" stroke-width="2"/>
+<text x="300" y="469" text-anchor="middle" fill="#ffd3a2" font-size="20" font-weight="bold">T</text>
+<rect x="342" y="376" width="44" height="44" rx="5" fill="#705138" stroke="#e9a16b" stroke-width="2"/>
+<text x="364" y="405" text-anchor="middle" fill="#ffd3a2" font-size="20" font-weight="bold">T</text>
+<circle cx="332" cy="366" r="19" fill="#5c3034" stroke="#ef7777" stroke-width="3"/>
+<path d="M303 366 H361 M332 337 V395 M312 346 L352 386 M312 386 L352 346" stroke="#ef7777" stroke-width="3"/>
+<path d="M268 558 H332" stroke="#161b22" stroke-width="8"/>
+<path d="M270 558 H330" stroke="#ef7777" stroke-width="6"/>
+<path d="M300 576 V609" stroke="#a1abb9" stroke-width="3"/>
+<text x="300" y="638" text-anchor="middle" font-size="17">Вход / запираемая дверь</text>
+<text x="595" y="132" font-size="19" fill="#f3d58c" font-weight="bold">Галерея +10 feet</text>
+<text x="595" y="160" font-size="16" fill="#e6edf3" font-weight="normal">Лезвия вращаются внизу, на уровне пола.</text>
+<text x="595" y="188" font-size="16" fill="#e6edf3" font-weight="normal">Две вертикальные лестницы: A2 и F2.</text>
+<text x="595" y="216" font-size="16" fill="#e6edf3" font-weight="normal">Б — Бруно; L — два рычага.</text>
+<text x="595" y="244" font-size="16" fill="#a1abb9" font-weight="normal">Низкий борт даёт cover от части выстрелов.</text>
+<text x="595" y="272" font-size="16" fill="#e6edf3" font-weight="normal"></text>
+<text x="595" y="300" font-size="19" fill="#e6edf3" font-weight="bold">Основной пол +0 feet</text>
+<text x="595" y="328" font-size="16" fill="#e6edf3" font-weight="normal">Красный механизм — машина на узле сетки.</text>
+<text x="595" y="356" font-size="16" fill="#8bd3aa" font-weight="normal">P — панель отключения, доступна с пола.</text>
+<text x="595" y="384" font-size="16" fill="#e9a16b" font-weight="normal">T — две нажимные плиты запуска.</text>
+<text x="595" y="412" font-size="16" fill="#a1abb9" font-weight="normal">Серые ящики — укрытия / преграды.</text>
+<text x="595" y="440" font-size="16" fill="#e6edf3" font-weight="normal"></text>
+<text x="595" y="468" font-size="19" fill="#e6edf3" font-weight="bold">У рычагов</text>
+<text x="595" y="496" font-size="16" fill="#e6edf3" font-weight="normal">1 action — закрыть и запереть вход.</text>
+<text x="595" y="524" font-size="16" fill="#e6edf3" font-weight="normal">1 action — запустить машину.</text>
+<text x="595" y="552" font-size="16" fill="#e6edf3" font-weight="normal">1 action — снять запор с входа.</text>
+<text x="595" y="580" font-size="16" fill="#a1abb9" font-weight="normal">Рычагами могут пользоваться и герои.</text>
+<text x="40" y="691" font-size="15" fill="#a1abb9">Initiative до запирания и запуска. Галерея защищает от машины любого, кто туда добрался.</text>
+</g></svg>
